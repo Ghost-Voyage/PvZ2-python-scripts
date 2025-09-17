@@ -1,0 +1,4716 @@
+		PropertySheetBase 020
+			$ ScaledProps : std::vector<BoardEntityScaledPropsEntry>
+			CreaturePropertySheet 0B0
+				$ Speed : float
+				$ SpeedVariance : float
+				$ ExitSpeedup : float
+				$ GridHeight : int32
+				$ HitRect : Rect
+				$ AttackRect : Rect
+				$ ArtCenter : SexyVector2
+				$ ShadowOffset : SexyVector3
+				$ ShadowScaling : SexyVector2
+				$ GroundTrackName : std::string
+				$ GridExtents : Point
+				$ ZombieStats : std::vector<BoardEntityStat>
+				$ SoundOnWalk : std::string
+				$ SoundOnIdle : std::string
+				$ AlmanacScale : float
+				$ AlmanacOffset : SexyVector2
+				DinosaurPropertySheet 0C8
+					$ ActivationGridX : int32
+					$ Timeout : float
+					$ UnaffectedZombies : ClassRestrictionSet
+					DinosaurAnkylosaurusPropertySheet 0D8
+						$ PauseBetweenAttacks : float
+						$ AttackRangeMinX : int32
+						$ MaxZombiesToFling : int32
+						$ MaxGridDistanceToFling : int32
+					DinosaurPterodactylPropertySheet 0F8
+						$ MovementSpeed : float
+						$ MinimumX : int32
+						$ MaximumX : int32
+						$ GrabbingRangeError : float
+						$ NumSecondsToCooldownAfterCarryingZombie : float
+						$ NumZombiesToCarry : int32
+						$ ValidZombieTypes : ZombieRestrictionSet
+					DinosaurTyrannosaurusPropertySheet 0F0
+						$ EatCooldown : float
+						$ MaxZombiesToEat : int32
+						$ EatGridX : int32
+						$ EatRect : Rect
+						$ MaxTimesToRoar : int32
+						$ RoarDelay : float
+						$ Cooldown : float
+					DinosaurRaptorPropertySheet 0F0
+						$ MaxKicks : int32
+						$ LeftMostKickGridX : int32
+						$ TossTime : float
+						$ TossHeight : float
+						$ TossDistance : float
+						$ FlipAttackRect : Rect
+						$ KickRectFudgeFactor : int32
+					DinosaurStegosaurusPropertySheet 100
+						$ NumTimesToToss : int32
+						$ NumZombiesToFling : int32
+						$ ZombieAnnoyingGridX : int32
+						$ ActivationGridRangeStartX : float
+						$ ActivationGridRangeWidth : float
+						$ TossReadyUpTime : float
+						$ TossTime : float
+						$ TossHeight : float
+						$ TossDistanceMin : float
+						$ TossDistanceMax : float
+						$ TailDamageRadius : float
+						$ TailSmashDamage : int32
+						$ TailAOEDamage : int32
+						$ ZombieTailStaggerX : float
+			ZombieSpawnerPattern 038
+				$ RowStartOffset : std::vector<int>
+				$ RowBetweenOffset : std::vector<int>
+			AwardConfigPropertySheet 028
+				$ GiftBoxRewards : std::vector<LevelOfTheDay_RewardItemType>
+			LevelGenData 068
+				$ Config : std::map<std::string RT_COMMA float>
+				$ WorldConfigs : std::map<std::string RT_COMMA LevelGenWorldConfigEntry>
+				$ WaveData : std::map<std::string RT_COMMA LevelGenWaveDataEntry>
+				$ ZombieData : std::map<std::string RT_COMMA LevelGenZombieDataEntry>
+				$ EventGroupData : std::map<std::string RT_COMMA LevelGenEventGroupDataEntry>
+				$ CustomSeeds : std::vector<LevelGenCustomSeedEntry>
+				- LevelGenLevelParams
+					$ Title : std::string
+					$ Description : std::string
+					$ LevelNumber : int32
+					$ DisableSaveGame : bool
+				- LevelGenParams
+					$ World : std::string
+					$ Seed : std::string
+					$ UniqueIdentifier : std::string
+					$ LevelParams : LevelGenLevelParams
+				- LevelGenWaveResult
+					$ Budget : float
+					$ Actual : float
+					$ Zombies : std::vector<std::string>
+					$ PlantFoodCount : int32
+				- SelectedObstacleLayout
+					$ ObstacleType : DangerRoomBoardGridType
+					$ LevelDesignerType : std::string
+					$ GridMap : RtWeakPtr<BoardGridMapProps>
+				- LevelGenResults
+					$ Params : LevelGenParams
+					$ Events : std::vector<std::string>
+					$ Obstacles : std::vector<std::string>
+					$ WaveConfig : std::string
+					$ Strength : float
+					$ ZombieTypes : std::vector<std::string>
+					$ PlantFoodTotal : int32
+					$ Waves : std::vector<LevelGenWaveResult>
+					$ SelectedObstacleLayouts : std::vector<SelectedObstacleLayout>
+					$ ClaimedObstacleSquares : BoardGridMapProps
+				- LevelGenWorldConfigEntry
+					$ World : std::string
+					$ GameMode : std::string
+					$ StageModule : std::string
+					$ LootModule : std::string
+					$ DefaultModules : std::vector<std::string>
+					$ RequiredEventGroupIds : std::vector<std::string>
+					$ AdditionalEventGroupIds : std::vector<std::string>
+					$ MinEventCount : int32
+					$ MaxEventCount : int32
+					$ ObstacleGroupIds : std::vector<std::string>
+					$ MinObstacleCount : int32
+					$ MaxObstacleCount : int32
+				- LevelGenWaveDataEntry
+					$ UID : std::string
+					$ Weight : float
+					$ StrengthMin : float
+					$ StrengthMax : float
+					$ MaxZombieTypes : int32
+					$ KeywordLimits : std::map<std::string RT_COMMA int>
+					$ PlantFoodMin : int32
+					$ PlantFoodMax : int32
+					$ HugeWaves : std::vector<int>
+					$ Waves : std::vector<float>
+				- LevelGenZombieDataEntry
+					$ ZombieTypeID : std::string
+					$ Weight : float
+					$ Strength : float
+					$ Worlds : std::vector<std::string>
+					$ Keywords : std::vector<std::string>
+				- LevelGenEventDataEntry
+					$ EventID : std::string
+					$ PropertySheet : std::string
+					$ EventLevel : int32
+					$ Prerequisite : std::string
+					$ Priority : int32
+					$ Weight : float
+				- LevelGenEventGroupDataEntry
+					$ EventGroupID : std::string
+					$ EventData : std::map<std::string RT_COMMA LevelGenEventDataEntry>
+					$ IsObstacleGroup : bool
+				- LevelGenCustomSeedEntry
+					$ World : std::string
+					$ Seed : std::string
+			PlantPropertySheet 148
+				$ TypeName : std::string
+				$ Cost : int32
+				$ BeghouledCost : int32
+				$ Hitpoints : float
+				$ PacketCooldown : float
+				$ StartingCooldown : float
+				$ PlantFoodDurationSeconds : float
+				$ PlantFoodPlayCount : int32
+				$ PlantFoodShineTime : float
+				$ PlantFoodActivationSound : std::string
+				$ HelpedActivationSound : std::string
+				$ PlantGridType : PlantGridPlantingType
+				$ Actions : std::vector<PlantAction>
+				$ Powers : PowerSet
+				$ GridWidth : int32
+				$ GridHeight : int32
+				$ GridItemDamage : int32
+				$ PlantingOffsetY : float
+				$ CursorPreviewOffset : SexyVector2
+				$ ArtCenter : SexyVector2
+				$ ZenGardenOffset : SexyVector2
+				$ ZenGardenSmallScale : float
+				$ ZenGardenLargeScale : float
+				$ HitRectAdjust : Rect
+				$ Height : BoardEntityHeight
+				$ DangerRoomWeight : int32
+				$ ZenGardenSproutWeight : int32
+				$ ZenGardenBoostCost : int32
+				$ ZenGardenDurationOverrideSeconds : int32
+				$ IsZenGardenTreasurePlant : bool
+				$ IsZenGardenWaterPlant : bool
+				$ Boosts : std::vector<PlantBoost>
+				$ PlantStats : std::vector<BoardEntityStat>
+				$ ValidStages : std::vector<std::string>
+				$ SuggestionAlts : std::vector<std::string>
+				$ RestrictPlantingToGridArea : Rect
+				$ CanReceiveFirstAid : bool
+				$ IsConsumable : bool
+				$ IsInstant : bool
+				$ CanLiveOnWaves : bool
+				$ IdleAnimationWeights : std::map<std::string RT_COMMA int>
+				$ AnimRigProps : RtWeakPtr<PlantAnimRigPropertySheet>
+				$ HidePlantingEffects : bool
+				$ MasteryBoostChance : float
+				$ MasteryResistancePiercing : float
+				$ MultiPlantLayer : MultiPlantGridLayer
+				$ CanPlantAgainToUpgrade : bool
+				SnowPeaProps 150
+					$ PlantFoodProjectileCount : int32
+					$ PercentChanceOfFreezingPea : float
+				RepeaterProps 148
+					$ PlantFoodProjectileCount : int32
+				SplitpeaProps 150
+					$ PlantFoodForwardProjectileCount : int32
+					$ PlantFoodBackwardProjectileCount : int32
+				KernelpultProps 168
+					$ ButterChance : float
+					$ ButterStormDuration : float
+					$ AdditionalButterStormMissiles : int32
+					$ ButterStormDelay : float
+					$ ButterStormMissileSpeed : float
+					$ ButterDuration : float
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+				MelonpultProps 158
+					$ NormalProjectileLobHeight : float
+					$ NormalProjectileTimeOfFlight : float
+					$ PlantfoodProjectileLobHeight : float
+					$ PlantfoodProjectileTimeOfFlight : float
+					WintermelonProps 158
+						$ ChillDuration : float
+				CoconutCannonProps 150
+					$ MinimumSpeedScaleWhilePushing : float
+					$ NumPushedZombiesForMinSpeed : int32
+					$ ExplodeAtXPosition : float
+				SpringbeanProps 168
+					$ KnockbackTime : float
+					$ KnockbackOffset : float
+					$ KnockbackHeight : float
+					$ AttackRecoveryTime : float
+					$ RectZombieProximity : Rect
+				SpikeweedProps 160
+					$ PFSpikeDamage : int32
+					$ PFSpikeCooldown : float
+					$ PFSpikeOffset : SexyVector2
+					$ PlantFoodDPS : int32
+					$ PFConveyorSpeed : float
+				SquashProps 150
+					$ SquashRadius : int32
+					$ PlantfoodZombiesToTarget : int32
+					$ NormalZombiesToTarget : int32
+					- TargetProbabilityItem
+						$ Number : int32
+						$ Weight : int32
+				MagnifyingGrassProps 1C8
+					$ SunMoneyPerShot : int32
+					$ SunSuckInTime : float
+					$ PlantFoodBeamDPS : float
+					$ PlantFoodBeamMovementRate : float
+					$ PlantFoodBeamStartOffset : Point
+					$ PlantFoodOriginArtOffset : Point
+					$ PlantFoodBeamStartArtOffset : Point
+					$ PlantFoodBeamEndArtOffset : Point
+					$ PlantFoodHitEffectPivotOffset : Point
+					$ PlantFoodBeamMaxTargetingAngleDegrees : float
+					$ PlantFoodBeamMaxTargetingDistance : float
+					$ PlantFoodPulseDamage : float
+					$ SunproducerTypes : std::vector<std::string>
+					$ SunproducerOriginatingPlantOffset : SexyVector3
+					$ SunproducerTargetMagnifyingGrassOffset : SexyVector3
+					$ SunproducerExtendTime : float
+					$ SunproducerContractTime : float
+					$ SunproducerBeamStartOffset : Point
+					$ SunproducerBeamEndOffset : Point
+				BloverProps 150
+					$ WindAccel : float
+					$ UpPercent : float
+					$ WindGiveHelpLimit : int32
+				EMPeaProps 160
+					$ ActivateImmediately : bool
+					$ TapToActivate : bool
+					$ AffectedZombieTypes : std::vector<std::string>
+					$ ActivationRadius : float
+					$ ActivationRecoveryTime : float
+					$ StunTime : float
+				HolonutProps 160
+					$ RegenAfterDamage : bool
+					$ DelayBeforeRegenFromDamage : float
+					$ RegenAfterDeath : bool
+					$ DelayBeforeRecoverFromDeath : float
+					$ SoundOnRegen : std::string
+				StarFruitProps 150
+					$ PlantFoodProjectileCount : int32
+					$ FireHeight : float
+				BloomerangProps 160
+					$ PlantFoodProjectileCount : int32
+					$ BoomerangHitCount : int32
+					$ BoomerangSlowdownRadius : float
+					$ BoomerangMinSpeedPercentage : float
+					$ BoomerangPauseDuration : float
+					$ BoomerangStunsZombies : bool
+				ImitaterProps 148
+					$ NewPlantFadeInTime : float
+				PowerLilyProps 148
+				PlantCoinDispenserProps 148
+					$ PlantFoodCoinsToSpawn : int32
+				PuffshroomProps 160
+					$ PlantFoodProjectileCount : int32
+					$ ExpirationDurationSeconds : float
+					$ ExpirationBlinkTime : float
+					$ PlantfoodPropagationDelayBaseSeconds : float
+					$ PlantfoodPropagationDelayPerTileDistanceSeconds : float
+					$ PlantfoodResetsDecayForAllPuffshrooms : bool
+				FumeshroomProps 148
+					$ PlantFoodPushSpeed : float
+				PowerPlantProps 150
+					$ NumberOfFreeTiles : int32
+					$ FirstNonFreeCost : int32
+					$ CostMultiplier : float
+				SunBeanProps 158
+					$ SunMultiplierOnPlantfoodBurst : float
+					$ MaxSunPerZombieOnPlantfoodBurst : float
+					$ SunPerHitpoint : float
+					$ MaxSunPerZombie : float
+					$ OnlyLargeSun : bool
+				MagnetShroomProps 180
+					$ GridSquareRangeWidth : int32
+					$ GridSquareRangeHeight : int32
+					$ InitialPulledObjectSpeed : float
+					$ PulledObjectAcceleration : float
+					$ DestroyPulledObjectsTime : float
+					$ MaxPlantFoodObjects : int32
+					$ PlantFoodCollectTime : float
+					$ PlantFoodProjectileType : RtWeakPtr<RtObject>
+					$ PullableZombieTypes : std::vector<std::string>
+					$ PullableZombieHeadTypes : std::vector<std::string>
+				HypnoShroomProps 158
+					$ HealsOnHypnosis : bool
+					$ HypnotismHealPercentage : float
+					$ CannotBeHypnotized : std::vector<std::string>
+				LilyPadProps 148
+				PlantLauncherProps 158
+					$ NumPlantfoodRockets : int32
+					$ FireTime : float
+					$ PlantfoodFireTime : float
+					$ TargetOffset : SexyVector2
+					HollyKnightProps 1A0
+						$ PlantfoodMinTargets : int32
+						$ PlantfoodUnaimedRepeatCount : int32
+						$ PlantfoodUnaimedOffsetStart : int32
+						$ PlantfoodUnaimedSlotDegrees : float
+						$ StartingNumCharges : int32
+						$ DamagePhases : DamageLifetime
+						$ ProjectileDamage : float
+						$ ProjectileDamagePF : float
+						$ ProjectileKnockback : int32
+						$ ProjectileKnockbackPF : int32
+						$ BarrierLeafHitpoints : int32
+						$ BarrierLeafDamage : float
+						$ BarrierLeafHitpointsPF : int32
+						$ BarrierLeafDamagePF : float
+						$ AttackDamage : float
+					BoomFlowerProps 170
+						$ BalloonSplashDamage : int32
+						$ BalloonDamage : int32
+						$ PFBalloonSplashDamage : int32
+						$ PFBalloonDamage : int32
+						$ NormalRechargeSeconds : float
+				BananaProps 158
+					$ NumPlantfoodRockets : int32
+					$ FireTime : float
+					$ PlantfoodFireTime : float
+					$ TargetOffset : SexyVector2
+				TangleKelpProps 160
+					$ MinPlantfoodWaterKills : int32
+					$ MaxPlantfoodWaterKills : int32
+					$ MaxNormalWaterKills : int32
+					$ ZombieDrownExcludeList : std::vector<std::string>
+					$ SlapDamage : float
+				ChomperProps 170
+					$ NumberOfPlantfoodTargets : int32
+					$ ChewDamage : float
+					$ PFChewDamage : float
+					$ SuctionSpeed : float
+					$ BurpingSpeed : float
+					$ ChewTimeSeconds : float
+					$ BurpingTimeSeconds : float
+					$ ZombieChewExcludelist : std::vector<std::string>
+					$ GobbleCapacity : int32
+				GuacodileProps 148
+				SunpodProps 148
+					$ SunBankPerTier : int32
+				SunGunProps 148
+					$ AngleVarianceInDegrees : float
+				EmpowermintProps 180
+					$ PlantLifetime : float
+					$ PowerUpRegion : Rect
+					$ HealPlants : bool
+					$ PlantfoodPlants : bool
+					$ BoardFlashColor : Color
+					$ GlowEffectColor : Color
+					FilamintProps 190
+						$ NumShotBounces : int32
+						$ BounceDamagePercent : float
+						$ BounceDelay : float
+						$ DecayDelay : float
+					PeppermintProps 188
+						$ FireDuration : float
+						$ FireDamageTick : float
+						$ FireDamagePerTick : float
+					WintermintProps 180
+						$ ChillDuration : float
+					EnlightenmintProps 180
+					ReinforcemintProps 188
+						$ KnockbackTime : float
+						$ KnockbackHeight : float
+						$ KnockbackDistance : float
+					BombardmintProps 188
+						$ TimeBetweenExplosions : float
+						$ NumExplosions : int32
+					AilmintProps 188
+						$ PoisonDuration : float
+						$ PoisonDamage : float
+					EnchantmintProps 1A0
+						$ NumHypnotizeTargets : int32
+						$ CannotBeHypnotized : ZombieRestrictionSet
+						$ HealsOnHypnosis : bool
+						$ HypnotismHealPercentage : float
+					ContainmintProps 180
+						$ StunDuration : float
+					EnforcemintProps 198
+						$ ShrinkTime : float
+						$ NumShrinkTargets : int32
+						$ CannotBeShrunk : ZombieRestrictionSet
+					ArmamintProps 190
+						$ StunDuration : float
+						$ FireTime : float
+						$ NumProjectiles : int32
+						$ TargetOffset : SexyVector2
+					ConcealmintProps 238
+						$ NumSwallowTargets : int32
+						$ CannotBeSwallowed : ZombieRestrictionSet
+						$ BoostRadius : ComponentConditionRadiusProps
+					SpearmintProps 190
+						$ NumPlantsToSpawn : int32
+						$ LevelOfSpawnedPlants : int32
+						$ PlantTypeToSpawn : std::string
+					AppeasemintProps 188
+						$ NumberOfProjectiles : int32
+						$ NumberOfChildProjectiles : int32
+						$ TimeBetweenShots : float
+				ShadowPeashooterProps 168
+					$ PlantFoodProjectileCount : int32
+					$ PoweredAttackSlowDuration : float
+					$ PoweredAttackSlowMinimumDuration : float
+					$ PoweredAttackDecayPerZombieHit : float
+					$ ShadowBoostedZombieSwallows : int32
+					$ PlantFoodBombTravelTime : float
+					$ ZombieSwallowExcludeList : std::vector<std::string>
+				PoisonPeashooterProps 180
+					$ MaxStacks : int32
+					$ PoisonDPSPerStack : float
+					$ SpeedPercentDecreasePerStack : float
+					$ PoisonAndSlowDuration : float
+					$ PlantfoodPoisonDPS : float
+					$ PlantfoodSpeedPercentDecrease : float
+					$ PlantfoodPoisonAndSlowDuration : float
+					$ PlantfoodKnockBackDistance : float
+					$ PlantfoodKnockBackTime : float
+					$ PlantfoodKnockBackHeight : float
+					$ GridItemLifetime : float
+					$ GridItemPoisonAndSlowDuration : float
+					$ GridItemSpeedPercentDebuff : float
+					$ GridItemPoisonDPS : float
+				ArmamintPeashooterProps 158
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ NumberOfShots : int32
+					$ NumberOfPlantFoodShots : int32
+				GraveBusterProps 150
+					$ EatTime : float
+					$ DirtFadeTime : float
+				CabbagepultProps 1A8
+					$ NormalLaunchProps : PultProjectileProps
+					$ PlantfoodLaunchProps : PultProjectileProps
+				BowlingBulbProps 150
+					$ MaxAmmo : int32
+					$ AmmoRefreshTime : float
+					$ RegenOrder : BowlingBulbRegenOrder
+				ChilibeanProps 158
+					$ DuplicationInformation : DuplicatableProps
+				LightningReedProps 168
+					$ NumShotBounces : int32
+					$ BounceDamagePercent : float
+					$ BounceDelay : float
+					$ DecayDelay : float
+					$ PlantFoodCloudSpeed : float
+					$ PlantFoodLightningBoltDamage : float
+					$ PlantFoodAttackCooldown : float
+					$ PlantFoodCloudDuration : float
+				SunflowerProps 148
+					$ PlantFoodSunCount : int32
+					SunshroomProps 148
+				PeashooterProps 148
+					$ PlantFoodProjectileCount : int32
+					PeanutProps 150
+						$ PlantFoodShieldHitpoints : float
+				PrimalWallnutProps 148
+					$ SmashDamage : float
+				PlantPerfumeShroomProps 188
+					$ CharmBurstProps : ComponentPropagatedBurstProps
+				PotatomineProps 238
+					$ DuplicationInformation : DuplicatableProps
+					$ ExplodeRadius : ComponentDamageRadiusProps
+					$ TimeUntilArmed : float
+				PhatBeetProps 150
+					$ PowerfulAttackRatioMin : float
+					$ PowerfulAttackRatioMax : float
+				CeleryStalkerProps 158
+					$ PlantFoodPlantsToSpawn : int32
+					$ RetractionDelay : float
+					$ HitPointRemainingForDamage1 : float
+					$ HitPointRemainingForDamage2 : float
+				ThymeWarpProps 168
+					$ TimeBeforeWarpStart : float
+					$ TimeOfWarpOut : float
+					$ TimeZombieIsGone : float
+					$ TimeOfWarpIn : float
+					$ WarpZombieHP : float
+					$ ConditionsRemovedByWarping : std::vector<ZombieConditions>
+				GarlicProps 1E8
+					$ FromEating : GarlicStateInfo
+					$ FromPlantfood : GarlicStateInfo
+					$ PlantFoodGasEffectDelay : float
+					$ ZombiesAffectedByEating : ZombieRestrictionSet
+					$ ZombiesAffectedByPlantfood : ZombieRestrictionSet
+					- GarlicStateInfo
+						$ EatDuration : float
+						$ RegretfulDuration : float
+						$ LaneChangeDuration : float
+						$ StunDuration : float
+						$ IndifferenceDuration : float
+						$ SoundOfRegret : std::string
+						$ SoundOfMoveUp : std::string
+						$ SoundOfMoveDown : std::string
+						$ ShouldRegret : bool
+				SporeshroomProps 1B8
+					$ DuplicatableZombies : ZombieRestrictionSet
+					$ NormalLaunchProps : PultProjectileProps
+					$ PlantfoodLaunchProps : PultProjectileProps
+				IntensiveCarrotProps 150
+					$ PercentageOfHealthForRaisedPlant : float
+					$ NewPlantFadeInTime : float
+				CitronProps 148
+					$ ChargeTimeMultiplier : float
+				GoldbloomProps 148
+				ElectricCurrantProps 1A0
+					$ FromEating : GarlicStateInfo
+					$ ZombiesAffectedByEating : ZombieRestrictionSet
+					$ KnockbackDetails : KnockbackInfo
+					- KnockbackInfo
+						$ KnockbackHeight : float
+						$ KnockbackDistance : float
+				KiwiBeastProps 4D0
+					$ GrowthStageOneDamageLimit : float
+					$ GrowthStageTwoDamageLimit : float
+					$ GrowthStageOneDamageRadius : ComponentDamageRadiusProps
+					$ GrowthStageTwoDamageRadius : ComponentDamageRadiusProps
+					$ GrowthStageThreeDamageRadius : ComponentDamageRadiusProps
+					$ PlantfoodDamageRadius : ComponentDamageRadiusProps
+				AloeProps 168
+					$ HealCooldown : float
+					$ TargetHPTriggerPercent : float
+					$ TargetHPHealAmount : float
+					$ PFTargetHPHealPercent : float
+					$ UnhealablePlants : PlantRestrictionSet
+				SproutProps 158
+					$ TimeToGerminate : float
+					$ PlantWeights : std::vector<std::vector<SproutPlantWeights>>
+				HotPotatoProps 150
+					$ BlockMeltingDuration : float
+					$ ProximityDPS : float
+					$ CanRemoveOctopus : float
+				PepperpultProps 150
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ PlantfoodProjectilesToFire : int32
+				ChardGuardProps 170
+					$ PushesPerLeaf : int32
+					$ KnockbackTime : float
+					$ KnockbackOffset : float
+					$ KnockbackHeight : float
+					$ PFKnockbackTime : float
+					$ PFKnockbackOffset : float
+					$ PFKnockbackHeight : float
+					$ RectZombieProximity : Rect
+				StunionProps 158
+					$ PlantfoodProjectileDistance : float
+					$ PoisonDPS : float
+					$ StaticGasCloudPAMOffset : SexyVector2
+				XShotProps 150
+					$ PlantFoodProjectileCount : int32
+					$ PlantFoodAngleVarianceInDegrees : float
+					$ FireHeight : float
+				AkeeProps 158
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ NormalProjectileBounceCount : int32
+					$ PFProjectileBounceCount : int32
+				EndurianProps 148
+					$ PlantFoodShieldHitpoints : float
+				StalliaProps 150
+					$ Knockback : float
+					$ StallDuration : float
+					$ PlantfoodStallDuration : float
+				GoldLeafProps 148
+				MoonFlowerProps 208
+					$ BoostRadius : ComponentConditionRadiusProps
+					$ SunPerNeighbor : int32
+					$ MaxSunProduction : int32
+					$ ShadowBoostable : PlantRestrictionSet
+				NightshadeProps 190
+					$ MeleeDamage : float
+					$ PFMeleeDamage : float
+					$ LeafRespawnCooldown : float
+					$ TargetProps : TargetInfoProps
+				ShadowShroomProps 158
+					$ PoisonDPS : float
+					$ PoisonDuration : float
+					$ CannotBePoisoned : std::vector<std::string>
+				DusklobberProps 150
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ PlantfoodProjectilesToFire : int32
+				GrimroseProps 1E0
+					$ MaxPlantfoodKills : int32
+					$ NumTimesToActivateWhenNotPowered : int32
+					$ NumTimesToActivateWhenPowered : int32
+					$ ShadowStretcherProps : ComponentVisualStretcherProps
+					$ ZombieDeathExcludeList : std::vector<std::string>
+					$ SlapDamage : float
+				SnapdragonProps 150
+					$ ProjectilePAM : std::string
+				IceweedProps 170
+					$ PFSpikeDamage : int32
+					$ PFSpikeOffset : SexyVector2
+					$ PlantFoodDPS : int32
+					$ PFSpikes : int32
+					$ PFBladeDistance : float
+					$ PFBladeKnockback : float
+					$ HitPointsUpgraded : float
+				FirePeashooterProps 350
+					$ FlameThrowerLengthInNumTiles : float
+					$ PercentChanceOfPlasmaPea : float
+					$ NormalWarmingRadius : ComponentWarmingRadiusProps
+					$ PlantfoodWarmingRadius : ComponentWarmingRadiusProps
+				TorchwoodProps 358
+					$ ConvertProjectiles : std::vector<ConvertProjectileNameNode>
+					$ NormalWarmingRadius : ComponentWarmingRadiusProps
+					$ PlantfoodWarmingRadius : ComponentWarmingRadiusProps
+					$ LevelToStartAutoBoost : int32
+					- ConvertProjectileNameNode
+						$ InputType : std::string
+						$ OutputType : std::string
+						$ PFOutputType : std::string
+						$ AudioEventName : std::string
+				GhostPepperProps 168
+					$ DamagePerPulse : float
+					$ RateOfDamagePulsing : float
+					$ ChainDamage : float
+					$ NumChainJumps : int32
+					$ Lifetime : float
+					$ DeathExplosionDamage : float
+					$ DeathExplosionRadius : float
+					$ PlantfoodDamageMult : float
+					$ PlantfoodDamageRadiusMult : float
+				HomingThistleProps 158
+					$ ThistlePlantfoodMinTargets : int32
+					$ ThistlePlantfoodUnaimedRepeatCount : int32
+					$ ThistleUnaimedOffsetStart : int32
+					$ ThistleAimedOffsetStart : int32
+					$ ThistleUnaimedSlotDegrees : int32
+				SweetPotatoProps 188
+					$ MovableZombies : ZombieRestrictionSet
+					$ NormalAttractRect : Rect
+					$ PlantfoodAttractRect : Rect
+					$ LaneChangeTime : float
+					$ TimeBetweenLaneChanges : float
+					$ DrawAttractRects : bool
+					HotDateProps 288
+						$ NormalWarmingRadius : ComponentWarmingRadiusProps
+				LavaGuavaProps 350
+					$ ExplosionRadius : float
+					$ ExplosionDamage : float
+					$ CrackLengthInNumTiles : float
+					$ NormalWarmingRadius : ComponentWarmingRadiusProps
+					$ PlantfoodWarmingRadius : ComponentWarmingRadiusProps
+				SapflingProps 1C0
+					$ PlantfoodPineconeCount : int32
+					$ AmountToAimLeftOfZombie : float
+					$ TargetableZombieTypes : ClassRestrictionSet
+					$ NormalLaunchProps : PultProjectileProps
+					$ PlantfoodLaunchProps : PultProjectileProps
+				OlivePitProps 1C0
+					$ PitCapacity : int32
+					$ ChewTime : float
+					$ PitExcludelist : ClassRestrictionSet
+					$ PitCapacityExcludelist : ClassRestrictionSet
+					$ OilItemName : std::string
+					$ OilSpitRecharge : float
+					$ OilSpitRange : Rect
+					$ OilDuration : float
+					$ OilCondition : ZombieConditions
+					$ CanBeTargetedByList : ClassRestrictionSet
+					$ ZombieFallTime : float
+					$ PFZombiePullTime : float
+					$ PFZombieFallTime : float
+				HurrikaleProps 160
+					$ FlyingZombieBlowingSpeed : float
+					$ FlyingZombieUpAccelerationFactor : float
+					$ GroundZombieBlowingSpeed : float
+					$ BlowDuration : float
+					$ ChillDuration : float
+					$ WindGiveHelpLimit : int32
+				DandelionProps 158
+					$ PlantfoodProjectilesToFire : int32
+					$ WindHelperProjectilesToFire : int32
+					$ WindHelperCooldown : float
+					$ WindHelpProjectilePeriod : ValueRange
+				ToadstoolProps 2A0
+					$ ZombieChewExcludelist : std::vector<std::string>
+					$ TongueOffRowRangeOffset : int32
+					$ TimeBetweenBites : float
+					$ RectInstantGulpTriggerRange : Rect
+					$ NormalTongueStretcherProps : ComponentVisualStretcherProps
+					$ NormalTongueRange : float
+					$ NormalTongueSlapDamage : float
+					$ NormalTongueWaitTimeSeconds : float
+					$ NormalChewTimeSeconds : float
+					$ NormalAmountOfSunProducedPerZombie : int32
+					$ PFTongueStretcherProps : ComponentVisualStretcherProps
+					$ PFTargetSearchExpirationSeconds : float
+					$ PFMaxNumberOfTargets : int32
+					$ PFTongueRange : float
+					$ PFTongueSlapDamage : float
+					$ PFTongueWaitTimeSeconds : float
+					$ PFChewTimeSeconds : float
+					$ PFAmountOfSunProducedPerZombie : int32
+				StrawburstProps 180
+					$ MinimumSpeedScaleWhilePushing : float
+					$ NumPushedZombiesForMinSpeed : int32
+					$ ExplodeAtXPosition : float
+					$ NormalLaunchProps : PultProjectileProps
+				CactusProps 198
+					$ DuckAndCoverRange : Rect
+					$ StayDuckedRange : Rect
+					$ SpikeRange : Rect
+					$ SpikeDamage : int32
+					$ SpikeCooldown : float
+					$ PFSpikeDamage : int32
+					$ PFSpikeCooldown : float
+					$ ZombiesWhichDoNotCauseCower : ZombieRestrictionSet
+				ElectricBlueberryProps 178
+					$ PlantFoodLightningTargets : int32
+					$ PlantFoodCloudSpeed : float
+					$ PlantFoodLightningBoltDamage : float
+					$ PlantFoodResistantLightningBoltDamage : float
+					$ PlantFoodAttackCooldown : float
+					$ NormalLightningTargets : int32
+					$ NormalCloudSpeed : float
+					$ NormalLightningBoltDamage : float
+					$ NormalResistantLightningBoltDamage : float
+					$ NormalAttackCooldown : float
+					$ WeightTargetNormalZombie : int32
+					$ WeightTargetGargantuarZombie : int32
+					$ WeightTargetOtherZombie : int32
+				JackOLanternProps 278
+					$ WarmingRadius : ComponentWarmingRadiusProps
+					$ FlameOffset : SexyVector2
+					$ GridLengthOfFlamethrower : int32
+					$ FlamethrowerDPS : float
+					$ MaximumFireAmount : float
+					$ FlamethrowerActivateCost : float
+					$ FlamethrowerSustainCostPerSecond : float
+					$ FlamethrowerDamageIncrementTime : float
+					$ FlamethrowerDamageIncrementPercent : float
+					$ FireRegenerationPerSecond : float
+					$ PFWispCount : int32
+				ShrinkingVioletProps 160
+					$ ShrinkTime : float
+					$ DamageMultiplier : float
+					$ UnshrinkableZombies : ZombieRestrictionSet
+				BloomingHeartsProps 150
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ PlantfoodProjectilesToFire : int32
+				EscapeRootProps 178
+					$ UnswappablePlants : PlantingRestrictionSet
+					$ ExplodingPlantWeights : std::vector<PlantWeights>
+					$ TimeUntilArmed : float
+					$ SwapCooldownTime : float
+					$ PlantfoodAttackCount : int32
+				WasabiWhipProps 350
+					$ NormalWarmingRadius : ComponentWarmingRadiusProps
+					$ PlantfoodWarmingRadius : ComponentWarmingRadiusProps
+					$ TargetCount : float
+				AppleMortarProps 150
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+				MissileToeProps 160
+					$ NumPlantfoodRockets : int32
+					$ FireTime : float
+					$ PlantfoodFireTime : float
+					$ TargetOffset : SexyVector2
+					$ ChillDuration : float
+					$ FreezeDuration : float
+				ParsnipProps 148
+				WitchHazelProps 198
+					$ MagicOffset : SexyVector2
+					$ DecayDelay : float
+					$ BasicTransformationType : std::string
+					$ PlantfoodTransformationType : std::string
+					$ BasicTransformationLevel : int32
+					$ PlantfoodTransformationLevel : int32
+					$ ZombieTransformationExcludelist : ClassRestrictionSet
+					$ ZombieTargetingExcludelist : ClassRestrictionSet
+				CaulipowerProps 188
+					$ PlantFoodTargets : int32
+					$ PlantFoodAttackCooldown : float
+					$ PlantFoodPushBackDistance : float
+					$ PlantFoodPushBackHeight : float
+					$ PlantFoodPushBackTime : float
+					$ NormalHypnoTargets : int32
+					$ NormalAttackCooldown : float
+					$ HealsOnHypnosis : bool
+					$ HypnotismHealPercentage : float
+					$ WeightTargetNormalZombie : int32
+					$ WeightTargetGargantuarZombie : int32
+					$ WeightTargetOtherZombie : int32
+					$ CannotBeHypnotized : ZombieRestrictionSet
+				PlantSolarTomatoProps 158
+					$ SolarFlareStunDuration : float
+					$ SolarFlareDamage : float
+					$ ExplosionWidth : int32
+					$ ExplosionHeight : int32
+				ElectricPeashooterProps 160
+					$ BoltFrequency : float
+					$ BoltCount : int32
+					$ BoltRange : float
+					$ BoltDamage : float
+					$ PFProjectileSpawnCount : int32
+					$ PFSubProjectileSpawnCount : int32
+				HollyBarrierLeafProps 170
+					$ AttackEffectPopAnimID : std::string
+					$ AttackEffectAnim : std::string
+					$ DamagePhases : DamageLifetime
+					$ IsFromPlantFood : bool
+				MiniPeashooterProps 158
+					$ MiniPeasNeededBetweenTiers : int32
+					$ MaxDamageTier : int32
+					$ BaseDamageMultiplier : float
+					$ DamageTierMultiplier : float
+				SnapPeaProps 190
+					$ ChewTimeSeconds : float
+					$ FiredZombieHeadAttackCooldownSeconds : float
+					$ CouldNotEatAttackCooldownSeconds : float
+					$ PlantfoodTargetCount : int32
+					$ ZombieEatTypeExcludelist : ZombieRestrictionSet
+					$ ZombieEatExcludelist : ClassRestrictionSet
+					$ ZombieBurrowAttackExcludelist : ClassRestrictionSet
+				BurnadeProps 170
+					$ MaxUsesAfterPlantfood : int32
+					$ TimedExplosionProps : ComponentTimedExplosionProps
+				ZoybeanPodProps 168
+					$ ZombieTypeToSpawn : std::string
+					$ PlantFoodZombieTypeToSpawn : std::string
+					$ ZombieLevel : int32
+					$ PlantFoodZombieLevel : int32
+					$ CycleTime : float
+				PlantReincarnationProps 150
+					$ PetalAmount : int32
+					$ RecoveryTime : float
+				ElectriciteaProps 168
+					$ BoltCount : int32
+					$ BoltRange : float
+					$ ElectricBurstBoltCount : int32
+					$ ElectricBurstBoltRange : float
+					$ ElectricBurstNumBounces : int32
+					$ ElectricBurstBounceDamagePercent : float
+					$ ElectricBurstDecayDelay : float
+					$ ElectricBurstBounceDelay : float
+				BlastberryProps 168
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ PlantfoodProjectilesToFire : int32
+					$ ChildProjectileNum : int32
+					$ PFChildProjectileNum : int32
+					$ ChildDamage : float
+					$ PFChildDamage : float
+					$ ChildSplashRadius : float
+					$ PFChildSplashRadius : float
+				PokraProps 170
+					$ RecoveryTime : float
+					$ SlowDuration : float
+					$ SlowDurationFinal : float
+					$ SlowDurationPF : float
+					$ TimeBetweenAttacks : float
+					$ PhaseOneAttackRateOverrideValue : float
+					$ PhaseTwoAttackRateOverrideValue : float
+					$ PhaseThreeAttackRateOverrideValue : float
+					$ PhaseFourAttackRateOverrideValue : float
+					$ BasicProjectileAttackRateOverrideValue : float
+					$ PlantfoodProjectileAttackRateOverrideValue : float
+				ImpPearProps 170
+					$ PFZombiesImped : int32
+					$ ImpIndigestion : int32
+					$ ZombiePFExcludelist : ClassRestrictionSet
+					$ ImpType : std::string
+				PyreVineProps 260
+					$ WarmingRadius : ComponentWarmingRadiusProps
+					$ FlameOffset : SexyVector2
+					$ PFFlameDamage : int32
+					$ GridLengthOfFlamethrower : int32
+					$ FlamethrowerDPS : float
+				IceBloomProps 158
+					$ IceBlockDamagePhases : DamageLifetime
+					$ IceBlockHealth : float
+				UltomatoProps 178
+					$ BeamStartOffset : Point
+					$ BeamStartArtOffset : Point
+					$ BeamEndArtOffset : Point
+					$ BeamDPSUpgrade1 : int32
+					$ BeamDPSUpgrade2 : int32
+					$ BeamDPSUpgrade3 : int32
+					$ HitpointsUpgrade2 : int32
+					$ HitpointsUpgrade3 : int32
+					$ CostPerExistingPlant : int32
+					$ ResetLaunchTimeOnUpgrade : float
+				DartichokeProps 180
+					$ ThistlePlantfoodUnaimedRepeatCount : int32
+					$ ThistleUnaimedOffsetStart : int32
+					$ ThistleAimedOffsetStart : int32
+					$ ThistleUnaimedSlotDegrees : int32
+					$ DartichokeNormalBoostChance : float
+					$ MainTargetPriority : ClassBucketFilter
+					$ PlantfoodStartOffset : std::vector<ValueRange>
+					$ DartichokeMaxAmmo : int32
+					$ DartichokeOutOfAmmoSadSeconds : float
+				GumnutProps 178
+					$ GumZombieType : std::string
+					$ BaseGumHealth : float
+					$ ZombieGumHealthPercent : float
+					$ PFZombiesGummed : int32
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ TargetPriorityBuckets : ClassBucketFilter
+				ShineVineProps 160
+					$ SunProductionModifier : int32
+					$ SunProducerExcludelist : PlantRestrictionSet
+				TumbleweedProps 160
+					$ BonusTumblersChance : float
+					$ BonusTumblersAmount : int32
+					$ BonusTumblersTimeBetween : float
+					$ TumbleStunChance : float
+					$ TumbleStunDuration : float
+					$ KnockbackDistance : float
+					$ KnockbackChance : float
+				PuffballProps 150
+					$ DecayPoisonDPS : float
+					$ ConfettiPropagationDelay : float
+				ExplodeOVineProps 160
+					$ InitialExplosionDamage : float
+					$ RegularExplosionDamage : float
+					$ PFExplosionDamage : float
+					$ KnockbackRadius : float
+					$ KnockbackDistance : float
+					$ KnockbackTime : float
+					$ KnockbackHeight : float
+				MurkadamiaProps 180
+					$ MurkRegenerationDelay : float
+					$ MurkRegenerationDPS : float
+					$ MurkArmorMax : float
+					$ MurkArmorInitial : float
+					$ MurkReflectionDamage : float
+					$ MurkDamageAnimThreshold : float
+					$ MurkUnboostedLayers : std::vector<std::string>
+					$ MurkBoostedLayers : std::vector<std::string>
+					$ BoostAnimLayers : std::map<std::string RT_COMMA std::vector<std::string>>
+				TurkeypultProps 1C8
+					$ TurkeyTypeToSpawn : std::string
+					$ PlantfoodTurkeyTypeToSpawn : std::string
+					$ TurkeyLevel : int32
+					$ NormalLaunchProps : PultProjectileProps
+					$ PlantfoodLaunchProps : PultProjectileProps
+				HeadbutterLettuceProps 160
+					$ ButterChance : float
+					$ MinButterQuantity : int32
+					$ MaxButterQuantity : int32
+					$ PFButterQuantity : int32
+					$ ButterDuration : float
+					$ ButterTimeOfFlight : float
+					$ ButterLobHeight : float
+				BoingsettaProps 160
+					$ ZombiePlantfoodDamage : float
+					$ KnockbackTime : float
+					$ KnockbackHeight : float
+					$ KnockbackOffset : float
+					$ PlantfoodKnockbackTime : float
+					$ PlantfoodKnockbackHeight : float
+					$ PlantfoodKnockbackOffset : float
+				StickybombRiceProps 170
+					$ ProjectileLobHeight : float
+					$ ProjectileTimeOfFlight : float
+					$ ProjectileCount : int32
+					$ CreatedBombTimer : float
+					$ CreatedBombExplodeRadius : float
+					$ CreatedBombBaseDamage : float
+					$ CreatedBombPropagationMultiplier : float
+					$ PlantfoodCreatedBombTimer : float
+					$ PlantfoodCreatedBombExplodeRadius : float
+					$ PlantfoodCreatedBombBaseDamage : float
+					$ PlantfoodCreatedBombPropagationMultiplier : float
+				HocusCrocusProps 170
+					$ TeleportRechargeTime : float
+					$ TeleportInitialDelay : float
+					$ TimeZombieGone : float
+					$ TeleportDamage : float
+					$ PFZombiesTeleported : int32
+					$ CannotTeleport : ZombieRestrictionSet
+				GloomVineProps 1E8
+					$ BoostRadius : ComponentConditionRadiusProps
+				DraftodilProps 168
+					$ FlyingZombieBlowingSpeed : float
+					$ FlyingZombieUpAccelerationFactor : float
+					$ SlowDuration : float
+					$ SlowdownPercentage : float
+					$ BlowDuration : float
+					$ WindGiveHelpLimit : int32
+					$ PFShots : int32
+					$ LightweightZombieFlickChance : float
+					$ PFLightweightZombieFlickChance : float
+				PvineProps 1F8
+					$ PlantFoodProjectileCount : int32
+					$ BoostRadius : ComponentFamilyConditionRadiusProps
+				InfernoProps 150
+					$ TornadoDuration : float
+					$ PFTornadoDuration : float
+					$ CycloneZombieCap : int32
+				SolarSageProps 178
+					$ IlluminationExcludeList : ClassRestrictionSet
+					$ SunSpawnOffset : SexyVector2
+					$ InfectivityPercentage : float
+					$ InfectivityPercentagePF : float
+					$ SunProductionTimer : float
+					$ SunProductionTimerCap : float
+					$ InfectivityCooldown : float
+					$ InfectivityRange : float
+				PowerVineProps 180
+					$ PFRotationAngleDegrees : float
+					$ NetworkPlantMin : int32
+					$ NetworkShots : int32
+					$ NetworkedPlantFoodPlayCount : int32
+					$ NetworkShotCooldown : float
+					$ PFEmpBurstIncludeList : ZombieRestrictionSet
+					$ EmpBurstActivationRadius : float
+					$ EmpBurstStunTime : float
+					$ PFProjectileRotationOffset : ValueRange
+				NoctarineProps 190
+					$ PoweredActionDamage : float
+					$ ExplosionPAMOffset : SexyVector2
+					$ ActionDamageCloud : float
+					$ PoweredActionDamageCloud : float
+					$ GasDamageBonus : float
+					$ PoweredGasDamageBonus : float
+					$ GasDuration : float
+					$ PoweredGasDuration : float
+					$ PoweredSlowDuration : float
+					$ PoweredExplosionChance : float
+					$ CorpseExplosionDamage : float
+					$ CorpseExplosionGridSquareHeight : float
+					$ CorpseExplosionGridSquareWidth : float
+					$ ZombieExcludeList : ClassRestrictionSet
+				NoctarineCloudProps 1F8
+					$ BoostRadius : ComponentFamilyConditionRadiusProps
+				HeathSeekerProps 160
+					$ DartCount : int32
+					$ DartStartOffset : int32
+					$ DartSlotDegree : int32
+					$ PiercingDamage : int32
+					$ FinalDamage : int32
+					$ MaxTargets : int32
+					$ DartsDiffTime : float
+				TigerGrassProps 1B8
+					$ TigerHealing : float
+					$ TigerRegenTime : float
+					$ GrowthTime : float
+					$ TigerHealth : float
+					$ GlobalGrowthMultiplier : float
+					$ TigerPFHealth : float
+					$ PounceDamageMultiplier : float
+					$ TigerTypeToSpawn : std::string
+					$ NormalLaunchProps : PultProjectileProps
+					$ ZombiesExcludeList : ClassRestrictionSet
+				TeleportatoMineProps 178
+					$ ArmingTime : float
+					$ TeleportationUnitLimit : int32
+					$ CannotTeleport : ZombieRestrictionSet
+					$ TimeOfWarpOut : float
+					$ TimeZombieIsGone : float
+					$ TimeOfWarpIn : float
+					$ ConditionsRemovedByWarping : std::vector<ZombieConditions>
+				ButtercupProps 1D0
+					$ AmountToAimLeftOfZombie : float
+					$ ZombiesExcludeList : ClassRestrictionSet
+					$ NormalLaunchProps : PultProjectileProps
+					$ PlantfoodLaunchProps : PultProjectileProps
+					$ ButterLifetime : float
+					$ PFButterLifetime : float
+					$ ButterConditionDuration : float
+					$ PFButterConditionDuration : float
+				BlockoliProps 150
+					$ ShieldSmashStunDuration : float
+					$ ShieldSmashCooldown : float
+				BrambleBushProps 188
+					$ TrapNumber : int32
+					$ KnockbackDistance : float
+					$ KnockbackHeight : float
+					$ KnockbackTime : float
+					$ RetrapDelay : float
+					$ ZombieDragSpeed : float
+					$ ZombieTrapExcludelist : ClassRestrictionSet
+					$ ZombieTrapUseExcludelist : ClassRestrictionSet
+				RhubarbarianProps 190
+					$ LifespanTimer : float
+					$ TimerPauseDuration : float
+					$ InitialSmashDamage : float
+					$ InitialStunDuration : float
+					$ InitialSmashDamageWidth : float
+					$ InitialSmashDamageHeight : float
+					$ LeapStunDamageWidth : float
+					$ LeapStunDamageHeight : float
+					$ LeapDistanceCap : float
+					$ LeapStunDuration : float
+					$ LeapDamage : float
+					$ LeapProps : RhubarbarianLeapProps
+					$ ZombieFlickExcludeList : ClassRestrictionSet
+					- RhubarbarianLeapProps
+						$ FlightTime : float
+						$ ApexHeight : float
+				MegaGatlingProps 150
+					$ ChanceToPF : float
+					$ PlantFoodDurationSeconds : float
+					$ PlantFoodProjectileCount : int32
+				LevitaterProps 198
+					$ LevitateAttackCoolDown : float
+					$ ZombieFloatTime : float
+					$ ZombieFloatTimePF : float
+					$ ChanceTo2ndLevitate : float
+					$ ChanceToLevitatePF : float
+					$ ChanceTo2ndLevitatePF : float
+					$ FlickHeight : float
+					$ RotationVelocity : float
+					$ PFLevitationFrequency : float
+					$ NoOfTilesToLevitate : float
+					$ ZombiesExcludeList : ClassRestrictionSet
+					$ ZombiesDestroyList : ClassRestrictionSet
+				TombTanglerProps 1A8
+					$ FogZombieSlowDownPercentage : float
+					$ HealthConversionPercentage : float
+					$ FogPullChance : float
+					$ FogPullChanceTickTime : float
+					$ PFTargets : int32
+					$ UndergroundDamage : int32
+					$ PullZombieExcludelist : ClassRestrictionSet
+					$ SlowDownExcludelist : ClassRestrictionSet
+					$ InvulnerableZombieIncludelist : ClassRestrictionSet
+					$ PullExcludeZombieConditions : std::vector<ZombieConditions>
+				- Rect
+					$ mX : int32
+					$ mY : int32
+					$ mWidth : int32
+					$ mHeight : int32
+				- PowerNode
+					$ Type : PowerType
+					$ Context : PowerContext
+					$ Props : std::string
+				- PowerSet
+					$ List : std::vector<PowerNode>
+				- PlantAction
+					$ Type : PlantActionType
+					$ Projectile : RtWeakPtr<ProjectilePropertySheet>
+					$ ExplodeType : SplashDamageType
+					$ ExplodeRadius : float
+					$ TriggerType : PlantActionTriggerType
+					$ DieAfterExplode : bool
+					$ InitialMinCooldownTime : float
+					$ CooldownTimeMin : float
+					$ CooldownTimeMax : float
+					$ XVelocityOverride : float
+					$ Damage : int32
+					$ SplashDamage : int32
+					$ Burns : bool
+					$ PushbackAmount : int32
+					$ ChillDuration : float
+					$ FreezeDuration : float
+					$ StunDuration : float
+					$ RectTriggerRange : Rect
+					$ ProjectileLaunchSound : std::string
+					$ SpawnOffset : SexyVector2
+					$ SecondaryAction : bool
+				- PlantBoost
+					$ PlantBoostProps : RtWeakPtr<PlantBoostPropertySheet>
+					$ Value : float
+					$ CooldownDurationSeconds : float
+			PultProjectileProps 030
+				$ TimeOfFlight : float
+				$ LobHeight : float
+				$ TimeOfFlightVariance : float
+				$ LobHeightVariance : float
+				$ FireOnlyForward : bool
+			ProjectilePropertySheet 188
+				$ ClassName : std::string
+				$ BaseDamage : float
+				$ HealAmount : float
+				$ CollisionFlags : std::vector<CollisionTypeFlags>
+				$ DamageFlags : std::vector<DamageTypeFlags>
+				$ SplashDamage : float
+				$ SplashRadius : float
+				$ StunDuration : float
+				$ SplashRadiusBaseDamageCutoff : float
+				$ ShakeBoardOnSplash : bool
+				$ DiesOnImpact : bool
+				$ HasShadow : bool
+				$ ImpactSoundForce : bool
+				$ RotateToMatchVelocity : bool
+				$ FollowsGround : bool
+				$ OverrideStunCondition : ZombieConditions
+				$ InitialVelocity : std::vector<ValueRange>
+				$ InitialAcceleration : std::vector<ValueRange>
+				$ InitialVelocityScale : std::vector<ValueRange>
+				$ InitialHeight : ValueRange
+				$ InitialRotation : ValueRange
+				$ InitialAngularVelocity : ValueRange
+				$ InitialScale : ValueRange
+				$ AttachedPAM : std::string
+				$ AttachedPAMAnimRigClass : std::string
+				$ AttachedPAMOffset : SexyVector2
+				$ AttachedPAMEffectOffset : SexyVector2
+				$ AttachedPAMAnimationToPlay : std::vector<std::string>
+				$ ShadowImage : std::string
+				$ SpawnPAM : std::string
+				$ SpawnPAMAnimationToPlay : std::vector<std::string>
+				$ SpawnPAMOffset : std::vector<ValueRange>
+				$ RenderColor : Color
+				$ RenderImage : std::string
+				$ CollisionRect : FRect
+				$ ImpactSoundEvent : std::string
+				$ ImpactSoundThrottleTimer : float
+				$ ImpactPAM : std::string
+				$ ImpactPAMAnimationToPlay : std::vector<std::string>
+				$ ImpactOffset : std::vector<ValueRange>
+				$ ImpactShowsAtZombieFeet : bool
+				$ Conditions : std::vector<ZombieConditionEntry>
+				PennyPerkShockwaveProjectileProperties 188
+				SnowballProjectileProps 190
+					$ MinZombieDamagePct : float
+					$ MaxDamage : float
+				SandbagProjectileProps 190
+					$ ImpactRadiusX : int32
+					$ ImpactRadiusY : int32
+				ShockWaveProjectileProps 188
+				PowerDrinkProjectileProps 190
+					$ ConditionToApply : ZombieConditions
+				HelpdeskLaptopProjectileProps 188
+				BouncingAndRollingProjectileProps 190
+					$ BounceAngleInRadians : float
+					$ BounceOutwardTendency : float
+					BowlingBulbProjectileProps 1A0
+						$ HitsUntilFirstAward : int32
+						$ HitsUntilRepeatAward : int32
+						$ LootAwardOnHits : Loot
+					TumbleweedProjectileProps 1B8
+						$ KnockbackTime : float
+						$ KnockbackHeight : float
+						$ TossChanceBuckets : ClassBucketFilter
+						$ TossChance : std::vector<float>
+				FishHookProjectileProps 188
+				GuacodileProjectileProps 190
+					$ ChompsPerSecond : float
+					$ DamagePerChomp : float
+				PrimalPeashooterProjectileProps 1A0
+					$ StunDuration : float
+					$ KnockbackChance : float
+					$ KnockbackDistance : float
+					$ KnockbackTime : float
+					$ KnockbackHeight : float
+				GiantPlasmaProjectileProps 198
+					$ MinTossAngle : float
+					$ MaxTossAngle : float
+					$ TossSpeed : float
+					$ TossSpinRadiansPerSecond : float
+				AkeeProjectileProps 198
+					$ ProjectileRetargetingRadius : float
+					$ PropertyReductionMultiplierPerBounce : float
+					$ DamageReductionAmountPerBounce : float
+				DusklobberPlantfoodProjectileProps 198
+					$ ShrapnelDamage : float
+					$ ShrapnelRadius : float
+					$ PauseBeforeStartingFlower : float
+				SnowPeaProjectileProps 190
+					$ LinearAOE : float
+				SnowPeaFreezingProjectileProps 190
+					$ LinearAOE : float
+				HomingThistleLeafProps 190
+					$ MaxRotationsPerSecond : float
+					$ Lifetime : float
+				SapflingProjectileProps 198
+					$ SapItemName : std::string
+				ButtercupProjectileProps 198
+					$ ButterItemName : std::string
+				DandelionProjectileProps 1A8
+					$ ResistancePerSecond : float
+					$ LaneChangeStartOffsetY : float
+					$ LaneChangeStartVelocityY : float
+					$ DriftDecayZPeriod : float
+					$ DriftDecayZTargetVelocity : float
+					$ DriftDecayXPeriod : float
+					$ DriftDecayXTargetVelocity : float
+				CactusProjectileProps 190
+					$ InitialPierceChance : int32
+					$ PierceChanceReductionPerHit : int32
+				GrapeshotProjectileProps 1A0
+					$ BounceAngleInRadians : float
+					$ BounceOutwardTendency : float
+					$ BouncesUntilSelfDestruct : int32
+					$ EndingPAM : std::string
+				BloomingHeartsProjectileProps 198
+					$ MaximumStacks : float
+					$ StacksToAdd : float
+					$ AdditionalDamagePerStack : float
+				ParsnipProjectileProps 190
+					$ ChompsPerSecond : float
+					$ DamagePerChomp : float
+				CaulipowerProjectileProps 190
+					$ InitialPositionOffset : SexyVector2
+				ElectricPeaPlantfoodSubProps 190
+					$ SlowDownPercentage : float
+					$ SlowDownTime : float
+				HollyKnightLeafProps 1A8
+					$ KnockbackChance : float
+					$ KnockbackTime : float
+					$ KnockbackHeight : float
+					$ ShieldType : std::string
+					$ IsFromPlantFood : bool
+				PoisonPeashooterPlantFoodProjectileProps 188
+				PoisonPeashooterProjectileProps 188
+				SnapPeaMedusaProjectileProps 1C0
+					$ PetrificationArea : Rect
+					$ CannotBePetrified : ClassRestrictionSet
+					$ PetrifiedHealthMultiplier : float
+					$ PetrifiedZombieType : std::string
+				BlastberryMainProjectileProps 1A0
+					$ ChildProjectileType : std::string
+					$ ChildProjectileXStart : float
+					$ ChildProjectileXSpacing : float
+				DartichokeLeafProps 190
+					$ MaxRotationsPerSecond : float
+					$ Lifetime : float
+				DraftodilProjectileProps 1A8
+					$ WindAccel : float
+					$ UpPercent : float
+					$ CanBlowAway : ClassRestrictionSet
+				BoomFlowerProjectileProps 190
+					$ BalloonLifetime : int32
+					$ BalloonMaxMerge : int32
+				BoomFlowerPlantfoodProjectileProps 188
+				InfernoProjectileProps 1C8
+					$ TimeBetweenDamagePulses : float
+					$ DamagePulseMultiple : float
+					$ UnmovableZombies : ZombieRestrictionSet
+					$ MeltableGridItems : GridItemRestrictionSet
+					$ InitialExtraVelocityStart : float
+					$ InitialExtraVelocitySeconds : float
+					$ InitialExtraVelocityCurve : CurveType
+					InfernoPFProjectileProps 1D0
+						$ LaneChangeTime : float
+						$ TimeBetweenLaneChanges : float
+						$ CyclonePullSquareRange : float
+				HeathSeekerProjectileProps 190
+					$ MaxRotationsPerSecond : float
+					$ Lifetime : float
+				BoulderProjectileProps 1A0
+					$ RollingVelocity : SexyVector3
+					$ BounceElasticity : float
+					$ BounceThreshold : float
+			QuestRewardTablesProps 028
+				$ TablesConfig : std::vector<QuestRewardsTablesConfig>
+				- QuestRewardsWeightedAwardEntry
+					$ Type : AwardType
+					$ SubType : std::string
+					$ MinAmount : int32
+					$ MaxAmount : int32
+					$ Weight : int32
+				- QuestRewardsTablesConfig
+					$ Difficulty : int32
+					$ Awards : std::vector<QuestRewardsWeightedAwardEntry>
+			JoustPropertySheet 0C8
+				$ ReplayRecordEventBasePeriodSecondsMin : float
+				$ ReplayRecordEventBasePeriodSecondsMax : float
+				$ FreePlayRechargeTimeSeconds : float
+				$ NetworkTimeoutSeconds : float
+				$ MaxRewardStreakMultiplier : int32
+				$ RewardStreakRetentionCost : std::vector<int>
+				$ LeagueIcons : std::vector<std::string>
+				$ LeagueNames : std::vector<std::string>
+				$ ShortLeagueNames : std::vector<std::string>
+				$ PlantReplayRestrictions : PlantReplayRestrictionsData
+				$ LeagueReplayRestrictions : std::vector<LeagueReplayRestrictionEntry>
+				$ PredefinedLoadouts : std::vector<PredefinedLoadoutGroup>
+				$ HowToPlayData : HowToPlayScreenData
+				$ PlantsRequiredToUnlock : int32
+				$ EndOfTournamentManagement : EndOfTournamentManagementInfo
+				$ MatchRequestRetryCount : int32
+				- PredefinedLoadoutEntry
+					$ PlantType : std::string
+					$ PlantLevel : int32
+					$ IsImitater : bool
+				- PredefinedLoadoutGroup
+					$ Name : std::string
+					$ Loadouts : std::vector<std::vector<PredefinedLoadoutEntry>>
+				- TimedPlantExcludelistEntry
+					$ Plant : std::string
+					$ UnvaultDate : uint64
+				- PlantReplayRestrictionsData
+					$ InvalidPlants : std::vector<TimedPlantExcludelistEntry>
+					$ MaxNumberOfPlants : int32
+				- LeagueReplayRestrictionEntry
+					$ MaxAveragePlantLevel : float
+					$ MaxSinglePlantLevel : int32
+					$ MaxAveragePlantMastery : float
+					$ MaxSinglePlantMastery : int32
+					$ MaxScore : uint64
+				- EndOfTournamentManagementInfo
+					$ ForcedMaintenanceTimeMin : int32
+					$ ForcedMaintenanceTimeMax : int32
+					$ LocalNoteMinDelayTime : int32
+					$ LocalNoteMaxDelayTime : int32
+			JoustProfilePropertySheet 058
+				$ MaxAvatarIcon : int32
+				$ MaxStartingAvatarIcon : int32
+				$ AvatarIconPattern : std::string
+				$ JoustNames : std::vector<std::string>
+				$ AvatarEarnHints : std::vector<AvatarEarnHint>
+				$ AvatarPages : std::vector<AvatarPage>
+				- AvatarEarnHint
+					$ StartIndex : int32
+					$ EndIndex : int32
+					$ Hint : std::string
+					$ Feature : GameFeature
+					$ Plant : std::string
+					$ PlantLevel : int32
+					$ Mystery : bool
+				- AvatarPage
+					$ Title : std::string
+					$ Icons : std::vector<int>
+			JoustSeasonSchedule 028
+				$ SeasonDefinitions : std::vector<JoustSeasonDefinition>
+				- JoustSeasonDefinition
+					$ StartDate : uint64
+					$ EndDate : uint64
+					$ Name : std::string
+					$ RewardsKey : std::string
+			JoustSeasonRewards 070
+				$ ProgressionRewards : std::vector<JoustSeasonProgressionReward>
+				$ AlternateGrandPrize : JoustSeasonProgressionReward
+				- JoustSeasonProgressionReward
+					$ RewardThreshold : int32
+					$ Reward : LevelOfTheDay_RewardItemType
+					$ IsGrandPrize : bool
+			ArmorPropertySheetUtils 028
+				$ ToggleLayers : std::map<std::string RT_COMMA std::vector<std::string>>
+			ArmorPropertySheet 088
+				$ ClassName : std::string
+				$ ArmorType : std::string
+				$ BaseHealth : float
+				$ ArmorLayers : std::vector<std::string>
+				$ ArmorLayerHealth : std::vector<float>
+				$ ParticleLayerOverride : std::vector<std::string>
+				$ ImpactSoundEvent : std::string
+				$ DropSoundEvent : std::string
+				$ ArmorFlags : std::vector<ArmorTypeFlags>
+				NewspaperArmorPropertySheet 090
+					$ FireLayer : std::string
+			DamageInfoProps 038
+				$ BaseDamage : float
+				$ DamageFlags : std::vector<DamageTypeFlags>
+				$ Conditions : std::vector<ZombieConditionEntry>
+				- ValueRange
+					$ Min : float
+					$ Max : float
+				- ZombieConditionEntry
+					$ Condition : ZombieConditions
+					$ Duration : ValueRange
+				- PlantConditionEntry
+					$ Condition : PlantConditions
+					$ Duration : ValueRange
+			ComponentWarmingRadiusGlobalProperties 040
+				$ WarmableGridItems : GridItemRestrictionSet
+				$ StagesThatEnableWarming : std::vector<RtWeakPtr<const class LevelModuleProperties>>
+			TargetInfoProps 040
+				$ IgnoreZombiesFlagged : std::vector<ZombieTestFlag>
+				$ IgnoreGridItemsFlagged : std::vector<GridItemTestFlag>
+			TideEffectsProps 028
+				$ Effects : std::vector<SexyVector2>
+			ComponentTimedExplosionProps 028
+				$ TimeUntilExplosion : float
+				$ ExplosionDamageBasedOffZombieMaxHpPercent : float
+				$ ExplosionRadius : float
+			MiniGameMusicEnableList 038
+				$ EnabledMiniGameSuffixes : std::vector<std::string>
+				$ EnabledMiniGameWorlds : std::vector<std::string>
+			PVZLiveConfig 110
+				$ CDNRefreshMinutes : int32
+				$ LODEventTime : int32
+				$ LoadingTextCycleTime : int32
+				$ CDNDownloadTimeoutSeconds : float
+				$ CDNForceDownloadTimeoutSeconds : float
+				$ CDNCacheExpirationMinutes : float
+				$ DraperLocalNotesPollFrequency : float
+				$ SeasonalCostumeLayers : std::string
+				$ TestIdSeedKey : std::string
+				$ TitleBackground : std::string
+				$ TitleShowLogo : bool
+				$ Toggles : std::vector<Toggle>
+				$ EASquaredAwaitAdRewardTimeout : float
+				$ EASquaredServerRetriesRemaining : int32
+				$ EASquaredNextServerRetryTime : int32
+				$ NimbleAgeGateTimeOut : float
+				$ MetricsUploadTimeOut : float
+				$ StoreReceiptValidationRetryAttempts : int32
+				$ StoreReceiptValidationTimeout : int32
+				$ DraperAdNetworkTimeout : int32
+				$ DraperAdDisplayTimeout : float
+				$ DraperEnabledLogging : DraperLogEventSettings
+				$ OptionsScreenVariant : OptionsScreenUIVariants
+				$ AdConfig : InGameAdConfig
+				$ MemoryLimits : AppMemoryLimits
+				$ GATSThrottles : std::vector<GATSThrottle>
+				$ NimbleIdentityAwards : std::vector<LevelOfTheDay_RewardItemType>
+				- Toggle
+					$ Key : std::string
+					$ Enabled : bool
+					$ DisplayName : std::string
+					$ Category : ToggleCategory
+				- GATSThrottle
+					$ Key : std::string
+					$ iOS : float
+					$ Android : float
+					$ Value : float
+				- InGameAdConfig
+					$ FlamethrowerOfferProbability : float
+					$ FlamethrowerOfferCooldown : float
+				- OSSpecificAppMemoryLimits
+					$ AppTooLowAvailablePercent : double
+					$ AppTooLowAvailableMemory : uint64
+					$ AppTooHighUsedMemory : uint64
+					$ AppTooLowMaxMemory : uint64
+				- AppMemoryLimits
+					$ IPhoneFourUsageLimit : double
+					$ AndroidConfig : OSSpecificAppMemoryLimits
+					$ IOSConfig : OSSpecificAppMemoryLimits
+			ZombieSpeedConditionsMap 028
+				$ Groups : std::vector<std::vector<ZombieConditionFloatValue>>
+				- ZombieConditionFloatValue
+					$ Condition : ZombieConditions
+					$ Value : float
+			HotUIComponentProperties 038
+				$ Targets : std::vector<RtId>
+				HotUIPropertyAnimatorProperties 060
+					$ Curve : CurveType
+					$ TargetProperty : PropertyAnimatorTarget
+					$ FirstTargetCurve : PropertyAnimatorCurveParams
+					$ NextTargetDelta : PropertyAnimatorCurveParams
+					- PropertyAnimatorCurveParams
+						$ StartValue : float
+						$ EndValue : float
+						$ Duration : float
+						$ PhaseOffset : float
+			LevelOfTheDayEventEntry 098
+				$ Name : std::string
+				$ PrimaryLevelName : std::string
+				$ LocalNoteDailyMessageOverride : std::string
+				$ Holiday : std::string
+				$ HolidayBannerName : std::string
+				$ ReplayLevelCurrency : MarketPurchaseCurrency
+				$ ReplayLevelCost : int32
+				$ NumReplaysAtDiscountedCost : int32
+				$ LootCommonPinata : std::string
+				$ LootValuablePinata : std::string
+				$ LootMegaPinata : std::string
+				$ AutocadoKey : std::string
+			LevelOfTheDayEvents 028
+				$ Events : std::vector<LevelOfTheDayEventEntry>
+			HotUIWidgetProperties 158
+				$ Name : std::string
+				$ Width : DynamicSizeData
+				$ Height : DynamicSizeData
+				$ MinWidth : DynamicSizeData
+				$ MinHeight : DynamicSizeData
+				$ MaxWidth : DynamicSizeData
+				$ MaxHeight : DynamicSizeData
+				$ Padding : DynamicPadding
+				$ Children : std::vector<RtId>
+				$ Anchor : AnchorDescriptor
+				$ EntryPoint : bool
+				$ IgnoreMouseInput : bool
+				$ DarkenBackground : float
+				$ IgnoreClipRect : bool
+				$ ClearClipRect : bool
+				$ IgnoreSafeArea : bool
+				$ Resources : std::vector<std::string>
+				HotUIRiftPerkProgressScreenProperties 158
+				HotUIEventsResultsScreenProperties 158
+				HotUITouchLayerProperties 158
+				HotUIAnimProperties 1A0
+					$ PopAnimName : std::string
+					$ PopAnimRigClass : std::string
+					$ OffsetPercentX : float
+					$ OffsetPercentY : float
+					$ ScaleOverride : float
+					$ RotationDegrees : float
+					$ InitialAnimationName : std::string
+					$ AnimLayersToDisable : std::vector<std::string>
+					$ DrawStyle : UIImageDrawStyle
+					$ PlayStyle : HotUIAnimPlayStyle
+					HotUIAnimPathProperties 1A0
+					HotUIPlantAnimProperties 1C8
+						$ PlantConfig : HotUIPlantAnimConfig
+						- HotUIPlantAnimConfig
+							$ PlantType : std::string
+							$ CostumeLayer : std::string
+							$ CostumeIDString : std::string
+							$ DrawShadow : bool
+				HotUIVerticalListProperties 170
+					$ SpaceBetweenWidgets : DynamicSizeData
+					$ NumColumns : int32
+				HotUIHorizontalListProperties 170
+					$ SpaceBetweenWidgets : DynamicSizeData
+					HotUIHorizontalGridProperties 180
+						$ SpaceBetweenWidgetsVertically : DynamicSizeData
+				HotUIJoustCrownCollectionEffectProperties 180
+					$ CrownImage : std::string
+					$ ImageWidth : float
+					$ FadeInTime : float
+					$ TweenCurve : CurveType
+					$ TweenTime : float
+					$ TweenDistance : float
+					$ MinAngleRadians : float
+					$ MaxAngleRadians : float
+				HotUILayoutListProperties 170
+					$ ForceCompactLayout : bool
+					$ CompactLayoutGap : DynamicSizeData
+					HotUIButtonListProperties 170
+					HotUITableViewProperties 188
+						$ SpaceBetweenRows : DynamicSizeData
+				HotUISeedPacketProperties 1C0
+					$ PacketConfig : HotUISeedPacketConfig
+					$ RenderOptions : PacketRenderOptions
+					- HotUISeedPacketConfig
+						$ PlantType : std::string
+						$ IsImitater : bool
+						$ PlantLevel : int32
+						$ PlantMasteryLevel : int32
+						$ PlantTierBadge : int32
+						$ Grayscale : bool
+						$ DrawEnvelope : bool
+						$ DrawFamily : bool
+					- PacketRenderOptions
+						$ DrawSelectionBorder : bool
+						$ DrawEnvelope : bool
+						$ DrawFamily : bool
+						$ DrawCost : int32
+						$ DrawPlantLevel : int32
+						$ DrawMasteryLevel : int32
+				HotUISeedPacketListProperties 158
+				HotUILabelProperties 188
+					$ Label : std::string
+					$ HorizontalJustification : UITextHorizontalJustification
+					$ VerticalJustification : UITextVerticalJustification
+					$ Font : std::string
+					$ Color : std::string
+				HotUIPowerUpButtonProperties 158
+				HotUIToUIWidgetTouchLayerProperties 158
+				HotUIButtonProperties 228
+					$ Label : std::string
+					$ LabelInset : DynamicPadding
+					$ LabelHorizontalJustification : UITextHorizontalJustification
+					$ UpImage : std::string
+					$ DownImage : std::string
+					$ HideButtonImages : bool
+					$ ButtonImageType : UIImageType
+					$ ButtonImageDrawStyle : UIImageDrawStyle
+					$ ButtonImageColor : std::string
+					$ UpAudio : std::string
+					$ DownAudio : std::string
+					$ Font : std::string
+					$ Color : std::string
+					$ IncludelistID : std::string
+					HotUIToggleButtonProperties 228
+						$ ToggleOnPress : bool
+					HotUIPurchaseButtonProperties 240
+						$ CostLabel : std::string
+						$ CostLabelX : int32
+						$ CostLabelY : int32
+						$ CostLabelMaxWidth : int32
+						HotUIStorePurchaseButtonProperties 240
+					HotUITableViewCellProperties 228
+				HotUIJoustResultsScreenProperties 170
+					$ ScoreFillStartDelay : float
+					$ ScoreFillLength : float
+					$ CrownFillStartDelay : float
+					$ CrownFillLength : float
+					$ CrownFillEffectLength : float
+					$ ShieldBreakLength : float
+				HotUITextEntryProperties 170
+					$ DefaultText : std::string
+					$ MaxCharacters : int32
+					$ UseNumericKeyboard : bool
+				HotUISliderProperties 180
+					$ SliderKnobImage : std::string
+					$ SliderBarImage : std::string
+					$ SliderFillImage : std::string
+				HotUIRiftResultsScreenProperties 158
+				HotUIScrollWidgetProperties 240
+					$ ScrollMode : UIScrollMode
+					$ ShowScrollIndicators : bool
+					$ AlwaysShowScrollIndicators : bool
+					$ ShowEdgeGradients : bool
+					$ ScrollInsets : DynamicPadding
+					$ ScrollIndicatorInsets : DynamicPadding
+					$ ScrollIndicatorDistanceFromEdge : DynamicSizeData
+					$ EdgeGradientLengthOffsetMin : DynamicSizeData
+					$ EdgeGradientLengthOffsetMax : DynamicSizeData
+				HotUIClickableLinkProperties 180
+					$ Link : std::string
+					$ Text : std::string
+					$ Font : std::string
+				HotUIProgressBarProperties 170
+					$ ProgressBarBackground : std::string
+					$ ProgressBarImage : std::string
+				HotUIMessageBarProperties 158
+				HotUIPrefabProperties 170
+					$ UIFileName : std::string
+					$ AdaptorClassName : std::string
+				HotUIImageProperties 1E8
+					$ DrawType : UIImageType
+					$ DrawStyle : UIImageDrawStyle
+					$ Image : std::string
+					$ ImageInsets : DynamicPadding
+					$ Rotation : float
+					$ RotationCenterX : float
+					$ RotationCenterY : float
+					$ ImageScale : float
+					$ ImageColor : std::string
+					HotUIMultiImageProperties 1F0
+						$ ImageList : std::vector<std::string>
+					JukeboxProgressBarProperties 1E8
+					HotUIImageBorderProperties 258
+						$ BorderDrawType : UIImageType
+						$ BorderDrawStyle : UIImageDrawStyle
+						$ BorderImage : std::string
+						$ BorderInsets : DynamicPadding
+						$ BorderColor : Color
+				- DynamicSizeData
+					% Value_CmdPropertyGet : *
+					% Value_CmdPropertySet : *
+					# Value : std::string
+				- AnchorDescriptor
+					$ AnchorPoint : HotAnchorType
+					$ ParentAnchorPoint : HotAnchorType
+					$ Parent : <void *>
+					$ OffsetX : DynamicSizeData
+					$ OffsetY : DynamicSizeData
+				- DynamicPadding
+					$ Left : DynamicSizeData
+					$ Top : DynamicSizeData
+					$ Right : DynamicSizeData
+					$ Bottom : DynamicSizeData
+			WaveManagerProperties 078
+				$ Waves : std::vector<std::vector<RtWeakPtr<WaveActionProperties> > >
+				$ FlagWaveInterval : int32
+				$ AdditionalFlagWaves : std::vector<int>
+				$ WaveCount : int32
+				$ SuppressFlagZombie : bool
+				$ WavesAlwaysRandomized : bool
+				$ FlagWaveVeteranOverrideTypes : std::vector<int>
+				$ SuppressedDynamicZombieWaves : std::vector<int>
+				$ LevelJam : std::string
+				$ MinNextWaveHealthPercentage : float
+				$ MaxNextWaveHealthPercentage : float
+				$ ZombieCountdownFirstWaveSecs : float
+				$ ZombieCountdownFirstWaveConveyorSecs : float
+				$ ZombieCountdownHugeWaveDelay : float
+			WaveActionProperties 038
+				$ ResourceGroupNames : std::vector<std::string>
+				$ NotificationEvents : std::vector<std::string>
+				TidalChangeWaveActionProps 040
+					$ TidalChange : TidalChangeDescription
+					- TidalChangeDescription
+						$ ChangeType : TidalChangeType
+						$ ChangeAmount : float
+				ZombieSpawnerActionProps 038
+					SpawnZombiesJitteredWaveActionProps 078
+						$ Zombies : std::vector<SpawnZombiesJitteredInstruction>
+						$ AdditionalPlantfood : int32
+						$ DynamicPlantfood : std::vector<int>
+						$ JitterOffsets : RtWeakPtr<ZombieJitterOffsets>
+						$ ZombieSpawnPattern : std::string
+						$ ForcedCondition : ZombieSpawnerConditionData
+						SpawnZombiesFromGroundSpawnerProps 080
+							$ ColumnStart : int32
+							$ ColumnEnd : int32
+						SpawnZombiesFromGridItemSpawnerProps 098
+							$ GridTypes : std::vector< RtWeakPtr<GridItemType> >
+							$ WaveStartMessage : std::string
+							$ ZombieSpawnWaitTime : float
+							$ SuppressActionIfNoGridItemsFound : bool
+							SpawnZombiesDelayedFromGridItemsProps 0A8
+								$ GroupSize : int32
+								$ TimeBetweenGroups : float
+								$ TimeBeforeFullSpawn : float
+								$ ZombieCondition : ZombieConditions
+								SpawnWhackAZombiesProps 0A8
+						- SpawnZombiesJitteredInstruction
+							$ Type : RtWeakPtr<ZombieType>
+							$ Row : RowSpawnInstruction::RowSpawnInstruction
+							$ FriendZombie : bool
+						- ZombieSpawnerConditionData
+							$ Condition : ZombieConditions
+							$ Duration : float
+					ZombieRainSpawnerProps 068
+						$ GroupSize : int32
+						$ SpiderCount : int32
+						$ TimeBetweenGroups : float
+						$ TimeBeforeFullSpawn : float
+						$ ZombieFallTime : float
+						$ ColumnStart : int32
+						$ ColumnEnd : int32
+						$ SpiderZombieName : std::string
+						$ WaveStartMessage : std::string
+						SpiderRainZombieSpawnerProps 068
+						ParachuteRainZombieSpawnerProps 068
+					StormZombieSpawnerProps 060
+						$ Zombies : std::vector<StormZombieInstruction>
+						$ AdditionalPlantfood : int32
+						$ GroupSize : int32
+						$ TimeBetweenGroups : float
+						$ TimeBeforeFullSpawn : float
+						$ ColumnStart : int32
+						$ ColumnEnd : int32
+						$ Type : StormType
+						- StormZombieInstruction
+							$ Type : RtWeakPtr<ZombieType>
+							$ HasPlantfood : bool
+					HamsterZombieSpawnerProps 058
+						$ Zombies : std::vector<HamsterZombieInstruction>
+						$ AdditionalPlantfood : int32
+						$ GroupSize : int32
+						$ TimeBetweenGroups : float
+						$ TimeBeforeFullSpawn : float
+						$ ColumnStart : int32
+						$ ColumnEnd : int32
+						- HamsterZombieInstruction
+							$ Type : RtWeakPtr<ZombieType>
+							$ HasPlantfood : bool
+							$ Behavior : int32
+							$ SpeedBeforeImpact : float
+							$ ZombieInsideBallType : RtWeakPtr<ZombieType>
+					RaidingPartyZombieSpawnerProps 048
+						$ SwashbucklerCount : int32
+						$ GroupSize : int32
+						$ TimeBetweenGroups : float
+						$ TimeBeforeFullSpawn : float
+					BeachStageEventZombieSpawnerProps 068
+						$ GroupSize : int32
+						$ ZombieCount : int32
+						$ TimeBetweenGroups : float
+						$ TimeBeforeFullSpawn : float
+						$ ColumnStart : int32
+						$ ColumnEnd : int32
+						$ ZombieName : std::string
+						$ WaveStartMessage : std::string
+				ModifyConveyorWaveActionProps 050
+					$ Add : std::vector<ConveyorAddSeedInstruction>
+					$ Remove : std::vector<ConveyorRemoveSeedInstruction>
+					- ConveyorAddSeedInstruction
+						$ Type : RtWeakPtr<PlantType>
+						$ ToolType : std::string
+						$ Weight : int32
+						$ MaxCount : int32
+						$ MinCount : int32
+						$ MaxDelivered : int32
+						$ MinWeightFactor : float
+						$ MaxWeightFactor : float
+						$ MaxCountCooldownSeconds : float
+					- ConveyorRemoveSeedInstruction
+						$ Type : RtWeakPtr<PlantType>
+						$ ToolType : std::string
+				SpawnGridItemsWaveActionProps 068
+					$ SpawnEffectAnimID : std::string
+					$ SpawnEffectAnimPlay : std::string
+					$ SpawnSoundID : std::string
+					$ DisplacePlants : bool
+					$ ShakeScreen : bool
+					$ RandomPlacement : bool
+					$ GridClassesToDestroy : std::vector<std::string>
+					SpawnModernPortalsWaveActionProps 090
+						$ PortalColumn : int32
+						$ PortalRow : int32
+						$ PortalType : std::string
+					SpawnGravestonesWaveActionProps 090
+						$ GravestonePool : std::vector<GridItemPoolEntry>
+						$ SpawnPositionsPool : std::vector<Point>
+						$ SpawnPositionsRect : Rect
+					- GridItemPoolEntry
+						$ Type : RtWeakPtr<GridItemType>
+						$ Count : int32
+				DinoWaveActionProps 040
+					$ DinoType : DinoSpawnType
+					$ DinoWaveDuration : int32
+					$ DinoRow : int32
+				SunDropperWaveActionProps 038
+					$ SunAmountToDrop : int32
+				SproutPlantingWaveActionProps 048
+					$ WaveSproutCount : int32
+					$ WaveDuration : float
+					$ PlantWeights : std::vector<std::vector<SproutPlantWeights>>
+				FrostWindWaveActionProps 040
+					$ Winds : std::vector<FrostWindDescription>
+					- FrostWindDescription
+						$ Direction : FrostWindDirection
+						$ Row : int32
+			ComponentVisualStretcherProps 080
+				$ StretchSpeed : float
+				$ BaseAnimName : std::string
+				$ StretchAnimName : std::string
+				$ TipAnimName : std::string
+				$ InitialBaseAnimAnimation : std::string
+				$ InitialStretchAnimAnimation : std::string
+				$ InitialTipAnimAnimation : std::string
+				$ BaseAnimOffset : SexyVector2
+				$ StretchAnimOffset : SexyVector2
+				$ TipAnimOffset : SexyVector2
+			LevelPowerupSet 030
+				$ UnlimitedUse : bool
+				$ Powerups : std::vector<std::string>
+			UniversalLinkTranslationPropertySheet 030
+				$ Version : int32
+				$ Entries : std::vector<UniversalLinkData>
+				- UniversalLinkData
+					$ UniversalLink : std::string
+					$ AppAction : std::string
+			GamePropertySheet 078
+				$ PlantTypeOrder : std::vector<std::string>
+				$ ZombieAlmanacOrder : std::vector<std::string>
+				$ SproutFirstLevelThreshold : std::vector<std::string>
+				$ StarsPerCostume : int32
+				$ KeysPerCostume : int32
+				$ CoinsPerKey : int32
+				$ LawnMowerPurchasePriceInCoins : int32
+				$ PowerTilePropagationAlpha : float
+				$ PowerTilePropagationDelay : float
+				$ PowerTilePropagationInitialDelay : float
+				$ ZombieVsZombieCrushingDamageScale : float
+				$ ZombieVsFriendlyZombieDamageScale : float
+				$ ZombieConditionsWhichInvincibleOverrides : std::vector<ZombieConditions>
+				$ SeedSlotRentalCost : int32
+			SeedChooserPriorityList 040
+				$ ClassicList : std::vector<std::string>
+				$ FeatureList : std::vector<std::string>
+				$ PromoList : std::vector<std::string>
+			SeedChooserFamilyPriorityList 028
+				$ PrioritizedFamilyList : std::vector<std::string>
+			PlantBoostPropertySheet 050
+				$ Type : PlantBoostType
+				$ Name : std::string
+				$ Description : std::string
+				$ DetailDescription : std::string
+				$ HarvestImage : std::string
+			PlayerProfileProperties 028
+				$ InitialPlantList : std::vector<std::string>
+			CalendarConfig 058
+				$ StreakPreservationCost : int32
+				$ OrderingConfig : CalendarOrderingConfig
+				- CalendarOrderingConfig
+					$ PrimaryOrderingCategory : OrderingCategory
+					$ PrimaryOrder : OrderType
+					$ SecondaryOrderingCategory : OrderingCategory
+					$ SecondaryOrder : OrderType
+					$ CalendarNameOrder : std::vector<std::string>
+					$ CalendarCategoryOrder : std::vector<CalendarCategory>
+					$ CalendarUniqueIdOrder : std::vector<int32>
+			GridItemAction 0B8
+				$ Damage : float
+				$ SecondsBetweenEffects : float
+				$ RangeInGridSquares : float
+				$ ZConditions : std::vector<ZombieConditionEntry>
+				$ PConditions : std::vector<PlantConditionEntry>
+				$ GConditions : std::vector<GridItemConditionEntry>
+				$ Type : GridItemEffectType
+				$ TeamsToAffect : std::vector<TeamFlags>
+				$ EntitiesToAffect : std::vector<BoardEntityTypeFlag>
+				$ TargetArea : GridItemTargetingArea
+				$ ActionAnimationName : std::string
+				$ HitPopAnim : std::string
+				$ HitAnimStartName : std::string
+				$ HitAnimLoopName : std::string
+				$ HitAnimLoopTime : float
+				$ HitAnimEndName : std::string
+				$ HitAffectOffset : Point
+			ZombieDropProps 038
+				$ Collectables : std::vector<std::string>
+				$ Zombies : std::vector<ZombieDropZombieProps>
+				- ZombieDropZombieProps
+					$ Type : std::string
+					$ Hypnotized : bool
+					$ TossGridXDelta : float
+					$ TossGridYDelta : int32
+					$ SpawnGridXDelta : float
+					$ SpawnGridYDelta : int32
+					$ SpawnGridZDelta : float
+					$ TossDuration : float
+					$ TossApexHeight : float
+			BoardGridMapProps 028
+				$ Values : std::vector<std::vector<uint32>>
+			PVZManifest 028
+				$ Versions : std::vector<PVZManifestEntry>
+				- PVZManifestPlatform
+					$ PlatformName : std::string
+					$ DiffSize : int32
+					$ RSBSize : int32
+					$ full_MD5 : std::string
+					$ patch_MD5 : std::string
+				- PVZManifestEntry
+					$ Version : PVZVersion
+					$ Platform : std::vector<PVZManifestPlatform>
+					$ Reset : bool
+			CDNConfigData 028
+				$ PushKey : std::string
+			TreasureYetiSchedulingProps 048
+				$ MinimumMinutesBetweenYetis : int32
+				$ MaximumMinutesBetweenYetis : int32
+				$ MinimumMinutesBetweenYetisOnRetry : int32
+				$ MaximumMinutesBetweenYetisOnRetry : int32
+				$ LatestYetiIntroLevel : std::string
+				$ SoonestYetiIntroLevel : std::string
+				$ MinimumMinutesBeforeYeti : float
+			TreasureYetiExcludelistProps 028
+				$ LevelExcludelist : std::vector<std::string>
+			RiftFirstClearRewards 038
+				$ LevelClearRewards : std::vector<RiftFirstClearRewardsDefinition>
+				$ DefaultLevelClearRewards : RiftFirstClearRewardsDefinition
+				- RiftFirstClearRewardsDefinition
+					$ FirstClearRewards : std::vector<LevelOfTheDay_RewardItemType>
+			NotificationStringProperties 0D0
+				$ DangerRoomPrompts : std::vector<std::string>
+				$ LODNotesUpcoming : std::vector<std::string>
+				$ LODNotesCurrent : std::vector<std::string>
+				$ YetiReady : std::vector<std::string>
+				$ ZENPlantsSingleReady : std::vector<std::string>
+				$ ZENPlantsAllReady : std::vector<std::string>
+				$ ZENPlantsAllReadyLong : std::vector<std::string>
+				$ ZENPlantsBoostSingleReady : std::vector<std::string>
+				$ ZENPlantsBoostAllReady : std::vector<std::string>
+				$ ZENPlantsBoostAllReadyLong : std::vector<std::string>
+				$ ZENPlantsMarigoldSingleReady : std::vector<std::string>
+				$ ZENPlantsMarigoldBoostSingleReady : std::vector<std::string>
+				$ ZENPlantsMarigoldBoostSingleReadyLong : std::vector<std::string>
+				$ ZENEmptyPots1 : std::vector<std::string>
+				$ ZENEmptyPots2 : std::vector<std::string>
+			ScheduleProps 058
+				$ DefaultSchedule : ScheduleEntry
+				$ SegmentFilter : ScheduleSegmentationFilter
+				PlantRentalScheduleProps 060
+					$ RAPScheduleEntries : std::vector<PlantRentalScheduleEvent>
+					- PlantRentalData
+						$ PlantType : std::string
+						$ Segments : std::vector<std::string>
+					- PlantRentalScheduleEvent
+						$ Slot : SlotType
+						$ Plants : std::vector<PlantRentalData>
+				EventScheduleProps 060
+					$ EventScheduleEntries : std::vector<EventScheduleEntry>
+					- EventScheduleEntry
+						$ QuestUniqueIDs : std::vector<std::string>
+						$ LodEventIDs : std::vector<std::string>
+						$ LodCommonLoot : std::string
+						$ LodValuableLoot : std::string
+				MarketScheduleProps 060
+					$ MarketScheduleEntries : std::vector<MarketScheduleEvent>
+					- MarketScheduleEvent
+						$ ScheduledProducts : std::vector<MarketScheduleProductConfig>
+						$ RepeatStyle : MarketEventRepeatStyle
+						$ SmartFilter : MarketEventSmartFilter
+						$ VisualTheme : std::string
+						$ RandomPulls : int32
+						$ RandomFallbackPicking : bool
+						$ RandomPersist : bool
+						$ RandomPersistVersion : int32
+						$ RandomSeed : int32
+				- ScheduleEntry
+					$ Name : std::string
+					$ StartDateTime : int64
+					$ EndDateTime : int64
+					$ Segments : std::vector<std::string>
+			CalendarThemeProps 168
+				$ BottomLeftImage : std::string
+				$ BottomRightImage : std::string
+				$ TimerCharacter : std::string
+				$ BackgroundImage : std::string
+				$ OuterBorderImage : std::string
+				$ InnerBorderImage : std::string
+				$ RewardBackgroundImage : std::string
+				$ MonthlyDayImage : std::string
+				$ WeeklyDayImage : std::string
+				$ Event10DayImage : std::string
+				$ Event14DayImage : std::string
+				$ LargeDayImage : std::string
+				$ Event14BannerImage : std::string
+				$ Event7BannerImage : std::string
+				$ Event10BannerImage : std::string
+				$ TabUpIcon : std::string
+				$ TabDownIcon : std::string
+				$ TabTextColor : Color
+				$ NameColor : Color
+				$ DayTextColor : Color
+				$ LargeDayTextColor : Color
+				$ ClaimableDayTextColor : Color
+				$ TimerTextColor : Color
+				$ RewardTextColor : Color
+				$ CustomCellsForDays : std::map<std::string RT_COMMA std::string>
+			CalendarSchedule 030
+				$ CalendarBaseStartDate : uint64
+				$ Calendars : std::vector<CalendarDefinition>
+				- CalendarDefinition
+					$ StartDateTime : uint64
+					$ EndDateTime : uint64
+					$ UniqueID : int32
+					$ Rewards : std::vector<LevelOfTheDay_RewardItemType>
+					$ LoginType : CalendarLoginType
+					$ Name : std::string
+					$ Category : CalendarCategory
+					$ Theme : std::string
+					$ ShowTimer : bool
+					$ RetainForever : bool
+			SpawnEffectAnimIDResourceGroup 028
+				$ GroupsForAnims : std::vector<SpawnEffectAnimIDResourceGroupEntry>
+				- SpawnEffectAnimIDResourceGroupEntry
+					$ Anim : std::string
+					$ ResourceGroup : std::string
+			CoreLoopRewardsTablesProps 028
+				$ RewardsTables : std::map<std::string RT_COMMA CoreLoopRewardTable>
+				- CoreLoopPlantXpRewardEntry
+					$ PlantType : std::string
+					$ Min : int32
+					$ Max : int32
+					$ Weight : int32
+					$ Tag : std::string
+				- CoreLoopCurrencyRewardEntry
+					$ Min : int32
+					$ Max : int32
+					$ Weight : int32
+					$ Tag : std::string
+				- CoreLoopRewardTable
+					$ PlantXP : std::vector<CoreLoopPlantXpRewardEntry>
+					$ Coins : std::vector<CoreLoopCurrencyRewardEntry>
+					$ Gems : std::vector<CoreLoopCurrencyRewardEntry>
+					$ Mints : std::vector<CoreLoopCurrencyRewardEntry>
+					$ SeasonCrowns : std::vector<CoreLoopCurrencyRewardEntry>
+			ZenGardenPropertySheet 068
+				$ Pots : std::vector<ZenGardenPotProps>
+				$ BackgroundImageID : std::string
+				$ PlantGrowDurationInSeconds : float
+				$ NormalPlantCoinRewardAmount : int32
+				$ TreasurePlantSpawnRate : int32
+				$ GrowingSpeedupCalcMultiplyFactor : float
+				$ GrowingSpeedupCalcAddFactor : float
+				$ GrowingSpeedupCalcMaxTimeSeconds : int32
+				$ PotCosts : ZenGardenPotCosts
+				- ZenGardenPotCosts
+					$ GemCostDefault : int32
+					$ GemCostPurchased0 : int32
+					$ GemCostPurchased1 : int32
+					$ GemCostPurchased2 : int32
+					$ GemCostPurchased3 : int32
+					$ GemCostPurchased4 : int32
+					$ GemCostPurchased5 : int32
+				- ZenGardenPotProps
+					$ PositionKey : int32
+					$ Position : Point
+					$ IsLocked : bool
+					$ UnlockIndex : int32
+			ZenGardenPlantSlotProps 078
+				$ EffectsOffset : SexyVector2
+				$ WateringEffectID : std::string
+				$ SproutRevealEffectID : std::string
+				$ BoostEffectID : std::string
+				$ BoostEffectOffset : SexyVector2
+				$ RemoveEffectID : std::string
+				$ RemoveEffectOffset : SexyVector2
+				$ WaterIndicatorID : std::string
+				$ WaterIndicatorOffset : SexyVector2
+			ZenGardenFloatingTextProps 028
+				$ Duration : float
+				$ InitialVelocity : float
+			RiftZombossRewards 038
+				$ PinataTypeForOpeningSequence : std::string
+				$ ProgressionRewards : std::vector<RiftZombossRewardDifficultySet>
+				- RiftZombossRewardDifficultyEntry
+					$ Rewards : std::vector<LevelOfTheDay_RewardItemType>
+				- RiftZombossRewardDifficultySet
+					$ Attempt : int32
+					$ DifficultyList : std::vector<RiftZombossRewardDifficultyEntry>
+			RiftConfigSheet 080
+				$ ZombossUnlockCost : int32
+				$ ZPSResetValue : int32
+				$ ZPSCap : int32
+				$ ZPSDecayPeriodSeconds : uint64
+				$ ZombossAvailableHours : int32
+				$ RiftLevelCosts : std::vector<int>
+				$ ZPSGainedPerDifficultyLevel : std::vector<int>
+				$ EnergyRefillPeriodSeconds : uint64
+				$ EnergyRefillCap : int32
+				$ PerkSelectionCosts : std::vector<int>
+				$ ZPSBackupRewards : std::vector<LevelOfTheDay_RewardItemType>
+				$ ZombossCycleHours : int32
+				$ ZombossFightsPerCycle : int32
+			ZombiePropertySheet 198
+				$ Speed : float
+				$ SpeedVariance : float
+				$ Hitpoints : float
+				$ TimeToKillInSeconds : float
+				$ EatDPS : float
+				$ PowerUpDamageModifier : float
+				$ FireDamageMultiplier : float
+				$ FoeEatDamageReflectPct : float
+				$ Ammo : int32
+				$ Size : ZombieSize
+				$ CanSpawnPlantFood : bool
+				$ CanTriggerZombieWin : bool
+				$ CanSurrender : bool
+				$ ExplodesWhenMowed : bool
+				$ NormalDeathWhenMowed : bool
+				$ IsValidPinchTarget : bool
+				$ NormalDeathOnExplosion : bool
+				$ ChillInsteadOfFreeze : bool
+				$ CanBePlantTossedStrong : bool
+				$ CanBePlantTossedWeak : bool
+				$ SkipHeadDropState : bool
+				$ ArmDropFraction : float
+				$ Helm : HelmType
+				$ HelmHitpoints : float
+				$ HelmDamageLayerIndices : int32
+				$ HelmAbsorbsOverflowDamage : bool
+				$ MetallicBodyParts : bool
+				$ GridHeight : int32
+				$ HitRect : Rect
+				$ AttackRect : Rect
+				$ Cost : int32
+				$ WavePointCost : int32
+				$ Weight : int32
+				$ StreetSize : SexyVector2
+				$ StreetCriticalSize : SexyVector2
+				$ StreetOffset : SexyVector2
+				$ ArtScale : float
+				$ ArtCenter : SexyVector2
+				$ ShadowOffset : SexyVector3
+				$ ShadowScaling : SexyVector2
+				$ GroundTrackName : std::string
+				$ ArtCenterBurnEffectOffset : SexyVector2
+				$ GridExtents : Point
+				$ ZombieStats : std::vector<BoardEntityStat>
+				$ ZombieArmorProps : std::vector<RtWeakPtr<RtObject> >
+				$ ConditionImmunities : std::vector<ZombieConditionImmunity>
+				$ IgnoreWaterLine : bool
+				$ MaxTideLoweredPercent : float
+				$ SoundOnDeath : std::string
+				$ SoundOnTakeDamage : std::string
+				$ SoundOnWalk : std::string
+				$ SoundOnEat : std::string
+				$ SoundOnIdle : std::string
+				$ SoundOnAsh : std::string
+				$ SoundOnElectrocute : std::string
+				$ HypnoshroomEffectOffset : SexyVector2
+				$ AlmanacScale : float
+				$ AlmanacOffset : SexyVector2
+				$ CanBeFlicked : bool
+				$ CanBeFlickedOff : bool
+				$ FlickIsLaneRestricted : bool
+				$ IsSpawnedFlying : bool
+				$ ShrunkenScale : float
+				$ ScoreOverride : float
+				ZombieBeachFishermanProps 1D0
+					$ DelayBetweenCasting : float
+					$ DelayBeforeReeling : float
+					$ CastingAreaMinRange : int32
+					$ CastingAreaMaxRange : int32
+					$ CastingAreaHeight : int32
+					$ CastTimePerGridSquare : float
+					$ ReelTimePerGridSquare : float
+					$ PlantablePlants : std::vector<std::string>
+					$ AllowedLowPlants : std::vector<std::string>
+				ZombieZombossMechProps 208
+					$ SquashZombies : bool
+					$ SquashGridItems : bool
+					$ EnterRow : int32
+					$ EnterColumn : int32
+					$ HideDuringIntro : bool
+					$ CrosshairPopAnim : std::string
+					$ CrosshairAnimation : std::string
+					$ RocketAnimation : std::string
+					$ RocketExplosionAnimation : std::string
+					$ UnlimitedStages : ZombossStageScoring
+					$ Stages : std::vector<ZombossStage>
+					ZombieZombossMechBeachProps 228
+						$ TangleKelpStunDuration : float
+						$ TangleKelpStunShouldUseKnockback : bool
+						$ TangleKelpStunShouldUseFlash : bool
+						$ RetreatSubmergedDuration : float
+						$ MinionParameters : SharkMinionParameters
+					ZombieZombossMechCowboyProps 208
+					ZombieZombossMechDarkProps 208
+						$ MagnetStunDuration : float
+					ZombieZombossMechDinoProps 228
+						$ SplashRadius : float
+						$ SplashDamage : float
+						$ EyeLaserWarmUpTime : float
+						$ EyeLaserSweepTime : float
+						$ LaserOffset : Point
+						$ LaserMaxColumn : int32
+						$ LaserMinColumn : int32
+					ZombieZombossMechEgyptProps 210
+						$ NumRocketGravestones : int32
+						$ BoneProjectileType : RtWeakPtr<RtObject>
+					ZombieZombossMechEightiesProps 220
+						$ StageJamOrder : std::vector<std::string>
+						$ ZombossAnimOrder : std::vector<std::string>
+					ZombieZombossMechFutureProps 208
+					ZombieZombossMechIceAgeProps 220
+						$ IceCrustHealth : int32
+						$ RevealAction : RtWeakPtr<RtObject>
+						$ CoverUpAction : RtWeakPtr<RtObject>
+					ZombieZombossMechLostCityProps 218
+						$ SpawnZombieAction : RtWeakPtr<RtObject>
+						$ DropSandbagAction : RtWeakPtr<RtObject>
+					ZombieZombossMechPirateProps 208
+					- ZombossStageScoring
+						$ UseUnlimitedStages : bool
+						$ DefinedScores : std::vector<int>
+						$ DefinedStagesToInterpolate : std::vector<int>
+						$ PostDefinedStages : ZombossPostStageScoring
+					- ZombossPostStageScoring
+						$ HitPoints : int32
+						$ Score : int32
+					- ZombossStage
+						$ HitPoints : int32
+						$ DamageIndexFull : int32
+						$ DamageIndexHalf : int32
+						$ MinColumn : int32
+						$ MaxColumn : int32
+						$ AnimRateModifier : float
+						$ ChilledDurationFromFrozen : float
+						$ SlowDurationFromStun : float
+						$ IdleTime : ValueRange
+						$ RetreatAction : RtWeakPtr<RtObject>
+						$ StunTime : float
+						$ StunDamageScale : float
+						$ StunStaggerBackTime : float
+						$ StunStaggerBackMovement : float
+						$ Actions : std::vector<RtWeakPtr<RtObject>>
+				ZombieChickenFarmerProps 1C8
+					$ ChickeningHealthPercentage : float
+					$ ChickenTypeName : std::string
+					$ ChickeningSound : std::string
+					$ ChickeningDuration : float
+					$ ChickeningDurationVariance : float
+					$ ChickeningInterval : float
+					$ ChickeningIntervalVariance : float
+				ZombieTombRaiserProps 1B0
+					$ TimeBetweenCasts : float
+					$ TimeBetweenRaisings : float
+					$ NumberOfTombsToSpawn : int32
+					$ Projectile : RtWeakPtr<ProjectilePropertySheet>
+				ZombieDarkJugglerProps 1F0
+					$ LaunchVelocity : SexyVector3
+					$ LaunchAcceleration : SexyVector3
+					$ LaunchHeight : ValueRange
+					$ MaxProjectilesToJuggle : int32
+					$ JuggleLaunchDelay : float
+					$ MoveSpeedMultiplierWhileJuggling : float
+					$ CatchArcDegrees : float
+					$ JuggleableProjectiles : std::vector<std::string>
+					$ UnthrowableProjectiles : std::vector<std::string>
+					$ AngleAgnosticProjectiles : std::vector<std::string>
+				ZombieDarkKingProps 1C8
+					$ DelayBetweenKnightings : float
+					$ KnightingAreaX : int32
+					$ KnightingAreaY : int32
+					$ KnightHelm : HelmType
+					$ KnightHelmHitpoints : float
+					$ ValidKnightTargets : std::vector<std::string>
+					$ PlantablePlants : std::vector<std::string>
+				ZombieDinoBullyVeteranProps 1B0
+					$ SmashDuration : float
+					$ SmashDamage : float
+					$ SoundOnSmash : std::string
+					$ CraterLifetime : float
+				ZombieEightiesBoomboxProps 1C8
+					$ PlantBoomRestrictionSet : PlantRestrictionSet
+					$ JamStyle : std::string
+					$ BoomBoxDuration : float
+					$ PlantFreezeRadius : int32
+					$ BoomBoxColumn : float
+				ZombieEightiesBreakDancerProps 1D8
+					$ JamStyle : std::string
+					$ JamWalkSpeedMult : float
+					$ TossTime : float
+					$ TossHeight : float
+					$ TossDistance : float
+					$ TossTargetRect : Rect
+					$ ZombiesToNotKick : ClassRestrictionSet
+				ZombieEightiesGlitterProps 1A8
+					$ JamStyle : std::string
+					$ RainbowTrailLength : int32
+				ZombieEightiesMCProps 1B0
+					$ JamStyle : std::string
+					$ JamAttackRadius : float
+					$ JamAttackDamage : float
+				ZombieEightiesPunkProps 1C8
+					$ JamStyle : std::string
+					$ PushCooldown : float
+					$ PushDamageToZombies : float
+					$ KickFallbackDPS : float
+					$ PlantsToKickInsteadOfPush : PlantRestrictionSet
+				ZombieModernAllStarProps 1A8
+					$ SmashDamage : int32
+					$ RunningSpeedScale : float
+				ZombieBarrelPusherProps 1A8
+					$ BarrelType : std::string
+				ZombieGumProps 1A8
+					$ DamagePhases : DamageLifetime
+				ZombieStatueProps 1B8
+					$ DamagePhases : DamageLifetime
+					$ BreakEffect : std::string
+				ZombieTigerGrassTigerProps 1F0
+					$ TigerLaunchProps : PultProjectileProps
+					$ TigerSpawnOffset : SexyVector2
+					$ TigerDieAnimationOffset : SexyVector2
+					$ SwipeImpactEffectOffset : SexyVector2
+					$ TigerProjectile : RtWeakPtr<RtObject>
+					$ SwipeAttackRate : float
+					$ TigerWaitTime : float
+				ZombieBugProps 1C8
+					$ BasicHelm : BasicHelmType
+					$ DamageFraction : float
+					$ PlantsWhichAlsoKillBasic : PlantRestrictionSet
+					$ DamageAmountWhichAlsoKillsBasic : float
+					$ SpawnedZombieName : std::string
+				ZombieCrystalSkullProps 1B0
+					$ ChargingTime : float
+					$ ChargingTimeDecrementPerFiveSun : float
+					$ LaserBeamLength : float
+					$ LaserBeamDamage : float
+					$ LaserCooldownTime : float
+				ZombieExcavatorProps 1F0
+					$ CatchArcDegrees : float
+					$ PreferredDistanceToThrowPlant : int32
+					$ ShovelAttackRectOffsetX : int32
+					$ ShovelRect : Rect
+					$ PlantsShovelableWhileInvincible : PlantRestrictionSet
+					$ PlantsToBashInsteadOfShovel : PlantRestrictionSet
+					$ ProjectileClassesToNeverBlock : StringRestrictionSet
+				ZombieImpPorterProps 1A0
+					$ TentTargetingOffsetX : float
+				ZombieLostCityJaneProps 1B0
+					$ ProjectileBounceHeight : int32
+					$ ProjectileBounceTime : float
+					$ ProjectileBounceDistance : int32
+					$ BounceableProjectiles : std::vector<RtWeakPtr<ProjectilePropertySheet>>
+				ZombieSwashbucklerProps 1A0
+					$ MinLandingColumn : int8
+					$ MaxLandingColumn : int8
+					$ FallIntoDrinkChance : float
+					ZombieLostCityRelicHunterProps 1A0
+				ZombieModernNewspaperProps 1A0
+					$ EnragedSpeedScale : float
+					$ EnragedDpsScale : float
+				ZombieModernSuperfanImpProps 1A8
+					$ MinTriggerColumn : int32
+					$ MaxTriggerColumn : int32
+					$ ExplosionDamage : float
+					$ ExplosionRadius : float
+				ZombieSeagullProps 1A0
+					$ DropsHeadOnDeath : bool
+					$ SpawnBirdOnDeath : bool
+				ZombieRomanImpProps 1A0
+					$ NetSuspendSeconds : int32
+				ZombieRomanBallistaProps 1E8
+					$ InitialShotCooldown : float
+					$ ShotCooldown : float
+					$ ChanceImpFallsInWater : float
+					$ TimeToWalkInToPosition : float
+					$ VaseShotHeight : float
+					$ VaseShotTime : float
+					$ VaseTargetLeftmostGridXOffset : int32
+					$ VaseTargetRightmostGridXOffset : int32
+					$ VaseDefaultGridX : int32
+					$ VaseProjectile : RtWeakPtr<RtObject>
+					$ ZombieSpawnData : ProbabilityTypeContainer
+				ZombieZCorpImpProps 1A0
+					$ SmashDamage : float
+				ZombieZCorpConsultantProps 1C8
+					$ ForwardShovePercentage : float
+					$ ShoveHeight : float
+					$ ShoveTime : float
+					$ SlideTime : float
+					$ SlideCooldown : float
+					$ TimeBetweenDirectionChanges : float
+					$ ShoveExcludeList : ClassRestrictionSet
+				ZombieZcorpRacerProps 1C0
+					$ RacerRect : Rect
+					$ RacerSpeed : float
+					$ LaunchZombieDistance : float
+					$ LaunchZombieApex : float
+					$ LaunchZombieTimeToLand : float
+					$ ChairCollideDamage : float
+				ZombieCarnieFireBreatherProps 1B8
+					$ FlamePAMOffset : SexyVector2
+					$ FlameRange : float
+					$ FlameDamagePerSecond : float
+					$ FlameCooldownTime : float
+					$ DeathExplosionDamage : float
+					$ DeathExplosionRadius : float
+				ZombieMechProps 1B8
+					$ SoundOnActivate : std::string
+					$ SoundOnDeactivate : std::string
+					$ NumDamageStates : int32
+					ZombieFutureProtectorProps 1E8
+						$ ShieldActivationColumn : float
+						$ ShieldSizeX : float
+						$ ShieldSizeY : float
+						$ ShieldHP : float
+						$ ShieldCount : int32
+						$ ShieldReactivationDelay : float
+						$ ShieldDiesUponLossOfControl : bool
+					ZombieMechFootballProps 1C8
+						$ SoundOnPush : std::string
+						$ PushDamageToZombies : float
+					ZombieMechDiscoProps 1D0
+						$ DanceCountdown : float
+						$ DanceDuration : float
+						$ SummonDuration : float
+						$ SoundOnSummon : std::string
+				ZombieGargantuarProps 1F0
+					$ HealthThresholdToImpAmmoLayers : std::vector<ZombieGargantuarProjectilePair>
+					$ MinPosXThrowImp : float
+					$ ThrowImpDuration : float
+					$ ImpTargetColumn : int32
+					$ ImpApex : float
+					$ ImpFlightTime : float
+					$ ImpSpawnOffset : SexyVector3
+					$ SmashDuration : float
+					$ SmashDamage : float
+					$ ImpType : std::string
+					$ SoundOnSmash : std::string
+					$ SoundOnCannon : std::string
+					ZombieEightiesGargantuarProps 210
+						$ JamStyle : std::string
+						$ ArbitrarySmashDelay : float
+						$ ArbitrarySmashDelayVariance : float
+						$ ShockWaveSpawnOffset : SexyVector2
+					ZombieGargantuarMechProps 228
+						$ EyeLaserDelayBetweenShots : float
+						$ EyeLaserWarmUpTime : float
+						$ EyeLaserSweepTime : float
+						$ EyeLaserTotalDamage : float
+						$ EyeLaserMinDistance : float
+						$ EyeLaserMaxDistance : float
+						$ EyeLaserSweepLength : float
+						$ SoundOnDeactivate : std::string
+						$ SoundOnActivate : std::string
+					- ZombieGargantuarProjectilePair
+						$ HealthPercentThrowImp : float
+						$ ProjectileLayersToHide : std::vector<std::string>
+				ZombieCamelProps 1B8
+					$ CamelSegmentOffset : int32
+					$ CamelSegmentTooCloseBuffer : int32
+					$ CamelSegmentTooFarBuffer : int32
+					$ WalkCycleOffset : int32
+					$ SpawnManyCamelSegmentAtPosition : int32
+					$ PropagateSignDestruction : bool
+					$ OnlyHeadZombieEats : bool
+					$ SurprisedTime : float
+					$ DropArmOnSignDrop : bool
+					$ SwitchToHeadCamelSign : bool
+					ZombieCamelTouchProps 1C0
+						$ PostMatchStunChance : float
+						$ PostMatchStunDuration : float
+				ZombieRaProps 1A0
+					$ MaxClaimedSunCurrency : int32
+				ZombieSarcophagusProps 1A0
+					$ RunSpeed : float
+				ZombiePirateCannonProps 1D8
+					$ InitialShotCooldown : float
+					$ ShotCooldown : float
+					$ ChanceImpFallsInWater : float
+					$ TimeToWalkInToPosition : float
+					$ ImpShotHeight : float
+					$ ImpShotTime : float
+					$ ExplosionImpSpawnCount : int32
+					$ ExplosionImpTargetColumnMin : int32
+					$ ExplosionImpTargetColumnMax : int32
+					$ ExplosionImpLaunchHeight : float
+					$ ExplosionImpLaunchTime : float
+					$ ExplosionImpLaunchTimeVariance : float
+					$ ImpType : std::string
+				ZombiePirateCaptainProps 1A0
+					$ ParrotCooldown : float
+					$ ParrotRetryCooldown : float
+				ZombiePirateCaptainParrotProps 1B0
+					$ LiftSpeed : float
+					$ PlantLiftingWaitTime : float
+					$ ReturningToCaptainWaitTime : float
+					$ ParrotTargetExcludeList : std::vector<std::string>
+					ZombieCarnieMagicianDoveProps 1B8
+						$ FeatherEffectSpawnOffset : SexyVector2
+				ZombieProspectorProps 1A8
+					$ LaunchCountdown : float
+					$ StunTime : float
+					$ TimeToTravel : float
+					$ Apex : float
+				ZombieBullProps 1B8
+					$ BuckRect : Rect
+					$ BullRunSpeed : float
+					$ BullPawLocation : float
+					$ BullEnterSpeed : float
+					ZombieBullVeteranProps 1C0
+						$ BullRunAgainDelay : float
+						$ BullRammingDamage : float
+				ZombieBullRiderProps 1A8
+					$ LaunchDistance : float
+					$ LaunchHeight : float
+					$ LaunchAirTime : float
+				ZombiePonchoProps 1A8
+					$ PonchoHealth : float
+					$ PlateProbability : float
+					$ PlateHealth : float
+				ZombieBarrelProps 1D0
+					$ TargetByIncludelist : PlantRestrictionSet
+					$ PlantsWhichBreakBarrelOnCollision : PlantRestrictionSet
+					$ BurstDelay : float
+					$ ImpType : std::string
+				ZombiePianoProps 1B0
+					$ FastMoveSpeed : float
+					$ PlantsWhichBreakPianoOnCollision : PlantRestrictionSet
+				ZombieExplorerProps 1A0
+					$ MaxTorchReach : float
+				ZombieFutureJetpackProps 1A0
+					$ DiscoMode : bool
+				ZombieHeroProps 1A8
+					$ HeroBehavior : ZombieHeroBehavior
+					$ HeroBehaviorProps : RtWeakPtr<PropertySheetBase>
+				ZombieTreasureYetiProps 1A8
+					$ WalkTime : float
+					$ CollectableType : std::string
+				ZombieBeachFastSwimmerProps 1A0
+					$ SwimSpeedMultiplier : float
+				ZombieHamsterBallProps 1D8
+					$ TargetByIncludelist : PlantRestrictionSet
+					$ PlantsWhichBreakBarrelOnCollision : PlantRestrictionSet
+					$ ZombieInsideBallType : std::string
+					$ Behavior : int32
+					$ SpeedBeforeImpact : float
+					$ RicochetLaneChangeTime : float
+				ZombieWithActionsProps 1A8
+					$ Actions : std::vector<RtWeakPtr<RtObject>>
+					ZombieEightiesArcadeProps 1B0
+						$ JamStyle : std::string
+					ZombieGeneralProps 1B8
+						$ LifetimeSeconds : float
+						$ GeneralPhase : int32
+						$ CollidePlants : ZombieGeneralCollide
+						$ CollideHypnotizedZombies : ZombieGeneralCollide
+						ZombieGeneralCaesarProps 1C8
+							$ ActionAttackTargetRect : Rect
+						ZombieGeneralTreadmillProps 1C8
+							$ PowerDrinkTargetRect : Rect
+						ZombieGeneralZmechProps 1F0
+							$ CrosshairPopAnim : std::string
+							$ CrosshairAnimation : std::string
+							$ RocketAnimation : std::string
+							$ RocketExplosionAnimation : std::string
+							$ CraterLifetime : int32
+							$ StunTime : float
+						ZombieCakeTankProps 1C0
+							$ CustomDamageSteps : std::vector<GeneralDamageStep>
+							- GeneralDamageStep
+								$ MaxDamagePercent : float
+								$ ActionOnStart : RtWeakPtr<RtObject>
+					ZombieIceAgeDodoProps 1F8
+						$ PlantsToFlyOver : PlantRestrictionSet
+						$ GridItemsToFlyOver : GridItemRestrictionSet
+						$ MaximumGridSquaresToFlyOver : int32
+						$ MinRandomGridSquaresToFlyOver : int32
+						$ MaxRandomGridSquaresToFlyOver : int32
+						$ CooldownSecondsUntilNextJumpAvailable : int32
+						$ InitialSetRandomChanceForJump : float
+						$ LandedResetRandomChanceForJump : float
+						$ AddRandomChanceForJumpPerGridWalked : float
+						$ ElectrocutePAMName : std::string
+					ZombieIceAgeHunterProps 1B0
+						$ NearAttackRange : int32
+						$ FarAttackRange : int32
+						$ SnowballsPerBarrage : int32
+					ZombieIceAgeTroglobiteProps 1C0
+						$ NumberOfIceblocksToSpawnWith : int32
+						$ ImpType : std::string
+						$ ConditionToApply : std::string
+						ZombieRomanMedusaProps 1D0
+							$ PetrifiedZombieHealthMultiplier : float
+							$ PetrifiedZombieType : std::string
+					ZombieLostCityLostPilotProps 1B0
+						$ HangingAttackRectOffsetY : int32
+						$ HangingNoEatTimeUntilDrop : float
+						ZombieZCorpHelpdeskProps 200
+							$ EnragedSpeedScale : float
+							$ EnragedDpsScale : float
+							$ LaptopProjectile : RtWeakPtr<RtObject>
+							$ LaptopSpawnOffset : SexyVector2
+							$ ApexHeight : float
+							$ TimeUntilHit : float
+							$ MaxTossGridDistance : float
+							$ DeathExplosionRadius : float
+							$ DeathExplosionDamage : float
+							$ DeathExplosionOffsetX : float
+							$ DeathExplosionOffsetY : float
+							$ DeathExplosionPAM : std::string
+							$ DeathExplosionAnim : std::string
+					ZombieCarnieMagicianProps 1D8
+						$ TeleportOtherStartTime : float
+						$ TeleportSelfStartTime : float
+						$ DoveSpawnStartTime : float
+						$ TimeBetweenTeleportOther : float
+						$ TimeBetweenTeleportSelf : float
+						$ TimeBetweenDoveSpawn : float
+						$ TeleportationFailPercentage : float
+						$ ImmuneToPlantRestrictionSet : PlantRestrictionSet
+					ZombieRomanHealerProps 1D8
+						$ GridItemToDrop : RtWeakPtr<GridItemType>
+						$ BreaksStaff : PlantRestrictionSet
+						$ BlocksStaff : PlantRestrictionSet
+					ZombieDarkWizardProps 1A8
+					ZombieBeachOctopusProps 1A8
+				ZombieChickenProps 1B0
+					$ BucketPercentage : float
+					$ ElectrocutePAMName : std::string
+					$ AffectedBySliders : bool
+					ZombieCarnieMonkeyProps 1B8
+						$ PercentageChanceToDropCoin : float
+						$ CoinType : Loot
+				ZombiePrototypeProps 1A8
+					$ StaticArtImageAsset : std::string
+				ZombieBeachSurferProps 1C8
+					$ SurfSpeedMultiplier : float
+					$ SurfboardAttackRectOffsetX : float
+					$ BreaksSurfboard : PlantRestrictionSet
+					$ BlocksSurfboard : PlantRestrictionSet
+				ZombieBeachSnorkelProps 1D8
+					$ TargetByIncludelist : PlantRestrictionSet
+					$ DamageWhileSubmerged : PlantRestrictionSet
+					$ DamageWhileSubmergedPlantfoodOnly : PlantRestrictionSet
+				ZombieCarnieImpTwinsProps 1A8
+					$ SpawnImpType : std::string
+				ZombieCarnieGrinderheadProps 1A0
+					$ MonkeyAudioFrequency : float
+				- ZombieConditionImmunity
+					$ Percent : float
+					$ Condition : ZombieConditions
+			ZombieHeroBehaviorProps 030
+				$ TriggerAtHP : float
+				$ TriggerAtTime : float
+				$ TriggerInterval : float
+				$ TriggerMax : int32
+				ZombieHeroSpawnerProps 040
+					$ ZombieSpawnType : std::string
+					$ SpawnPattern : ZombieSpawnPattern
+			ComponentPropagatedBurstProps 040
+				$ Shape : PropagationShape
+				$ PropagationDelay : float
+				$ PopAnimEffectName : std::string
+				$ Action : PropagationAction
+				$ ContinualAction : bool
+				$ EffectLoop : bool
+				$ EffectLoopCount : int32
+			MarketLayoutProps 098
+				$ Markets : std::vector<MarketProps>
+				$ Clusters : std::vector<MarketClusterProps>
+				$ Tabs : std::vector<MarketTabProps>
+				$ Categories : std::vector<MarketCategoryProps>
+				$ PromotionSlots : std::vector<MarketPromotionSlotProps>
+				$ ItemThemes : std::vector<MarketItemTheme>
+				$ GlobalConfig : MarketLayoutGlobalProps
+				- MarketProps
+					$ Type : std::string
+					$ QuickStoreInnerHeader : std::string
+					$ ShowInnerHeaderOnlyForMultipleProfiles : bool
+					$ Clusters : std::vector<std::string>
+					$ LegacyStoreMap : std::vector<std::string>
+				- MarketClusterProps
+					$ Type : std::string
+					$ Tabs : std::vector<std::string>
+				- MarketTabProps
+					$ Type : std::string
+					$ Name : std::string
+					$ ImageDown : std::string
+					$ ImageActive : std::string
+					$ Categories : std::vector<std::string>
+				- MarketCategoryProps
+					$ Type : std::string
+					$ LabelText : std::string
+					$ Card : std::string
+					$ MaxCount : int32
+					$ ShowTimer : bool
+					$ DebugOnly : bool
+					$ PromotionSlots : std::vector<std::string>
+				- MarketPromotionSlotProps
+					$ Type : std::string
+					$ GroupPriority : std::vector<std::string>
+					$ FallbackCategory : std::string
+				- MarketLayoutGlobalProps
+					$ NotificationTimerEvent : std::string
+					$ NotificationDailyGiftCategory : std::string
+					$ BasicPlantXPPinataType : std::string
+					$ DefaultTabType : std::string
+				- MarketItemTheme
+					$ Type : std::string
+					$ CardImage : std::string
+			LevelOfTheDayPropertySheet 070
+				$ KilledZombieExcludelist : std::vector<RtWeakPtr<ZombieType> >
+				$ FirstTimeNarrative : std::string
+				$ SenorPinataInterval : int32
+				$ ReplayLevelCost : int32
+				$ ReplayLevelCurrency : MarketPurchaseCurrency
+				$ NotificationStartOffset : uint64
+				$ AndroidExcludelist : std::vector<std::string>
+				$ ConsecutiveCostumeRewardConsolationCategory : std::string
+				$ SoonestIntroLevel : std::string
+			LevelOfTheDayRewards 028
+				$ Rewards : std::vector<LevelOfTheDay_RewardItemType>
+			LevelOfTheDayHolidays 038
+				$ HolidayEvents : std::vector<HolidayEventProperties>
+				$ HolidayDefault : std::string
+			WorldMapPropertySheet 070
+				$ ParallaxSpeedLayerForeground4 : float
+				$ ParallaxSpeedLayerForeground3 : float
+				$ ParallaxSpeedLayerForeground2 : float
+				$ ParallaxSpeedLayerForeground1 : float
+				$ ParallaxSpeedLayer1 : float
+				$ ParallaxSpeedLayer2 : float
+				$ ParallaxSpeedLayer3 : float
+				$ ParallaxSpeedLayer4 : float
+				$ ParallaxSpeedLayer5 : float
+				$ ParallaxSpeedLayer6 : float
+				$ ParallaxSpeedLayer7 : float
+				$ ParallaxSpeedLayer8 : float
+				$ ParallaxSpeedLayer9 : float
+				$ ParallaxSpeedLayer10 : float
+				$ PathUnlockSpeed : float
+				$ SnapGrid : SexyVector2
+				$ EditorSafeZoneYStart : float
+				$ EditorSafeZoneYEnd : float
+			JoustSchedule 028
+				$ TournamentDefinitions : std::vector<JoustTournamentDefinition>
+				- JoustTournamentDefinition
+					$ StartDate : uint64
+					$ HideDetailsInFutureSchedule : bool
+					$ LeaderboardDefinitionKey : std::string
+					$ CrownRewardKey : std::string
+					$ LevelSetKey : std::string
+					$ ProgressiveRewardKeys : std::vector<std::string>
+					$ TournamentRewardKeys : std::vector<std::string>
+			JoustLeaderboardDefinition 038
+				$ NumLeagues : int32
+				$ LeaderboardSize : int32
+				$ PromotionCount : int32
+				$ DemotionCount : int32
+				$ MinimumPlayerCountBeforeDemotion : int32
+				$ MinimumLeagueBeforeDemotion : int32
+			JoustCrownRewardDefinition 030
+				$ CrownsWinBase : int32
+				$ CrownsLoss : int32
+				$ CrownsProgressiveBonus : std::vector<int>
+			JoustLevelSet 038
+				$ LevelName : std::string
+				$ LevelSeeds : std::vector<std::string>
+			JoustProgressiveRewardDefinition 028
+				$ ProgressiveRewards : std::vector<LevelOfTheDay_RewardItemType>
+			JoustTournamentRewardDefinition 028
+				$ PlacementRewards : std::vector<std::vector<LevelOfTheDay_RewardItemType> >
+			UIWidgetSheet 0B0
+				$ Class : std::string
+				$ Parent : std::string
+				$ ParentAnchor : AnchorType
+				$ Anchor : AnchorType
+				$ ResourceGroup : std::string
+				$ Width : uint16
+				$ Height : uint16
+				$ VirtualWidth : uint16
+				$ BoardScaledVirtualWidth : uint16
+				$ VirtualHeight : uint16
+				$ SizeFromImage : std::string
+				$ SizeFromScreen : bool
+				$ WidthFromImage : std::string
+				$ HeightFromImage : std::string
+				$ WidthFromScreen : bool
+				$ HeightFromScreen : bool
+				$ InputPriority : int8
+				$ RenderOrder : int16
+				$ PositionOffset : SexyVector2
+				$ ScalePositionOffset : bool
+				$ ImmuneToDeviceScaling : bool
+				$ VirtualHitInsets : Insets
+				$ IncludelistID : std::string
+				$ IgnoreSafeArea : bool
+				- Insets
+					$ mLeft : int32
+					$ mTop : int32
+					$ mRight : int32
+					$ mBottom : int32
+			PVZVersion 028
+				$ major : int32
+				$ minor : int32
+				$ content : int32
+			ForceUpdateConfigData 058
+				$ MinVersion : std::string
+				$ MinJoustVersion : std::string
+				$ MinRiftVersion : std::string
+				$ iOSURL : std::string
+				$ AndroidURL : std::string
+			ZenGardenPlantRewardsPropertySheet 050
+				$ LootCategories : std::vector<LevelOfTheDay_RewardItemType>
+				$ CoinRewards : std::vector<LevelOfTheDay_RewardItemType>
+				$ GemRewards : std::vector<LevelOfTheDay_RewardItemType>
+				$ PowerupRewards : std::vector<LevelOfTheDay_RewardItemType>
+			ProductFilterPropertySheet 028
+				$ ObjectTypeFilters : std::vector<ProductFilterProps>
+			BoardPropertySheet 0A8
+				$ PlantTargetingXThreshold : float
+				$ MaxSunCurrency : uint16
+				$ ZombieThreatLowAlert_TriggerPositionX : float
+				$ ZombieThreatHighAlert_TriggerPositionX : float
+				$ ZombieThreatLowAlert_StarChallengeOffsetX : float
+				$ ZombieThreatHighAlert_StarChallengeOffsetX : float
+				$ ZombieThreatLowAlert_ProtectPlantOffsetX : float
+				$ ZombieThreatHighAlert_ProtectPlantOffsetX : float
+				$ CoinAlert_LowBalanceThreshold : int32
+				$ RequiredSubsystems : std::vector<std::string>
+				$ ZombieTideMaxHeightPct : float
+				$ DefaultTideMaxHeightPct : float
+				$ MaxTideDropoffDistance : float
+				$ DynamicDifficultyMowerImmunity : std::vector<float>
+				$ DynamicDifficultyMowerCooldown : std::vector<float>
+				$ DangerRoomMowerImmunity : float
+				$ DangerRoomMowerCooldown : float
+				$ LastStandPlantExcludelist : std::vector<std::string>
+				$ PlantFrostExcludelist : std::vector<std::string>
+				$ ProtectThePlantAdditionalPlantingExcludelist : std::vector<std::string>
+				$ PlantSmashAttackExcludelist : std::vector<std::string>
+			MarketScheduleEventCacheData 028
+				$ Events : std::vector<MarketScheduleEventCached>
+				- MarketScheduleEventCached
+					$ VersionKey : int64
+					$ Event : MarketScheduleEvent
+			LevelModuleDifficultyProps 048
+				$ Description : std::string
+				$ Name : std::string
+				$ DisplayPriority : DifficultyDisplayPriority
+				$ DisplayPriorityOverrides : std::vector<DisplayPriorityOverride>
+				- DisplayPriorityOverride
+					$ EventSubType : MapEventSubType
+					$ DisplayPriority : DifficultyDisplayPriority
+			LevelModuleProperties 050
+				$ ResourceGroupNames : std::vector<std::string>
+				$ DifficultyProps : <void *>
+				$ IconImage : std::string
+				$ IconText : std::string
+				DefeatGeneralPhasesChallengeProps 060
+					$ Description : std::string
+					$ NumPhasesToKill : int32
+				InitialPlantProperties 060
+					$ InitialPlantPlacements : std::vector<PlantPlacementProperties>
+					$ IsInitialIntensiveCarrotPlacements : bool
+					- PlantPlacementProperties
+						$ TypeName : std::string
+						$ GridX : int32
+						$ GridY : int32
+						$ Condition : PlantConditions
+						$ Level : int32
+				PaddedRoomProperties ?
+					<NONE>
+				SpawnGravestoneZombiesOnFlagWavesProperties 050
+				StarChallengeSaveMowersProps 050
+				PickupCollectableTutorialProperties 078
+					$ PickupAdvice : std::string
+					$ PostPickupAdvice : std::string
+					$ DropperZombieType : std::string
+					$ LootType : Loot
+				LevelScoringModuleProperties 070
+					$ PlantBonuses : std::vector<LevelScoringPlantBonusTier>
+					$ PlantBonusMultiplier : float
+					$ ScoringRulesType : std::string
+					$ StartingPlantfood : int32
+					- LevelScoringPlantBonusTier
+						$ Multiple : int32
+						$ Plants : std::vector<std::string>
+				LevelMutatorStartingPlantfoodProps 050
+					$ StartingPlantfoodOverride : int32
+				LevelMutatorSeedSlotCountProps 050
+					$ SeedSlotCountOverride : int32
+				LevelMutatorPowerupSetProps 058
+					$ PowerupSetOverride : std::string
+				LevelMutatorMaxSunProps 050
+					$ MaxSunOverride : int32
+				LevelMutatorStartSunProps 050
+					$ StartSunModifier : int32
+				LevelMutatorMowerSpawnProps 050
+					$ SpawnOverride : MowerSpawnOverride
+				LevelMutatorZombieCountdownFirstWaveSecsProps 050
+					$ FirstWaveSecs : int32
+				LevelMutatorZombieLevelProps 050
+					$ BaseZombieLevel : int32
+				LevelMutatorZombieGeneralLevelProps 050
+					$ BaseZombieLevel : int32
+				LevelMutatorSunDropperProps 058
+					$ LevelModuleOverride : <void *>
+				LevelMutatorRiftZombossPhasesProps 050
+					$ ZombossPhases : int32
+				LevelMutatorGridItemLevelProps 050
+					$ BaseGridItemLevel : int32
+				PointOfLossModuleProperties 068
+					$ EscalatingGemCostPerLevel : std::vector<int>
+					$ AdUsesAvailablePerLevel : int32
+					$ TotalUsesAvailablePerLevel : int32
+					$ ExtraTimeGems : float
+					$ ExtraTimeAd : float
+					ZombossRiftPointOfLossModuleProperties 068
+					SecurityGourdPointOfLossModuleProperties 068
+					JoustPointOfLossModuleProperties 070
+						$ ExtraTimeGems : float
+						$ ExtraTimeAd : float
+				InitialGridItemProperties 058
+					$ InitialGridItemPlacements : std::vector<GridItemPlacementProperties>
+					- GridItemPlacementProperties
+						$ TypeName : std::string
+						$ GridX : int32
+						$ GridY : int32
+				PlantCooldownModifierProperties 060
+					$ HomeworldToExcludeFromOverride : std::string
+					$ CooldownMultiplier : float
+				BoardTimerProperties 050
+				SunDropperProperties 060
+					$ InitialSunDropDelay : float
+					$ SunCountdownBase : float
+					$ SunCountdownRange : float
+					$ SunCountdownMax : float
+					$ SunCountdownIncreasePerSun : float
+				PiratePlankProperties 058
+					$ PlankRows : std::vector<int>
+				ChallengeModuleProperties 068
+					$ Challenges : std::vector<std::vector<RtWeakPtr<LevelModuleProperties> > >
+					BaseChallengeModuleProperties 068
+						$ Difficulties : std::vector<int>
+						$ ChallengesAlwaysAvailable : bool
+						StarChallengeModuleProperties 068
+						BonusChallengeModuleProperties 068
+				TideProperties 058
+					$ StartingWaveLocation : float
+					$ ShowTideMarker : bool
+				GravestoneProperties 078
+					$ GravestoneTypeName : std::string
+					$ GravestoneCount : int32
+					$ GravestoneCountIncludesForceSpawns : bool
+					$ SpawnColumnStart : int32
+					$ SpawnColumnEnd : int32
+					$ ForceSpawnData : std::vector<GravestoneForceSpawnData>
+					- GravestoneForceSpawnData
+						$ TypeName : std::string
+						$ GridX : int32
+						$ GridY : int32
+				StageModuleProperties 140
+					$ BackgroundResourceGroup : std::string
+					$ BackgroundImagePrefix : std::string
+					$ StagePrefix : std::string
+					$ BasicZombieTypeName : std::string
+					$ FlagZombieTypeName : std::string
+					$ FlagVeteranZombieTypeNames : std::vector<std::string>
+					$ Armor1ZombieTypeName : std::string
+					$ Armor2ZombieTypeName : std::string
+					$ Armor4ZombieTypeName : std::string
+					$ MusicSuffix : std::string
+					$ MusicSuffixMinigame : std::string
+					$ AmbientAudioSuffix : std::string
+					$ RailcartDefaultTypeName : std::string
+					$ GravestoneDefaultTypeName : std::string
+					$ DirtSpawnEffectName : std::string
+					$ LevelPowerupSet : std::string
+					$ ZombieEventAudio : std::string
+					$ DisabledStreetCells : std::vector<Point>
+					$ ProgressFlagAsset : std::string
+					$ StarChallengeUnlockLevel : std::string
+					DinoStageProperties 140
+					LunarStageProperties 140
+					SportzballStageProperties 140
+					JoustStageProperties 140
+						$ DrawMultiplierOverlay : bool
+						$ DrawMultiplierLabels : bool
+					FutureStageProperties 140
+					DarkStageProperties 148
+						$ Armor3ZombieTypeName : std::string
+					CarnivalStageProperties 140
+					EgyptStageProperties 140
+					WestStageProperties 140
+					ModernStageProperties 140
+					LostCityStageProperties 140
+					PirateStageProperties 158
+						$ BreakerInterval : float
+						$ PlantsWhichCannotBePlantedOnPlanks : PlantRestrictionSet
+					BeachStageProperties 140
+					IceAgeStageProperties 140
+					EightiesStageProperties 140
+					FrontLawnStageProperties 140
+						HeroesStageProperties 140
+				ProtectThePlantChallengeProperties 060
+					$ MustProtectCount : int32
+					$ Plants : std::vector<ProtectedPlantEntry>
+					- ProtectedPlantEntry
+						$ PlantType : std::string
+						$ GridX : int32
+						$ GridY : int32
+						$ Level : int32
+				StarChallengeSimultaneousPlantsProps 050
+					$ MaximumPlants : int32
+				LevelSongOverrideProperties 078
+					$ StartEvent : std::string
+					$ StopEvent : std::string
+					$ AudioGroup : std::string
+					$ MusicDelayForLastStandStart : bool
+				WaveManagerModuleProperties 068
+					$ WaveManagerProps : RtWeakPtr<WaveManagerProperties>
+					$ ManualStartup : bool
+					$ DynamicZombies : std::vector<DynamicZombiesInstruction>
+					- DynamicZombiesInstruction
+						$ StartingPoints : int32
+						$ PointIncrementPerWave : int32
+						$ MaxPoints : int32
+						$ StartingWave : int32
+						$ ZombiePool : std::vector<RtWeakPtr<ZombieType> >
+				CannonMinigameProperties 090
+					$ Lanes : std::vector<PirateLane>
+					$ BaseMovementRate : float
+					$ SlowdownMovementRate : float
+					$ BufferDistance : float
+					$ RowHasCannon : std::vector<int>
+					$ UseLevelScoringModule : bool
+					$ ComboBrackets : std::vector<ComboBracket>
+					$ BaseZombieKillScore : int32
+					$ MinRewardGold : int32
+					$ MaxRewardGold : int32
+					$ MinScore : int32
+					- PirateLane
+						$ SplinePoints : std::vector<SexyVector2>
+					- ComboBracket
+						$ ZombiesKilled : int32
+						$ ScoreMultiplier : float
+						$ MessageColor : Color
+						$ AudioCue : std::string
+						$ Exclamations : std::vector<std::string>
+				ZombiePotionModuleProperties 068
+					$ PotionSpawnTimer : ValueRange
+					$ PotionTypes : std::vector<std::string>
+					$ MaxPotionCount : int32
+					$ InitialPotionCount : int32
+				DestroyGridItemsChallengeProps 068
+					$ GridItemsToDestroy : int32
+					$ GridItemType : std::string
+					$ ChallengeDescription : std::string
+				StarChallengeCannonMinigameProps 070
+					$ Description : std::string
+					$ DescriptionFailure : std::string
+					$ DescriptiveName : std::string
+				StarChallengeFamilyPlantsProps 060
+					$ PlantCount : int32
+					$ FamilyName : std::string
+				CoreLoopRewardsLevelModuleProps ?
+					<NONE>
+				StarChallengeLevelTimerProperties 050
+					$ TimeLimit : float
+				PlantFullRowChallengeProps 050
+					$ NumPlantsInRowNeeded : int32
+				GridItemPlacementModuleProps 060
+					$ Type : std::string
+					$ Locations : RtWeakPtr<BoardGridMapProps>
+					GridItemPlacementChallengeModuleProps 060
+				SproutOverrideProperties 058
+					$ PlantWeights : std::vector<std::vector<SproutPlantWeights>>
+				StarChallengeTargetScoreProps 078
+					$ TargetScore : float
+					$ Description : std::string
+					$ DescriptionFailure : std::string
+					$ DescriptiveName : std::string
+				LevelEscalationModuleProperties 080
+					$ WaveManagerProps : RtWeakPtr<WaveManagerProperties>
+					$ ZombiePool : std::vector<RtWeakPtr<ZombieType> >
+					$ FlagCount : int32
+					$ WavesPerFlag : int32
+					$ PlantfoodToSpawnCount : int32
+					$ PointIncrementPerWave : int32
+					$ StartingPoints : int32
+					$ MaxPoints : int32
+					LevelOfTheDayModuleProperties 080
+				SecurityGourdModuleProperties 078
+					$ DestroyZombiesAffectedColumns : int32
+					$ DestroyZombiesUnderHealthPercent : float
+					$ KnockbackAffectedColumns : int32
+					$ KnockbackDistance : float
+					$ KnockbackTime : float
+					$ KnockbackHeight : float
+					$ ResetPlantCooldowns : bool
+					$ ZombieClassKillIncludelist : std::vector<std::string>
+				JoustGameModuleProperties 088
+					$ TimeLimit : float
+					$ WaveSetsToAppend : int32
+					$ PeriodOfWavesToLoop : int32
+					$ LeagueModifiers : std::vector<JoustGameLeagueInitParams>
+					$ SuggestedLoadout : std::string
+					$ LevelLoadouts : PredefinedLoadoutGroup
+					- JoustGameLeagueInitParams
+						$ LeagueThreshold : int32
+						$ AddZombieLevel : int32
+						$ AddTimeLimit : int32
+				CrazyOlafTestProperties 0A0
+					$ PlantIncludelist : std::vector<std::string>
+					$ PlantExcludelist : std::vector<std::string>
+					$ PlantRequiredList : std::vector<std::string>
+					$ Actions : std::vector<ActionWeights>
+					$ CreatureList : std::vector<CreatureListType>
+					$ ActionTimer : float
+					$ RestartLevelTimer : float
+					$ MaxPlantTypes : int32
+					$ MaxPerType : int32
+					$ PlantBeforeColumn : int32
+					- ActionWeights
+						$ Action : TestActionsCrazyOlafStyle
+						$ Weight : int32
+					- CreatureListType
+						$ CreatureTypeName : std::string
+						$ MaxCountInRow : int32
+				StarChallengeBeatTheLevelProps 068
+					$ Description : std::string
+					$ DescriptiveName : std::string
+				LevelMutatorModuleProperties 058
+					$ MutatorTables : std::vector<RtId>
+				ZombieResistancesModuleProperties 058
+					$ FamilyResistances : std::map<std::string RT_COMMA std::vector<PlantFamilyResistance> >
+				StarChallengeZombieDistanceProps 050
+					$ TargetDistance : float
+				GeneralZombieModuleProperties 058
+					$ Phases : std::vector<GeneralZombieEntry>
+					- GeneralZombieEntry
+						$ ZombieType : std::string
+						$ SpawnDelay : float
+						$ ZombieLifetime : float
+						$ ZombieLevelOverride : int32
+						$ ZombieLevelAddLeagueBase : bool
+						$ LaneToSpawnMin : int32
+						$ LaneToSpawnMax : int32
+				VaseBreakerFlowModuleProperties 050
+				StarChallengeSunUsedProps 050
+					$ MaximumSun : int32
+				PowerTileProperties 058
+					$ LinkedTiles : std::vector<PowerTileEntry>
+					- PowerTileEntry
+						$ Location : Point
+						$ Group : PowerTileClass
+				PerkHandlerModuleProperties 050
+				IntroModuleProperties 050
+					StandardLevelIntroProperties 070
+						$ PanStartOffset : float
+						$ PanEndOffset : float
+						$ PanRightDuration : float
+						$ PanLeftDuration : float
+						$ NarrationID : int32
+						$ SubsequentPlayNarrationID : int32
+						$ AdditionalStartingSun : int32
+						$ PreSeedchooserFlow : PreSeedchooserFlowType
+						SproutPlantingMinigameProperties 080
+							$ StartingSproutCount : int32
+							$ TimeToPlantAllSprouts : float
+							$ PlantWeights : std::vector<std::vector<SproutPlantWeights>>
+						TutorialLevel4Properties 070
+						CamelMinigameProperties 098
+							$ ShowTutorial : bool
+							$ CardTypesUsed : int32
+							$ CardMatchingTime : float
+							$ CardMatchTime : float
+							$ CardNoMatchTime : float
+							$ MinSpawnXStart : float
+							$ MinSpawnXEnd : float
+							$ MaxSpawnX : float
+							$ InitialTutorialZombieRiseDelay : float
+							$ CamelSegmentRiseStagger : float
+							$ AdditionalXBufferBetweenChains : float
+						IntroCinemaProperties 070
+						PirateCannonTutorialProperties 070
+							$ ShowTutorial : bool
+						TutorialLevel1Properties 070
+						TutorialLevel3Properties 070
+						TutorialLevel2Properties 070
+						LastStandMinigameProperties 078
+							$ StartingSun : int32
+							$ StartingPlantfood : int32
+						PowerupPurchaseIntroProperties 078
+							$ Narrative : std::string
+						MagnifyingGrassTutorialIntroProperties 070
+						DangerRoomLevelIntroProperties 070
+						RailcartTutorialIntroProperties 070
+						PowerupTutorialIntroProperties ?
+							<NONE>
+						BananaTutorialProperties 070
+						MissileToeTutorialProperties 070
+						PlantfoodPurchaseTutorialIntroProperties 070
+						TutorialLevelMinesProperties 070
+						LevelOfTheDayIntroProperties 070
+						BeghouledIntroProperties 070
+						PlantfoodTutorialIntroProperties 070
+						PowerTileIntroProperties 070
+						ZombossBattleIntroProperties 078
+							$ ZombossPhaseCount : int32
+							$ SkipShowingStreet : bool
+				LootOverrideModuleProperties 058
+					$ Overrides : std::vector<LootOverrideEntry>
+					- LootOverrideEntry
+						$ ZombieType : RtWeakPtr<ZombieType>
+						$ LootOverride : Loot
+				OutroModuleProperties 050
+					VictoryOutroProperties 078
+						$ FlagSpawnTime : float
+						$ BaseCoinAwardValue : int32
+						$ CoinsPerMower : int32
+						$ CoinShowerStartTime : float
+						$ CoinShowerDuration : float
+						$ CoinShowerDelayBetweenMowers : float
+						$ CoinInitialHeight : float
+						$ CoinCollectTime : float
+						$ AdditionalEndingDelay : float
+						$ BoardFadeTime : float
+						ZombossVictoryOutroProperties 078
+					ZombiesAteYourBrainsOutroProperties 050
+					EventsOutroProperties 050
+					JoustOutroProperties 050
+					RiftOutroProperties 050
+					LevelOfTheDayOutroPropeties 050
+					FadeOutOutroProperties 070
+						$ DefaultMessage : std::string
+						$ FadeColor : Color
+						$ FadeDuration : float
+						$ PostFadeDelay : float
+				RailcartProperties 070
+					$ RailcartType : std::string
+					$ Rails : std::vector<RailcartRail>
+					$ Railcarts : std::vector<RailcartLocation>
+					- RailcartLocation
+						$ Column : int32
+						$ Row : int32
+					- RailcartRail
+						$ Column : int32
+						$ RowStart : int32
+						$ RowEnd : int32
+				SimpleZombieSpawnerProperties 058
+					$ Stages : std::vector<ZSEntryList>
+					BeghouledZombieSpawnerProperties 068
+						$ MatchCountsToStageAdvance : std::vector<MatchStageMap>
+						- MatchStageMap
+							$ StageNumber : int32
+							$ MatchCount : int32
+					- ZombieSpawnerEntry
+						$ ZombieType : std::string
+						$ Weight : int32
+					- ZSEntryList
+						$ Types : std::vector<ZombieSpawnerEntry>
+						$ SpawnCount : int32
+						$ SpawnDelay : float
+						$ PlantFoodInterval : int32
+				InvisighoulMinigameProperties 050
+				GlacierModuleProperties 068
+					$ ZombieSpawnData : std::vector<ProbabilityTypeContainer>
+					$ GlacierType : std::string
+				ApplyZombieConditionsChallengeProps 060
+					$ NumZombieConditionsToApply : int32
+					$ ConditionToInflict : std::vector<ZombieConditions>
+					$ IncludeBurnedToAsh : bool
+					$ IncludeElectrified : bool
+				SunBombChallengeProperties 060
+					$ PlantBombExplosionRadius : float
+					$ ZombieBombExplosionRadius : float
+					$ PlantDamage : float
+					$ ZombieDamage : float
+				CowboyMinigameProperties 058
+					$ ShowTutorial : bool
+					$ BeginString : std::string
+				SeedBankProperties 0B0
+					$ SelectionMethod : SeedBankSelectionMethod
+					$ AlwaysUseChooser : bool
+					$ PlantIncludeList : std::vector<std::string>
+					$ PlantExcludeList : std::vector<std::string>
+					$ ExcludeListLiftedBy : std::string
+					$ ExcludeListSunProducers : bool
+					$ PresetPlantList : std::vector<PresetPlantEntry>
+					$ PresetPlantCostumeList : std::vector<PresetPlantCostumeEntry>
+					$ BeghouledUpgradeList : std::vector<std::string>
+					$ SuggestPlantList : std::vector<std::vector<std::string>>
+					$ OverrideSeedSlotsCount : int32
+					ConveyorSeedBankProperties 0D8
+						$ ManualPacketSpawning : bool
+						$ InitialPlantList : std::vector<ConveyorPlantEntry>
+						$ DropDelayConditions : std::vector<ConveyorDropDelayCondition>
+						$ SpeedConditions : std::vector<ConveyorSpeedCondition>
+						- ConveyorPlantEntry
+							$ PlantType : std::string
+							$ Weight : int32
+							$ MinCount : int32
+							$ MinWeightFactor : float
+							$ MaxCount : int32
+							$ MaxWeightFactor : float
+							$ DeliveredSoFar : int32
+							$ MaxDelivered : int32
+							$ MaxCountCooldownSeconds : float
+							$ CooldownAvailableTime : float
+							$ ForceBoosted : bool
+							$ Level : int32
+						- ConveyorSpeedCondition
+							$ MaxPackets : int32
+							$ Speed : float
+						- ConveyorDropDelayCondition
+							$ MaxPackets : int32
+							$ Delay : float
+					BeghouledSeedBankProperties 0B0
+					- PresetPlantEntry
+						$ PlantType : std::string
+						$ Level : int32
+					- PresetPlantCostumeEntry
+						$ PlantType : std::string
+						$ CostumeID : int32
+				JamZombiesModuleProperties 050
+				StarChallengeKillZombiesInTimeProps 058
+					$ ZombiesToKill : int32
+					$ Time : float
+				ZombossBattleModuleProperties 070
+					$ ZombossSpawnGridPosition : Point
+					$ ReservedColumnCount : int32
+					$ ZombossMechType : std::string
+					$ ZombossDeathRow : int32
+					$ ZombossDeathColumn : int32
+					$ ShowInStreetView : bool
+					$ SlideInStreetView : bool
+					ZombossRiftBattleModuleProperties 078
+						$ ZombossPhases : int32
+						$ TimeLimit : float
+				BoosteramaModuleProperties 050
+				TutorialPeashooterDeathProperties 050
+				LootOverrideZombossRiftModuleProps 058
+					$ Entries : std::vector<ZombossRiftLootEntry>
+					- ZombossRiftLootEntry
+						$ MinSeconds : float
+						$ MaxSeconds : float
+						$ Drop : Loot
+				StarChallengeSpendSunHoldoutProps 050
+					$ HoldoutSeconds : int32
+				ZombiesDeadWinConProperties 050
+				VaseBreakerProperties 050
+					VaseBreakerPresetProperties 080
+						$ MinColumnIndex : int32
+						$ MaxColumnIndex : int32
+						$ Vases : std::vector<VaseContentProperties>
+						$ NumColoredPlantVases : int32
+						$ NumColoredZombieVases : int32
+						$ GridSquareExcludelist : std::vector<Point>
+						$ VaseGridItemType : std::string
+					VaseBreakerEndlessProperties 080
+						$ TestEndlessLevel : int32
+						$ VaseGridItemType : std::string
+						$ StarZombieAndPlantPair : VaseBreakerEndlessStarZombiePlantPair
+						$ Stages : std::vector<VaseBreakerEndlessStage>
+						- VaseBreakerEndlessStarZombiePlantPair
+							$ ZombieType : std::string
+							$ PlantType : std::string
+						- VaseBreakerEndlessEntityAndCountPair
+							$ Type : std::string
+							$ Count : int32
+						- VaseBreakerEndlessStage
+							$ StartingLevel : int32
+							$ EscalationRate : int32
+							$ MinColumnIndex : int32
+							$ MaxColumnIndex : int32
+							$ NumberOfColoredPlants : int32
+							$ PlantTypes : std::vector<VaseBreakerEndlessEntityAndCountPair>
+							$ CollectableTypes : std::vector<VaseBreakerEndlessEntityAndCountPair>
+							$ FixedZombieTypes : std::vector<VaseBreakerEndlessEntityAndCountPair>
+							$ EscalatingZombieTypes : std::vector<VaseBreakerEndlessEntityAndCountPair>
+					- VaseContentProperties
+						$ ZombieTypeName : std::string
+						$ PlantTypeName : std::string
+						$ CollectableTypeName : std::string
+						$ Count : int32
+				MinigameWhackAZombieModuleProperties 068
+					$ HammerTapsToDecay : std::vector<int>
+					$ HammerHitValue : std::vector<float>
+				ColumnMinigameProperties 050
+				InitialZombieProperties 058
+					$ InitialZombiePlacements : std::vector<ZombiePlacementProperties>
+					- ZombiePlacementProperties
+						$ TypeName : std::string
+						$ GridX : int32
+						$ GridY : int32
+						$ Condition : ZombieConditions
+				BeghouledProperties 050
+					BeghouledPresetProperties 068
+						$ MatchesToWin : int32
+						$ InitialPlants : std::vector<std::string>
+						$ UpgradeMap : std::vector<BeghouledUpgradeMap>
+						- BeghouledUpgradeMap
+							$ BasePlant : std::string
+							$ UpgradedPlant : std::string
+				DefeatZombiesOfTypeChallengeProps 070
+					$ Description : std::string
+					$ NumZombiesToKill : int32
+					$ TypesToKill : ZombieRestrictionSet
+				ArcadeModuleProperties 050
+					BeghouledArcadeModuleProperties ?
+						<NONE>
+					VaseBreakerArcadeModuleProperties ?
+						<NONE>
+				MoldColonyChallengeProps 058
+					$ Locations : RtWeakPtr<BoardGridMapProps>
+				StarChallengeSunProducedProps 050
+					$ TargetSun : float
+				DangerRoomLevelDesignerProperties 060
+					$ RngSeed : uint32
+					$ LevelDesigners : std::vector<DangerRoomLevelDesignerParams>
+					- DangerRoomLevelDesignerParams
+						$ LevelToUse : int32
+						$ Designer : RtWeakPtr<DangerRoomLevelDesigner>
+				StarChallengePlantsLostProps 050
+					$ MaximumPlantsLost : int32
+				BowlingMinigameProperties 050
+					$ BowlingFoulLine : int32
+				LawnMowerProperties 080
+					$ MowerEntryAnimDuration : float
+					$ MowerPopAnim : std::string
+					$ MowerActivatedAudioEvent : std::string
+					$ MowerIdleAnimWeights : std::vector<int>
+					$ MowerExplodeAtGridX : int32
+					$ UnlimitedMowers : bool
+				DangerRoomModuleProperties 068
+					$ WorldSpecificProperties : RtWeakPtr<WorldSpecificDangerRoomProperties>
+					$ LevelDesigners : std::vector<RtWeakPtr<DangerRoomLevelDesigner>>
+				OttoBotBoardStateObserverLevelModuleProperties 050
+				WaveDuplicatorModuleProperties 058
+					$ WaveSetsToAppend : int32
+					$ PeriodOfWavesToLoop : int32
+				ZombieModifierProperties 050
+					$ Speedy : bool
+				WaveDistributorModuleProperties 068
+					$ WavesToDistribute : std::vector<RtWeakPtr<WaveActionProperties>>
+					$ Count : int32
+					$ LevelEndpoint : float
+					$ Pattern : WaveDistributorPattern
+				ZombiesAteYourBrainsProperties 058
+					$ ZombieWinPositionX : float
+					$ ZombieDiesInsteadOfWinning : bool
+				LevelDifficultyScalingModuleProperties 068
+					$ DifficultyRulesType : std::string
+					$ ZombieLevelSwaps : std::vector<ZombieLevelSwapPool>
+					- ZombieLevelSwapEntry
+						$ From : RtWeakPtr<ZombieType>
+						$ To : std::vector<RtWeakPtr<ZombieType>>
+					- ZombieLevelSwapPool
+						$ Level : int32
+						$ Swaps : std::vector<ZombieLevelSwapEntry>
+			EASquaredPropertySheet 068
+				$ MinimumDaysSinceInstall : int32
+				$ FreeCoinsAwarded : int32
+				$ FreeGemsAwarded : int32
+				$ FreeGemsButtonMaxThrottle : int32
+				$ FreeTicketsAwarded : int32
+				$ FreeTicketsButtonMaxThrottle : int32
+				$ FreeMintsAwarded : int32
+				$ FreeMintsButtonMaxThrottle : int32
+				$ FreePennyFuelAwarded : int32
+				$ FreePennyFuelButtonMaxThrottle : int32
+				$ EnableAdMobMediation : bool
+				$ EnableIronSource : bool
+				$ FreePowerupsAwarded : int32
+				$ FreePowerupsMaxThrottle : int32
+				$ FreePinatasMaxThrottle : int32
+				$ PowerupType : std::string
+				$ FreeCoinsButtonMaxThrottle : int32
+			LevelDefinition 278
+				$ Name : std::string
+				$ Description : std::string
+				$ MainObjective : std::string
+				$ StartingSun : int16
+				$ AddBonusStartingSun : bool
+				$ LevelNumber : int32
+				$ SuppressSunSpawn : bool
+				$ FlickPowerupRightEdgeOffset : int32
+				$ StageModule : RtWeakPtr<StageModuleProperties>
+				$ VictoryModule : RtWeakPtr<OutroModuleProperties>
+				$ LossModule : RtWeakPtr<OutroModuleProperties>
+				$ LevelMutator : RtWeakPtr<LevelMutatorModuleProperties>
+				$ Modules : std::vector<RtId>
+				$ Loot : RtWeakPtr<LootConfig>
+				$ NormalPresentTable : std::string
+				$ ShinyPresentTable : std::string
+				$ SuppressAwardScreen : bool
+				$ FirstRewardType : AwardType
+				$ FirstRewardParam : std::string
+				$ ReplayRewardType : AwardType
+				$ ReplayRewardParam : std::string
+				$ GameOverDialogShowBrain : bool
+				$ ShowZombieThreatAlerts : bool
+				$ FirstIntroNarrative : std::string
+				$ ReplayIntroNarrative : std::string
+				$ FirstOutroNarrative : std::string
+				$ ReplayOutroNarrative : std::string
+				$ ForceNextLevel : std::string
+				$ ForceWarpTunnel : bool
+				$ ForceToWorldMap : bool
+				$ RepeatPlayForceToWorldMap : bool
+				$ IsVasebreaker : bool
+				$ IsDangerRoom : bool
+				$ IsLevelOfTheDay : bool
+				$ DisableRestart : bool
+				$ CompletionAchievement : std::string
+				$ GameFeaturesToUnlock : std::vector<GameFeature>
+				$ MusicType : std::string
+				$ ResourceGroupNames : std::vector<std::string>
+				$ GroupsToUnloadForAds : std::vector<std::string>
+				$ LevelPrerequisites : std::vector<std::string>
+				$ DraperPromo : std::string
+				$ LevelPowerupSet : std::string
+				$ LevelJam : std::string
+				$ DoMusicChanges : bool
+				$ RandomLevelSet : std::vector<std::string>
+				$ LoadDefaultMusic : bool
+				$ SuppressDynamicTutorial : bool
+				$ ZombieLevel : int32
+				$ GridItemLevel : int32
+				$ FixedPlantLevel : int32
+				$ SuppressPlantfoodPurchase : bool
+				$ SuppressAccountUpgrades : bool
+				$ DisablePlantBoosts : bool
+				$ DisableSaveGame : bool
+				$ GeneratorResults : LevelGenResults
+				$ PerksDisabledInLevel : std::vector<std::string>
+				$ PerksDisabledPerDifficulty : std::vector<std::vector<std::string>>
+			NPCDataSheet 108
+				$ PopAnim : std::string
+				$ StaticImage : std::string
+				$ DialogStyle : NPCTextType
+				$ FontType : NPCFontType
+				$ SoundBankPrefix : std::string
+				$ Name : std::string
+				$ ArtCornerPosition : Point
+				$ ArtIsMirrored : bool
+				$ FlipHorizontally : bool
+				$ LoadResourceGroups : std::vector<std::string>
+				$ IdleAnim : std::string
+				$ EnterAudioEvent : std::string
+				$ ExitAudioEvent : std::string
+				$ IdleAnim : std::string
+				$ IdleWithItemAnim : std::string
+				$ EatWithItemAnim : std::string
+				$ TalkWithItemAnim : std::string
+				$ TalkCrazyAnim : std::string
+				$ TalkShortAnim : std::string
+				$ TalkMediumAnim : std::string
+				$ TalkLongAnim : std::string
+				$ EnterAnim : std::string
+				$ EnterWithItemAnim : std::string
+				$ LeaveAnim : std::string
+			GridItemPropertySheet 060
+				$ Hitpoints : float
+				$ HitRectOffsetX : int32
+				$ HitRectOffsetWidth : int32
+				$ Height : BoardEntityHeight
+				$ CanBeMowed : bool
+				$ PlantingRestrictions : PlantingRestrictionSet
+				$ GridItemsOverride : GridItemRestrictionSet
+				GridItemAnimationProps 0A0
+					$ PopAnim : std::string
+					$ PopAnimRigClass : std::string
+					$ PopAnimRenderOffset : SexyVector2
+					$ PopAnimRenderScale : SexyVector2
+					$ LinkedPopAnim : std::string
+					$ LinkedOffset : SexyVector3
+					$ LinkedLayerOffset : int32
+					GridItemCraterProps 0A0
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						GridItemCraterTimedProps 0A8
+							$ Lifetime : float
+					GridItemZombiePortalProps 0E8
+						$ TimeBetweenSpawns : ValueRange
+						$ ZombieTypesToSpawn : std::vector<BasicZombieWeights>
+						$ ZombieSpawnPointOffset : int32
+						$ ZombiesToSpawn : int32
+						$ ZombieSpawnMethod : GridItemZombieSpawnMethod
+						$ SpawnAnimation : std::string
+						$ CloseAnimation : std::string
+						$ World : std::string
+					GridItemGoldTileProps 0B0
+						$ SunGrantedPerPlant : int32
+						$ SunGrantedOnFirstPlant : int32
+						$ TimeBetweenPlantSpawnedSunDrops : float
+					GridItemScoreTileProps 0A8
+						$ ScoreMultiplier : float
+					GridItemTriggerTileProps 0C0
+						$ TriggeringEntityTypes : std::vector<BoardEntityTypeFlag>
+						$ TriggerRect : Rect
+						$ TimeBetweenTriggersInSeconds : float
+						GridItemGridRegionAreaOfEffectTrapProps 0E8
+							$ EffectObjectName : std::string
+							$ TileBaseAnimation : std::string
+							$ ColumnRadius : int32
+							$ RowRadius : int32
+							$ TimeBetweenDamageEffectSpawnsInSeconds : float
+						GridItemSliderTileProps 0D0
+							$ Direction : GridItemSliderDirection
+							$ SlideDuration : float
+							$ SlideZombieLaneChangeCooldown : float
+						GridItemProjectileTrapProps 0F0
+							$ PositioningFlags : std::vector<GridItemProjectileTrapPositioningFlags>
+							$ ProjectileTypeToSpawn : RtWeakPtr<ProjectilePropertySheet>
+							$ TileBaseAnimation : std::string
+							$ ProjectileFireOriginOffset : SexyVector3
+					GridItemPowerTileProps 0B8
+						$ TileClass : PowerTileClass
+						$ TileColor : Color
+					ZombiePotionProps 0E8
+						$ EffectStacks : std::vector<ZombieConditions>
+						$ EffectSound : std::string
+						$ DestroyedSound : std::string
+						$ DestroyedSoundGargantuar : std::string
+						$ PopAnimEffect : std::string
+						$ PopAnimDestroyed : std::string
+					GridItemLilyPadProps 0B8
+						$ PlantsWhichCannotBePlantedOnLilypads : PlantRestrictionSet
+					GridItemDusklobberFlowerProps 0B0
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ Lifetime : float
+						$ BombProjectile : std::string
+					GridItemLavaProps 1B8
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ Lifetime : float
+						$ DamagePerSecond : float
+						$ WarmingRadius : ComponentWarmingRadiusProps
+						$ ZombieExcludelist : std::vector<std::string>
+					GridItemSapProps 0B8
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ Lifetime : float
+						$ SapTime : float
+						$ ZombieExcludelist : std::vector<std::string>
+					GridItemOilProps 0A8
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ OilTime : float
+					GridItemButterProps 0D0
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ ZombiesExcludeList : ClassRestrictionSet
+						$ ParentPlantType : std::string
+						$ ZConditions : std::vector<ZombieConditionEntry>
+					GridItemWispProps 0A8
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+						$ Lifetime : float
+					GridItemBombegranateSeedsProps 0C0
+						$ TriggeringEntityTypes : std::vector<BoardEntityTypeFlag>
+						$ TriggerRect : Rect
+					PoisonGridItemProps 0A0
+						$ PopAnim : std::string
+						$ PopAnimRenderOffset : SexyVector2
+					GridItemGravestonePropertySheet 0D8
+						$ DamageStateCount : int8
+						$ BreakEffect : std::string
+						$ BreakEffectSound : std::string
+						$ ArtCenter : SexyVector2
+						$ CanBeEatenByGravebuster : bool
+						$ GraveBusterEatTimeOveride : float
+						$ GridExtents : Point
+						$ IsAnimated : bool
+						GridItemGravestoneSunOnDestructionPropertySheet 0E0
+							$ AmountToSpawn : int32
+						GridItemDestroyableProps 0F0
+							$ DamageLayerRoot : std::string
+							$ OverrideUndamagedLayer : std::string
+						GridItemGravestonePlantOnDestructionPropertySheet 0E8
+							$ PlantTypeToSpawn : std::string
+						GridItemSurfboardProps 0E0
+							$ CanBeEatenByGravebusterAtLevel : int32
+						GridItemTentProps 0F8
+							$ TimeBetweenSpawns : ValueRange
+							$ ZombieTypesToSpawn : std::vector<BasicZombieWeights>
+							$ ZombieSpawnPointOffset : int32
+							$ CanBeEatenByGravebusterAtLevel : int32
+						GridItemBackpackProps 0E0
+							$ CanBeEatenByGravebusterAtLevel : int32
+						GridItemGravestoneZombieTimeSpawnerPropertySheet 100
+							$ MinInitialSpawnWaitSeconds : int32
+							$ MaxInitialSpawnWaitSeconds : int32
+							$ MinSpawnWaitSeconds : int32
+							$ MaxSpawnWaitSeconds : int32
+							$ MinSelfDestructWaitSeconds : int32
+							$ MaxSelfDestructWaitSeconds : int32
+							$ ZombieTypeName : std::string
+					GridItemBoostTileProps 0A8
+						$ BoostLimit : int32
+						$ BoostAnimDurationSeconds : float
+					GridItemBreakableTargetProps 110
+						$ Regenerates : bool
+						$ HealthRegenRate : float
+						$ DelayBeforeRegen : float
+						$ PopAnimSpawnAnim : std::string
+						$ PopAnimIdleAnim : std::string
+						$ PopAnimHitAnim : std::string
+						$ PopAnimDeathAnim : std::string
+						$ BreakEffect : std::string
+						$ BreakEffectSound : std::string
+						$ DamagePhases : DamageLifetime
+						GridItemEightiesArcadeCabinetProps 140
+							$ JamStyle : std::string
+							$ TimeBetweenSpawns : ValueRange
+							$ InitialPause : ValueRange
+							$ PauseAfterZombieCreationWhereCabinetDoesNotMove : float
+							$ ZombieTypesToSpawn : std::vector<BasicZombieWeights>
+							$ ZombieSpawnPointOffset : float
+						GridItemEntityTargetingProps 128
+							$ Teams : std::vector<TeamFlags>
+							$ Actions : std::vector<GridItemAction>
+							GridItemHealerStaffProps 140
+								$ UnhealableZombies : ZombieRestrictionSet
+						GridItemSpeakerProps 118
+							$ SonicDamageAmount : int32
+							GridItemSpeakerZombossProps 120
+								$ ShockWaveSpawnOffset : SexyVector2
+						GridItemBoardEntityConditionTargetProps 110
+							SaucedPlantConditionTargetProps 118
+								$ EvaporateTimeSeconds : float
+				GridItemVaseProps 080
+					$ PopAnimNormal : std::string
+					$ PopAnimPlant : std::string
+					$ PopAnimGargantuar : std::string
+				GridItemProtectorShieldProps 080
+					$ SoundOnActivate : std::string
+					$ SoundOnDeactivate : std::string
+					$ SoundOnHit : std::string
+				GridItemRailcartPropertySheet 070
+					$ ImagePrefix : std::string
+					$ GlobalProperties : RtWeakPtr<GridItemRailcartGlobalProperties>
+			GridItemRailcartGlobalProperties 070
+				$ StationaryPlants : PlantRestrictionSet
+				$ StationaryPlantfoodedPlants : PlantRestrictionSet
+				$ StationaryGridItems : GridItemRestrictionSet
+				$ ImmovablePlants : PlantRestrictionSet
+			CoreLoopRewardsSlotConfigProps 028
+				$ SlotConfigs : std::map<std::string RT_COMMA CoreLoopRewardsSlotsConfig>
+				- CoreLoopRewardsSlotsConfig
+					$ PinataType : std::string
+					$ RewardsTable : std::string
+					$ PercentBonusAward : float
+					$ BonusTable : std::string
+					$ Slots : std::vector<std::string>
+			StackImageProps 038
+				$ Image : std::vector<std::string>
+				$ Threshold : std::vector<int>
+			EffectObjectPropertySheet 060
+				$ PopAnim : std::string
+				$ PopAnimRenderOffset : SexyVector2
+				$ SpawnSoundID : std::string
+				$ SpawnAnimations : std::vector<std::string>
+				$ Centered : bool
+				$ CenterInGrid : bool
+				$ PopAnimScaleX : float
+				$ PopAnimScaleY : float
+				$ ShakeBoard : Point
+				$ LayerOverride : RenderLayer
+				EffectObject_StretchedScrollingImageProps 080
+					$ ColorizeColor : Color
+					$ DurationInSecondsToScroll : float
+					$ DistanceToScroll : float
+					$ Scale : float
+				EffectObject_DamageOverTimeProps 0C0
+					$ RampUpAnimation : std::string
+					$ LoopingAnimation : std::string
+					$ RampDownAnimation : std::string
+					$ RampUpAudioEvent : std::string
+					$ RampDownAudioEvent : std::string
+					$ DamageArea : Rect
+					$ DurationInSeconds : float
+					$ DamagePerSecond : float
+					$ DamageTypeFlags : std::vector<DamageTypeFlags>
+				EffectObjectAnimSequencePropertySheet 088
+					$ IntroAnimSequence : std::vector<std::vector<std::string>>
+					$ LoopAnim : std::vector<std::string>
+					$ OutroAnimSequence : std::vector<std::vector<std::string>>
+				EffectObject_StrawburstPlantfoodProps 068
+					$ DamageOnHit : float
+				EffectObject_BurrowAttackProps 068
+					$ AttackSpawnOffset : SexyVector2
+			OttoBotData 068
+				$ Config : OttoBotConfig
+				$ PlantData : std::vector<OttoBotPlantData>
+				$ Loadouts : std::vector<OttoBotLoadoutData>
+				$ KeywordData : std::vector<OttoBotKeywordData>
+				$ ScriptData : std::vector<OttoBotScriptData>
+				- OttoBotConfig
+					$ NumberValues : std::map<std::string RT_COMMA float>
+					$ StringValues : std::map<std::string RT_COMMA std::string>
+				- OttoBotPlantData
+					$ PlantID : std::string
+					$ Keywords : std::vector<OttoBotPlantKeyword>
+				- OttoBotLoadoutData
+					$ LoadoutID : int32
+					$ Plants : std::vector<std::string>
+				- OttoBotKeywordData
+					$ Keyword : std::string
+					$ LaneWeights : std::vector<float>
+				- OttoBotScriptData
+					$ ActionID : OttoBotScriptActionID
+					$ Args : std::vector<std::string>
+			GeneratedGradientPropertySheet 028
+				$ Gradients : std::vector<GeneratedGradientProps>
+				- GeneratedGradientProps
+					$ Name : std::string
+					$ FirstTimeBase : float
+					$ FirstTimeAdd : float
+					$ PeakStartBase : float
+					$ PeakStartAdd : float
+					$ PeakDurationBase : float
+					$ PeakDurationAdd : float
+					$ TargetRatioBase : float
+					$ TargetRatioAdd : float
+					$ TargetVarMin : float
+					$ TargetVarMax : float
+					$ PeakRatioBase : float
+					$ PeakRatioAdd : float
+					$ PeakRatioVarMin : float
+					$ PeakRatioVarMax : float
+					$ MinSeed : float
+					$ MaxSeed : float
+			DangerRoomLevelDesigner 020
+				DangerRoomProtectThePlantChallengeDesigner 038
+					$ Layouts : std::vector<ProtectThePlantConfig>
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+					- ProtectThePlantConfig
+						$ ValidPlantTypes : std::vector<std::string>
+						$ Locations : RtWeakPtr<BoardGridMapProps>
+				DangerRoomModernDesigner 0B0
+					$ LevelRange : ValueRange
+					$ FirstPortalWavesMin : ValueRange
+					$ FirstPortalWavesMax : ValueRange
+					$ NextPortalWavesMin : ValueRange
+					$ NextPortalWavesMax : ValueRange
+					$ PortalTypesMin : ValueRange
+					$ PortalTypesMax : ValueRange
+					$ PortalCountInWaveMin : ValueRange
+					$ PortalCountInWaveMax : ValueRange
+					$ ColumnToSpawnMin : ValueRange
+					$ ColumnToSpawnMax : ValueRange
+					$ ZombiesToSpawnMin : ValueRange
+					$ ZombiesToSpawnMax : ValueRange
+					$ ZombieRandomListStartMin : ValueRange
+					$ ZombieRandomListStartMax : ValueRange
+					$ ZombieRandomListEndMin : ValueRange
+					$ ZombieRandomListEndMax : ValueRange
+					$ PortalTypePool : std::vector<StringWeightedOption>
+				DangerRoomDinoDesigner 070
+					$ LevelRange : ValueRange
+					$ DinoTypesMin : ValueRange
+					$ DinoTypesMax : ValueRange
+					$ FirstDinoWavesMin : ValueRange
+					$ FirstDinoWavesMax : ValueRange
+					$ NextDinoWavesMin : ValueRange
+					$ NextDinoWavesMax : ValueRange
+					$ DinoCountInWaveMin : ValueRange
+					$ DinoCountInWaveMax : ValueRange
+					$ DinoTypePool : std::vector<StringWeightedOption>
+				DangerRoomMoldChallengeDesigner 038
+					$ Locations : std::vector<RtWeakPtr<BoardGridMapProps>>
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				DangerRoomSpiderRainDesigner 038
+					$ BaseSpiderRainCount : int32
+					$ MaxSpiderRainCount : int32
+					$ BaseSpiderRainCountPerLevel : float
+					$ BaseSpiderRainZombieCount : int32
+					$ MaxSpiderRainZombies : int32
+					$ BaseSpiderRainZombiesCountPerLevel : float
+					$ BaseSpiderRainStartWave : int32
+					DangerRoomParachuteRainDesigner 038
+				DangerRoomPowerTileDesigner 040
+					$ BaseTileSetCount : int32
+					$ BaseTileSetCountPerLevel : float
+					$ MaxTileSetCount : int32
+					$ ColumnCount : int32
+					$ PickByRowColumn : bool
+					$ TileSetLayouts : std::vector<std::vector<std::string> >
+				DangerRoomBoardGridMapPowerTilePlacer 038
+					$ GridMaps : std::vector<RtWeakPtr<BoardGridMapProps>>
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				DangerRoomSandstormDesigner 050
+					$ BaseSandstormCount : uint8
+					$ BaseSandstormCountPerLevel : float
+					$ MinSandstormCountPerLevel : float
+					$ MaxSandstormsPerFlagWave : float
+					$ BaseSandstormZombiesCount : uint8
+					$ BaseSandstormZombiesCountPerLevel : float
+					$ MinSandstormZombiesCountPerLevel : float
+					$ MaxSandstormZombies : uint8
+					$ MinStartingSandstormSpawnCol : uint8
+					$ MaxStartingSandstormSpawnCol : uint8
+					$ MaxStartingSandstormSpawnColOffsetPerLevel : float
+					$ MinEndingSandstormSpawnCol : uint8
+					$ MaxEndingSandstormSpawnCol : uint8
+					$ MaxEndingSandstormSpawnColOffsetPerLevel : float
+					$ UseBandedSandstormSpawnColumns : bool
+					$ MinSpawnColumnBandCenter : uint8
+					$ MaxSpawnColumnBandCenter : uint8
+					$ MinSpawnColumnBandWidth : uint8
+					$ MaxSpawnColumnBandWidth : uint8
+					$ MinSpawnColumn : uint8
+					$ MaxSpawnColumn : uint8
+				DangerRoomRailcartDesigner 040
+					$ BaseRailcartCount : uint8
+					$ BaseRailcartCountPerLevel : float
+					$ MaxGeneratedRailcarts : uint8
+					$ Layouts : std::vector<std::string>
+					$ RailcartType : std::string
+				DangerRoomBoardGridMapRailCartPlacer 040
+					$ RailcartType : std::string
+					$ GridMaps : std::vector<RtWeakPtr<BoardGridMapProps>>
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				DangerRoomZombieLineChallengeDesigner 028
+					$ TargetDistances : std::vector<FloatWeightedOption>
+				DangerRoomBeachTideChanger 4D8
+					$ StartingTideLevel : BoundedRandomRegion
+					$ FinalTideLevel : BoundedRandomRegion
+					$ MinimumTideLevel : BoundedRandomRegion
+					$ MaximumTideLevel : BoundedRandomRegion
+					$ MinimumTideDelta : BoundedRandomRegion
+					$ MaximumTideDelta : BoundedRandomRegion
+					$ LowTideEventsPerFlagWave : BoundedRandomRegion
+					$ LowTideStartLevel : BoundedRandomRegion
+					$ LowTideRecedeAmount : BoundedRandomRegion
+					$ BasicLowTideZombieType : std::string
+					$ BasicLowTideZombiesPerLowTideEvent : BoundedRandomRegion
+					$ SpecialLowTideZombieTypes : std::vector<std::string>
+					$ SpecialLowTideZombiesPerLowTideEvent : BoundedRandomRegion
+				DangerRoomBeachLilypadPlacer 160
+					$ NumberOfLilypads : BoundedRandomRegion
+					$ MinimumLilypadColumn : BoundedRandomRegion
+					$ MaximumLilypadColumn : BoundedRandomRegion
+				DangerRoomRaidingPartyDesigner 030
+					$ BasePartyCount : uint8
+					$ BasePartyCountPerLevel : float
+					$ BasePartyZombiesCount : uint8
+					$ BasePartyZombiesCountPerLevel : float
+					$ MaxPartyZombies : uint8
+					$ MaxPartyCount : uint8
+					$ BasePartyStartWave : uint8
+				DangerRoomPlankDesigner 028
+					$ PlankLayouts : std::vector<std::string>
+				DangerRoomFreezingWindDesigner 048
+					$ LevelRange : ValueRange
+					$ LaneCountMin : ValueRange
+					$ LaneCountMax : ValueRange
+					$ WavePercent : ValueRange
+					$ DoubleBlastPercent : ValueRange
+				DangerRoomIceBlockDesigner 080
+					$ LevelRange : ValueRange
+					$ PlantColumnMin : ValueRange
+					$ PlantColumnMax : ValueRange
+					$ ZombieColumnMin : ValueRange
+					$ ZombieColumnMax : ValueRange
+					$ BlocksMin : ValueRange
+					$ BlocksMax : ValueRange
+					$ PctGoodBlocks : ValueRange
+					$ PlantTypeNames : std::vector<std::string>
+					$ ZombieTypeNames : std::vector<std::string>
+				DangerRoomBoardGridMapPlantIceBlockPlacer 038
+					$ GridMapsAndPlantTypes : std::vector<DangerRoomBoardGridMapAndPlantTypeList>
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+					- DangerRoomBoardGridMapAndPlantTypeList
+						$ GridMap : RtWeakPtr<BoardGridMapProps>
+						$ PlantTypes : std::vector<std::string>
+				DangerRoomBoardGridMapZombieIceBlockPlacer 050
+					$ GridMaps : std::vector<RtWeakPtr<BoardGridMapProps>>
+					$ ZombieTypeExcludeList : std::vector<std::string>
+					$ ForceZombieType : std::string
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				DangerRoomJamDesigner 070
+					$ LevelRange : ValueRange
+					$ JamTypesMin : ValueRange
+					$ JamTypesMax : ValueRange
+					$ FirstJamWavesMin : ValueRange
+					$ FirstJamWavesMax : ValueRange
+					$ NextJamWavesMin : ValueRange
+					$ NextJamWavesMax : ValueRange
+					$ ZombieAddLevelRange : ValueRange
+					$ JamZombiesToReplaceMin : ValueRange
+					$ JamZombiesToReplaceMax : ValueRange
+					$ LevelToIntroduceMetalJam : int32
+				DangerRoomJitteredWaveGenerator 030
+					$ StartingPoints : uint16
+					$ BasePointIncrementPerWave : uint16
+					$ BasePointIncrementPerLevel : uint16
+					$ MaxPoints : uint16
+					$ ZombiePool : std::vector<RtWeakPtr<RtObject>>
+				DangerRoomGravestoneGenerator 050
+					$ MinGravestoneCount : uint8
+					$ BaseGravestoneCountPerLevel : float
+					$ MaxGeneratedGravestones : uint8
+					$ MinStartingGravestoneSpawnCol : uint8
+					$ MaxStartingGravestoneSpawnCol : uint8
+					$ MaxStartingGravestoneSpawnColOffsetPerLevel : float
+					$ MinEndingGravestoneSpawnCol : uint8
+					$ MaxEndingGravestoneSpawnCol : uint8
+					$ MaxEndingGravestoneSpawnColOffsetPerLevel : float
+					$ GravestoneTypeName : std::string
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				GridItemPatternPlacer 0A0
+					$ NumberOfTiles : BoundedRandomRegion
+					$ GridItemSpawnerPatterns : std::vector<RtWeakPtr<LevelModuleProperties> >
+				DangerRoomBoardGridMapPlacer 048
+					$ GridMaps : std::vector<RtWeakPtr<BoardGridMapProps>>
+					$ GridItemTypes : std::vector<std::string>
+					$ GridType : DangerRoomBoardGridType
+					$ CanPlaceOnGridTypes : std::vector<DangerRoomBoardGridType>
+				DangerRoomDarkEventGenerator 2C0
+					$ GravestoneSpawnEventsPerFlagWaveMin : BoundedLine
+					$ GravestoneSpawnEventsPerFlagWaveMax : BoundedLine
+					$ GravestonesPerSpawnEventMin : BoundedLine
+					$ GravestonesPerSpawnEventMax : BoundedLine
+					$ BeneficialGravestonesPerSpawnEventMin : BoundedLine
+					$ BeneficialGravestonesPerSpawnEventMax : BoundedLine
+					$ ChanceThatBeneficialGravestoneIsPlantfoodNotSun : float
+					$ GravestoneSpawnColumnMin : BoundedLine
+					$ GravestoneSpawnColumnMax : BoundedLine
+					$ NecromancyEventsPerFlagWaveMin : BoundedLine
+					$ NecromancyEventsPerFlagWaveMax : BoundedLine
+					$ ZombiesPerNecromancyEventMin : BoundedLine
+					$ ZombiesPerNecromancyEventMax : BoundedLine
+					$ SpawnZombieType : std::string
+					$ GravestoneType : std::string
+					$ SunGravestoneType : std::string
+					$ PlantfoodGravestoneType : std::string
+			ZenGardenBeePropertySheet 070
+				$ PopAnim : std::string
+				$ AnimRigClass : std::string
+				$ BeeEffects : std::vector<ZenGardenBeeEffect>
+				$ NextBeeTimeMinSeconds : int32
+				$ NextBeeTimeMaxSeconds : int32
+				$ BeeReadyTimeoutSeconds : float
+				$ BeeWanderRange : FRect
+				$ BeeRestSpot : SexyVector2
+				$ BeeVelocity : int32
+				$ BeeMovingToPlantVelocity : int32
+				- ZenGardenBeeEffect
+					$ Weight : int32
+					$ PercentBonus : float
+					$ SecondsBonus : float
+					$ IsCriticalHit : bool
+			PennyPerkProperties 068
+				$ TypeName : std::string
+				$ ClassName : std::string
+				$ Description : std::string
+				$ IconName : std::string
+				$ LevelTypesWhereEnabled : std::vector<MapEventSubType>
+				$ LevelTypesWhereDisabled : std::vector<MapEventSubType>
+				PennyPerkGridIsYoursProperties 0D8
+					$ SpawnCount : std::vector<int>
+					$ TimesBetweenApplications : std::vector<int>
+					$ MinColumnToTarget : int32
+					$ MaxColumnToTarget : int32
+					$ GridTypeToSpawn : std::string
+					$ SortingMethod : BoardLocationSortingMethod
+					$ PerkWarning : std::string
+					$ SpawnEffectAnimID : std::string
+					$ SpawnEffectAnimToPlay : std::string
+					$ SpawnEffectResourceGroup : std::string
+					$ GridBlockingTypes : std::vector<BoardEntityTypeFlag>
+					$ AllowBlockingTypesAsFallbackLocations : bool
+				PennyPerkShockwaveProperties 080
+					$ TimesBetweenApplications : std::vector<float>
+					$ PushBackDistance : std::vector<float>
+				PennyPerkPlantHealingProperties 0A0
+					$ TimesBetweenApplications : std::vector<float>
+					$ PercentHealed : std::vector<float>
+					$ MaxPercentHealth : std::vector<float>
+					$ UnhealablePlants : PlantRestrictionSet
+				PennyPerkBossBusterCannonProperties 0A0
+					$ TimesBetweenStrikes : std::vector<float>
+					$ NumberOfHitsPerStrike : std::vector<int>
+					$ DamagePerHit : std::vector<int>
+					$ Projectile : RtWeakPtr<ProjectilePropertySheet>
+					$ Resources : std::vector<std::string>
+				PennyPerkPennyShieldProperties 098
+					$ TimesBetweenApplications : std::vector<float>
+					$ ShieldHealth : std::vector<int>
+					$ ShieldColumns : std::vector<std::vector<int>>
+					$ NumberOfShields : std::vector<int>
+				PennyPerkRandomFlickProperties 098
+					$ TimesBetweenApplications : std::vector<float>
+					$ NumberOfZombiesFlicked : std::vector<int>
+					$ TargetPriority : ClassBucketFilter
+					$ FlickVelocity : float
+					$ FlingHeight : float
+					$ RotationVelocity : float
+				PennyPerkHeavyWateringProperties 080
+					$ PercentCooldownReductions : std::vector<float>
+					$ AffectedPlantFamilies : std::vector<std::string>
+				PennyPerkTrafficJamProperties 070
+					$ ZombieDelayLevels : std::vector<float>
+				PennyPerkMoreScoreProperties 070
+					$ ScoreBonusPercentage : std::vector<float>
+				PennyPerkSunBreakProperties 080
+					$ NumberOfBursts : std::vector<int>
+					$ SunPerBurst : std::vector<int>
+				PennyPerkZombieInhibitorProperties 098
+					$ ZombiesToRemove : std::vector<ClassRestrictionSet>
+					$ ZombieTypeToSwapIn : std::string
+					$ DisplayName : std::string
+					$ LevelDescriptions : std::vector<std::string>
+				PennyPerkApplyConditionProperties 0B0
+					$ TimesBetweenApplications : std::vector<float>
+					$ ConditionDamageValues : std::vector<int>
+					$ ConditionDurations : std::vector<float>
+					$ ConditionsToApply : std::vector<ZombieConditions>
+					$ MinZombiesToAffect : std::vector<int>
+					$ MaxZombiesToAffect : std::vector<int>
+				PennyPerkSunBankProperties 070
+					$ AdditionalStartingSun : std::vector<int>
+				PennyPerkQuickDeliveryProperties 070
+					$ TimeReductionPercentage : std::vector<float>
+				PennyPerkUtilityBeltProperties 098
+					$ TimesBetweenApplications : std::vector<float>
+					$ AdditionalPlantType : std::string
+					$ PlantLevels : std::vector<int>
+					$ IsBoosted : std::vector<std::string>
+				PennyPerkMineIsYoursProperties 0A0
+					$ SpawnCount : std::vector<int>
+					$ TimesBetweenApplications : std::vector<int>
+					$ MinColumnToTarget : int32
+					$ MaxColumnToTarget : int32
+					$ PlantTypeToSpawn : std::string
+					$ SortingMethod : BoardLocationSortingMethod
+					$ PerkWarning : std::string
+			RiftPropertySheet 060
+				$ HowToPlayData : HowToPlayScreenData
+				$ PlantsRequiredToUnlock : int32
+				$ EventEndNoteConfig : RiftLocalNoteConfig
+				$ ZombossEndNoteConfig : RiftLocalNoteConfig
+				$ ZombossPointOfLossGemCost : int32
+				$ ZombossPointOfLossNumAvailable : int32
+				$ ZombossPointOfLossTimeGained : int32
+				- RiftLocalNoteConfig
+					$ LocalNoteMinDelayTime : int32
+					$ LocalNoteMaxDelayTime : int32
+			ArcadePropertySheet 038
+				$ ArcadeModes : std::vector<ArcadeMode>
+				$ PowerUpCollections : std::vector<PowerUpCollection>
+				- ArcadeReward
+					$ Type : ArcadeRewardType
+					$ ID : std::string
+				- ArcadeLevel
+					$ ID : std::string
+				- ArcadeEndlessLevel
+					$ Level : ArcadeLevel
+					$ RewardPowerUp : std::string
+					$ RewardPowerUpAfterWave : int32
+				- ArcadeLevelPack
+					$ ID : std::string
+					$ Toggles : std::vector<std::string>
+					$ PackNameLocalizationKey : std::string
+					$ LayoutFile : std::string
+					$ BackdropImage : std::string
+					$ UnlockAfter : std::string
+					$ Levels : std::vector<ArcadeLevel>
+					$ Reward : ArcadeReward
+				- ArcadeMode
+					$ ID : std::string
+					$ ModeNameLocalizationKey : std::string
+					$ PowerUpCollectionID : std::string
+					$ ArcadeMenuImage : std::string
+					$ DisplayInArcadeMenu : bool
+					$ EndlessLevel : ArcadeEndlessLevel
+					$ UnlockEndlessAfter : std::string
+					$ LevelPacks : std::vector<ArcadeLevelPack>
+				- PowerUpMetaData
+					$ ID : std::string
+					$ UpImage : std::string
+					$ DownImage : std::string
+					$ GameFeature : std::string
+					$ NameLocalizationKey : std::string
+					$ DescriptionLocalizationKey : std::string
+					$ UnlockHintLocalizationKey : std::string
+				- PowerUpCollection
+					$ ID : std::string
+					$ PowerUps : std::vector<PowerUpMetaData>
+			PerkProgressionProperties 028
+				$ PerkProgressionRewards : std::vector<PerkProgressionReward>
+				- PerkProgressionReward
+					$ Perk : std::string
+					$ Level : int32
+					$ Threshold : int32
+			RiftSubEventProperties 048
+				$ Description : std::string
+				$ FeaturedPlant : std::string
+				$ PennyTechPerBonusObjective : int32
+				$ AddedLevelModules : std::vector<RtId>
+				- RiftLevelDefinition
+					$ UnlockDaysFromStart : int16
+					$ LockDaysFromStart : int16
+			RiftLevelUnlocksProperties 038
+				$ LevelUnlockSequence : std::vector<RiftLevelDefinition>
+			RiftSchedule 028
+				$ Events : std::vector<RiftEventDefinition>
+				- RiftSubEventDefinition
+					$ StartDeltaDays : uint64
+					$ EndDeltaDays : uint64
+					$ SubEventPropertyKey : std::string
+				- RiftEventDefinition
+					$ StartDate : uint64
+					$ EndDate : uint64
+					$ PerkProgressionKey : std::string
+					$ RiftZombieSwapPropsKey : std::string
+					$ SubEvents : std::vector<RiftSubEventDefinition>
+					$ RiftConfigKey : std::string
+					$ RiftWorld : std::string
+					$ RiftLevelUnlocksKey : std::string
+					$ RiftLevelFirstClearRewardsKey : std::string
+					$ ZombossLevel : std::string
+					$ ZombossRewards : std::string
+					$ TitleText : std::string
+			PowerPropertySheet 028
+				$ TypeName : std::string
+				PowerPropsSunProducer 030
+					$ Amount : int32
+					$ MinSpread : float
+				PowerPropsShield 030
+					$ Health : int32
+				PowerPropsWarmingRadius 128
+					$ WarmingRadius : ComponentWarmingRadiusProps
+				PowerPropsDamageRadius 108
+					$ DamageRadius : ComponentDamageRadiusProps
+				PowerPropsLinearBurst 0E0
+					$ LinearBurst : ComponentLinearBurstProps
+				PowerPropsDuplicator 038
+					$ DuplicationProps : DuplicatableProps
+				PowerPropsSunshroomGrowth 038
+					$ GrowthStages : std::vector<SunshroomGrowthStates>
+				PowerPropsRedStingerLocationData 038
+					$ LocationData : std::vector<StingerLocationStateData>
+				PowerPropsStrawburstGrowth 038
+					$ GrowthTimes : std::vector<pvztime_t>
+				- DuplicatableProps
+					$ NumberOfDuplicates : int32
+					$ PlantingRanges : std::vector<std::map<std::string RT_COMMA int>>
+			AutocadoList 048
+				$ Name : std::string
+				$ UniqueIDs : std::vector<std::string>
+			MusicalJamProperties 040
+				$ JamsToMusicSwitches : std::map<std::string RT_COMMA std::string>
+				$ JamsToMusicEnterEvents : std::map<std::string RT_COMMA std::string>
+				$ JamsToZombieConditionApplied : std::map<std::string RT_COMMA ZombieConditions>
+			StoreTryPreviewPropertySheet 028
+				$ PreviewList : std::vector<StoreTryPreviewItem>
+			DangerRoomPropertySheet 068
+				$ FlagWaveSetupList : std::vector<FlagWaveSetupData>
+				$ PlantfoodSetupList : std::vector<PlantFoodSetupData>
+				$ AssignMinPlantfoodPerFlagWave : uint8
+				$ LevelsPerCheckpoint : uint8
+				$ StartingLives : uint16
+				$ MaxPlantfoodPurchases : int8
+				$ MaxPowerupPurchases : int8
+				$ RewardSmallMowerWeight : int32
+				$ RewardSmallSunWeight : int32
+				$ RewardSmallPlantfoodWeight : int32
+				$ RewardPowerupWizardFingerWeight : int32
+				$ RewardPowerupFlickWeight : int32
+				$ RewardPowerupSnowballWeight : int32
+				$ RewardPowerupFlamethrowerWeight : int32
+				$ CashOutRanks : std::vector<uint16>
+				$ CashOutPerLevelAfterMax : uint16
+				$ ExtraCardCost : uint16
+				- PlantFoodSetupData
+					$ MinLevel : uint8
+					$ MinPlantfoodPerFlagWave : uint8
+					$ MaxPlantfoodPerFlagWave : uint8
+				- FlagWaveSetupData
+					$ MinLevel : uint8
+					$ FlagCount : uint8
+					$ MinWavesPerFlag : float
+					$ MaxWavesPerFlag : float
+			WorldSpecificDangerRoomProperties 038
+				$ StartingPlants : std::vector<std::string>
+				$ ExcludeList : std::vector<std::string>
+			ThymedEventTrackDefinition 058
+				$ Track : ThymedEventTrack
+				$ ActiveTab : std::string
+				$ DownTab : std::string
+				$ EnergyCap : int32
+				$ EnergyCostPerNode : std::vector<int>
+				$ EnergyRefillPeriodSeconds : int32
+				$ HintTexts : std::vector<std::string>
+			ThymedEventSchedule 028
+				$ Events : std::vector<ThymedEventDefinition>
+				- ThymedEventDefinition
+					$ EventName : std::string
+					$ Track : ThymedEventTrack
+					$ StartDate : uint64
+					$ EndDate : uint64
+					$ EventBackground : std::string
+					$ CurrencyImage : std::string
+					$ EnergyStackImage : std::string
+					$ DashboardIconImage : std::string
+					$ DashboardIconImageDown : std::string
+					$ SpecialLevelIntroDescs : std::vector<std::string>
+					$ ComingSoonEnableTime : uint64
+					$ Disabled : bool
+					$ Description : std::string
+					$ InfoText : std::string
+					$ ComingSoonTagline : std::string
+					$ ComingSoonDescription : std::string
+					$ Action : RtEmbeddedPtr<ThymedEventActionData RT_COMMA PVZDB::TABLE_THYMED_EVENT_SCHEDULE>
+			PersonalConfig 038
+				$ StartingConfig : RtWeakPtr<RtObject>
+				$ SpringBeanURL : std::string
+			PlantAnimRigPropertySheet 028
+				$ AttackAnimations : std::vector<std::string>
+			ZombieActionDefinition 040
+				$ Weight : int32
+				$ RepeatMin : int32
+				$ RepeatMax : int32
+				$ CanPickAgain : bool
+				$ Invulnerable : bool
+				$ SoundOnStart : std::string
+				$ Phase : ZombieActionPhase
+				$ PhaseAfter : ZombieActionPhase
+				ZombossWalkActionDefinition 048
+					$ WalkVerticalChance : float
+					$ WalkPreferSquashChance : float
+					ZombossDarkWalkActionDefinition 048
+					ZombossDinoWalkActionDefinition 048
+				ZombossJumpActionDefinition 050
+					$ JumpHeight : float
+					$ JumpHangTime : float
+					$ JumpAnimRateModifier : float
+				ZombossSpawnActionDefinition 070
+					$ SpawnJumpAction : RtWeakPtr<RtObject>
+					$ SpawnZombieTypes : std::vector<std::string>
+					$ SpawnChargeTime : float
+					$ SpawnCooldownTime : float
+					$ SpawnWavesBetweenPlantFood : ValueRange
+					$ SpawnZombieWavePointRange : ValueRange
+				ZombossSummonActionDefinition 070
+					$ SpawnDistanceVariance : int32
+					$ SpawnColumnOffset : int32
+					$ SpawnZombieTypes : std::vector<std::string>
+					$ SpawnStartTime : float
+					$ SpawnEndTime : float
+					$ SpawnWavesBetweenPlantFood : ValueRange
+					$ SpawnZombieWavePointRange : ValueRange
+					ZombossSpawnDinoActionDefinition 078
+						$ SpawnDinoType : std::string
+				ZombossRushActionDefinition 070
+					$ RushDamageToInterrupt : float
+					$ RushTime : float
+					$ RushLeadupTime : float
+					$ RushLeadupStartRate : float
+					$ RushLeadupEndRate : float
+					$ RushLeadupBackup : float
+					$ RushStartRate : float
+					$ RushEndRate : float
+					$ RushOvershoot : float
+					$ RushSound : std::string
+				ZombossFireActionDefinition 078
+					$ FireMinColumn : int32
+					$ FireMaxColumn : int32
+					$ FireRowRange : int32
+					$ FireTargetPlantWeight : int32
+					$ FireTargetEmptyWeight : int32
+					$ FireTargetRailsWeight : int32
+					$ FireTargetTilesWeight : int32
+					$ FireRocketHitTime : float
+					$ FireRocketSpeed : float
+					$ FireRocketDropSound : std::string
+					$ FireRocketCount : ValueRange
+					ZombieOrbitalStrikeActionDefinition 080
+						$ NoRepeatTargets : bool
+				ZombieDropActionDefinition 078
+					$ Animation : std::string
+					$ AwardDrop : RtWeakPtr<RtObject>
+					$ EffectPam : std::string
+					$ EffectAnim : std::string
+					$ EffectOffsetX : float
+					$ EffectOffsetY : float
+				ZombossBeachDiveActionDefinition 048
+					$ SubmergedDuration : float
+					$ PreferSquashChance : float
+				ZombossFanPullActionDefinition 058
+					$ FanDuration : float
+					$ PlantfoodDamageToInterrupt : float
+					$ BasePullTimePerGridSquare : float
+					$ AdditionalPullTimePerLinearDistanceFromFan : float
+					$ AdditionalPullTimePerSquaredDistanceFromFan : float
+				ZombossSharkMinionAttackActionDefinition 048
+					$ SharksToLaunch : int32
+				ZombieDarkWizardZapActionDefinition 080
+					$ SoundOnActivate : std::string
+					$ TimeBeforeFirst : ValueRange
+					$ TimeBetween : ValueRange
+					$ ProjectilePopAnim : std::string
+					$ SheepPopAnim : std::string
+					$ SheepOffset : Point
+				ZombossDarkFireBreathActionDefinition 050
+					$ FlameDuration : float
+					$ FlameFillRowTime : float
+					$ PlantfoodDamageToInterrupt : float
+				ZombossDarkLobFireballsActionDefinition 068
+					$ LobbedFlameCount : ValueRange
+					$ DragonImpCount : ValueRange
+					$ LobbedFlameDelay : float
+					$ LobbedFlameDuration : float
+					$ PlantfoodDamageToInterrupt : float
+					$ MinColumn : int32
+					$ TargetMagnetshroomChance : float
+				ZombossDinoLaserActionDefinition 050
+					$ FlameDuration : float
+					$ FlameFillRowTime : float
+					$ PlantfoodDamageToInterrupt : float
+				ZombossEightiesDropSpeakerActionDefinition 058
+					$ FireMinColumn : int32
+					$ FireMaxColumn : int32
+					$ FireTargetEmptyWithNoDmgWeight : int32
+					$ FireTargetEmptyWithDmgWeight : int32
+					$ FireTargetPlantWeight : int32
+					$ DropDelay : float
+				ZombossEightiesFireSpeakerRayActionDefinition 048
+					$ ClearDelay : float
+				ZombossEightiesSwapJamActionDefinition 040
+				ZombossSpawnGlacierColumnActionDefinition 040
+				ZombossCoverUpActionDefinition 040
+				ZombossHelmLostActionDefinition 048
+					$ IceCrustRevealMinTime : float
+				ZombossFreezingWindRowActionDefinition 040
+				ZombossDropZombieActionDefinition 088
+					$ SpawnJumpAction : RtWeakPtr<RtObject>
+					$ SpawnZombieTypes : std::vector<std::string>
+					$ SpawnWavesBetweenPlantFood : ValueRange
+					$ SpawnZombieWavePointRange : ValueRange
+					$ ValidSpawningRegion : Rect
+					$ NumberOfRowsToSpawnDown : int32
+					$ ZombieDropSpeed : float
+					$ SpawnCooldownTime : float
+					$ MovementCurveType : CurveType
+					$ MovementSpeed : float
+				ZombossDropSandbagActionDefinition 078
+					$ ProjectileTypeToSpawn : RtWeakPtr<ProjectilePropertySheet>
+					$ ProjectileOffset : SexyVector3
+					$ ValidDroppingRegion : Rect
+					$ DroppingOffset : SexyVector3
+					$ MovementCurveType : CurveType
+					$ MovementSpeed : float
+				ZombossImpCannonActionDefinition 070
+					$ ImpType : std::string
+					$ ImpLaunchDelay : float
+					$ ImpLaunchInterruptDamageAmount : float
+					$ ImpLaunchCount : int32
+					$ ImpLaunchTime : float
+					$ ImpLaunchTimeVariance : float
+					$ ImpLaunchHeight : float
+					$ ImpLaunchMinColumn : int32
+					$ ImpLaunchMaxColumn : int32
+				ZombieRomanHealerHealActionDefinition 0D0
+					$ SoundOnActivate : std::string
+					$ HealingAuraPopAnim : std::string
+					$ AuraOffset : Point
+					$ TimeBeforeFirstHeal : ValueRange
+					$ TimeBetweenHeal : ValueRange
+					$ TimeBeforeHealRecheck : ValueRange
+					$ TimeBeforeFirstHypnoHeal : ValueRange
+					$ TimeBetweenHypnoHeal : ValueRange
+					$ TimeBeforeHypnoHealRecheck : ValueRange
+					$ TimeBeforeFirstPoisonHeal : ValueRange
+					$ TimeBetweenPoisonHeal : ValueRange
+					$ TimeBeforePoisonHealRecheck : ValueRange
+					$ ProjectilePopAnim : std::string
+					$ UnhealableZombies : ZombieRestrictionSet
+					$ HealPercent : float
+				ZombieRomanMedusaPetrifyActionDefinition 078
+					$ TimeBeforeFirst : ValueRange
+					$ TimeBetweenActions : ValueRange
+					$ CannotBePetrified : ClassRestrictionSet
+					$ PetrifyRectangle : Rect
+				ZombiePushGridItemActionDefinition 090
+					$ PushableGridItems : GridItemRestrictionSet
+					$ PushBlockingGridItems : GridItemRestrictionSet
+					$ NotSquashedPlants : PlantRestrictionSet
+					$ RelocationDuration : float
+					$ PushRectangle : Rect
+				ZombieWalkActionDefinition 058
+					$ StopAtColumn : float
+					$ WalkBackwards : bool
+					$ TransitionAtStart : bool
+					$ TransitionAnimation : std::string
+					$ HasTransition : bool
+				ZombieTimedActionDefinition 048
+					$ MinDuration : float
+					$ MaxDuration : float
+					ZombieIdleActionDefinition 048
+				ZombiePlayAnimationActionDefinition 050
+					$ AnimationToPlay : std::string
+					$ AnimationLoops : int32
+				ZombieStunActionDefinition 068
+					$ StartingAnimation : std::string
+					$ LoopingAnimation : std::string
+					$ EndingAnimation : std::string
+				ZombieProjectileActionDefinition 088
+					$ TimeBeforeFirst : ValueRange
+					$ TimeBetween : ValueRange
+					$ TimeBetweenBarrages : ValueRange
+					$ Projectile : RtWeakPtr<RtObject>
+					$ ProjectileSound : std::string
+					$ SpawnOffset : SexyVector3
+					$ OverrideProjectileAnimation : std::string
+					ZombieProjectileLaunchActionDefinition 098
+						$ ApexHeight : float
+						$ TimeUntilHit : float
+						$ TargetType : ZombieProjectileActionTarget
+						$ OnlyHitTarget : bool
+						$ NoRepeatTargets : bool
+						ZombieInstantTargetAttackActionDefinition 098
+							$ InstantAttack : InstantTargetAttackAction
+				ZombieDropZombiesOnBoardActionDefinition 0B0
+					$ ColumnEnd : int32
+					$ ColumnStart : int32
+					$ MinSpawn : int32
+					$ MaxSpawn : int32
+					$ CenterOnInstigator : bool
+					$ RiseFromGround : bool
+					$ ZombieNames : std::vector<std::string>
+					$ ZombieWeights : std::vector<int>
+					$ TimeBeforeSpawn : float
+					$ ZombieFallTime : float
+					$ RampUpAnimation : std::string
+					$ LoopingAnimation : std::string
+					$ RampDownAnimation : std::string
+					$ EffectTypeToShow : std::string
+					$ DropAudioEvent : std::string
+				ZombieTeleportActionDefinition 0D0
+					$ NumZombies : int32
+					$ TilesToAdvance : int32
+					$ ColumnMin : int32
+					$ WeightLeftmost : int32
+					$ WeightRightmost : int32
+					$ WeightRandom : int32
+					$ TimeBeforeWarpStart : float
+					$ TimeOfWarpOut : float
+					$ TimeZombieIsGone : float
+					$ TimeOfWarpIn : float
+					$ NoRepeatTargets : bool
+					$ DelayWarpIn : bool
+					$ RampUpAnimation : std::string
+					$ LoopingAnimation : std::string
+					$ RampDownAnimation : std::string
+					$ AnimationSoundFX : std::string
+					$ ConditionsRemovedByWarping : std::vector<ZombieConditions>
+					$ ZombieTargetExcludeList : ClassRestrictionSet
+					$ DoOnlySelfTeleport : bool
+					$ IgnoreSelfWhileTeleportingOther : bool
+					$ CanShiftLane : bool
+					$ TeleportFailureChance : float
+					$ MaxRowShift : int32
+					$ ShouldAshOnTeleportError : bool
+				ZombieSpawnActionDefinition 088
+					$ SpawnZombieType : std::string
+					$ ZombieSpawnWeights : std::vector<WeightsInt>
+					$ PlantTargetExcludeList : std::vector<std::string>
+					$ SpawnStartAnimation : std::string
+					$ SpawnDoneAnimation : std::string
+					$ SpawnOffset : SexyVector2
+					$ IsADove : bool
+					- WeightsInt
+						$ Count : int32
+						$ Weight : int32
+			CostumePropertySheet 028
+				$ CostumeList : std::vector<CostumeItemType>
+		

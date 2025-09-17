@@ -53,7 +53,7 @@ def load_json_config(section):
         return None
 
     project_path = config.get("ProjectPath")
-    data_type = config.get(section)
+    data_type = config.get("Files").get(section)
 
     if not project_path:
         logger.error(f"Missing 'ProjectPath' in config: {config_path}")

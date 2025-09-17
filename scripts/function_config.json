@@ -1251,7 +1251,7 @@
             "IsRiftWorld"
         ],
         "Sub": {
-            "# WorldMapList": []
+            "WorldMapList": []
         }
     },
     "## PlantLevels": [
@@ -1280,2881 +1280,2898 @@
             "": []
         }
     },
-    "# Allowed_Universal_Links": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Arcade_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "ArmorTypes": {
-        "Main": [
-            "ClassName",
-            "ArmorType",
-            "BaseHealth",
-            "ArmorFlags",
-            "ArmorLayerHealth",
-            "ArmorLayers",
-            "ParticleLayerOverride",
-            "ImpactSoundEvent",
-            "DropSoundEvent"
-        ],
-        "Sub": {
-            "ArmorPropertySheet": [],
-            "ArmorPropertySheetUtils": [
-                "ToggleLayers"
-            ],
-            "NewspaperArmorPropertySheet": [
-                "FireLayer"
-            ]
-        }
-    },
-    "# Autocado": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Award_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "BoardGridMaps": {
-        "Main": [
-            "Values"
-        ],
-        "Sub": {
-            "BoardGridMapProps": []
-        }
-    },
-    "# CDN_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Calendar_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Calendar_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Calendar_Themes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# CollectableTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Colors": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Colors_Aliases": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# CreatureTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# DailyQuest_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# EASquared_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# EffectObjectTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Event_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Fonts": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Fonts_Aliases": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# ForceUpdateConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# GameFeatures": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# GriditemProps": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# GriditemTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# HeroTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# HotUIConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_CrownRewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Leaderboards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Levels": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Profile": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_ProgressiveRewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Season_Rewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_Season_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Joust_TournamentRewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LOD_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LOD_Events": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LOD_Holidays": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LOD_Rewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "LawnStrings-DE-DE": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "LawnStrings-EN-US": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "LawnStrings-ES-ES": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "LawnStrings-FR-FR": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "LawnStrings-IT-IT": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "LawnStrings-PT-BR": {
-        "Main": ["LocStringValues"],
-        "Sub": {
-            "LawnStringsData": []
-        }
-    },
-    "# LevelGen": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "#LevelModules": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LevelModulesDifficulty": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LevelMutatorModules": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LevelMutatorTables": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LevelScoringRules": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LiveConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Loading_Text": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# LootModifierSchedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Magento_Filter": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Manifest": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Market_Layout": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Market_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# NPCs": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# NewMapConversionMapping": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# News": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# OldMapDataMapping": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# OttoBot": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PersonalConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PinataCoreLoot": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PinataTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PlantAlmanacData": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PlantFamilyTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "PlantLevels": {
-        "Main": [],
-        "Sub": {
-            "PlantLevelStats": []
-        }
-    },
-    "# PlantMastery": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PlantPowerups": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "PlantProperties": {
-        "Main": [
-            "TypeName",
-            "Cost",
-            "BeghouledCost",
-            "Hitpoints",
-            "PacketCooldown",
-            "StartingCooldown",
-            "PlantGridType",
-            "MultiPlantLayer",
-            "Height",
-            "ArtCenter",
-            "Actions",
-            "Powers",
-            "PlantStats",
-            "ScaledProps",
-            "ZenGardenSproutWeight",
-            "ZenGardenBoostCost",
-            "ZenGardenDurationOverrideSeconds",
-            "Boosts",
-            "IsZenGardenTreasurePlant",
-            "IsZenGardenWaterPlant",
-            "ValidStages",
-            "PlantFoodDurationSeconds",
-            "PlantFoodPlayCount",
-            "PlantFoodShineTime",
-            "PlantFoodActivationSound",
-            "HelpedActivationSound",
-            "GridWidth",
-            "GridHeight",
-            "GridItemDamage",
-            "PlantingOffsetY",
-            "CursorPreviewOffset",
-            "ZenGardenOffset",
-            "ZenGardenSmallScale",
-            "ZenGardenLargeScale",
-            "HitRectAdjust",
-            "DangerRoomWeight",
-            "SuggestionAlts",
-            "RestrictPlantingToGridArea",
-            "CanReceiveFirstAid",
-            "IsConsumable",
-            "IsInstant",
-            "CanLiveOnWaves",
-            "IdleAnimationWeights",
-            "AnimRigProps",
-            "HidePlantingEffects",
-            "MasteryBoostChance",
-            "MasteryResistancePiercing",
-            "CanPlantAgainToUpgrade"
-        ],
-        "Sub": {
-            "AilmintProps": [
-                "ref:EmpowermintProps",
-                "PoisonDuration",
-                "PoisonDamage"
-            ],
-            "AkeeProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "NormalProjectileBounceCount",
-                "PFProjectileBounceCount"
-            ],
-            "AloeProps": [
-                "HealCooldown",
-                "TargetHPTriggerPercent",
-                "TargetHPHealAmount",
-                "PFTargetHPHealPercent",
-                "UnhealablePlants"
-            ],
-            "AppeasemintProps": [
-                "ref:EmpowermintProps",
-                "NumberOfProjectiles",
-                "NumberOfChildProjectiles",
-                "TimeBetweenShots"
-            ],
-            "AppleMortarProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight"
-            ],
-            "ArmamintPeashooterProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "NumberOfShots",
-                "NumberOfPlantFoodShots"
-            ],
-            "ArmamintProps": [
-                "ref:EmpowermintProps",
-                "StunDuration",
-                "FireTime",
-                "NumProjectiles",
-                "TargetOffset"
-            ],
-            "BananaProps": [
-                "NumPlantfoodRockets",
-                "FireTime",
-                "PlantfoodFireTime",
-                "TargetOffset"
-            ],
-            "BlastberryProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "PlantfoodProjectilesToFire",
-                "ChildProjectileNum",
-                "PFChildProjectileNum",
-                "ChildDamage",
-                "PFChildDamage",
-                "ChildSplashRadius",
-                "PFChildSplashRadius"
-            ],
-            "BlockoliProps": [
-                "ShieldSmashStunDuration",
-                "ShieldSmashCooldown"
-            ],
-            "BloomerangProps": [
-                "PlantFoodProjectileCount",
-                "BoomerangHitCount",
-                "BoomerangSlowdownRadius",
-                "BoomerangMinSpeedPercentage",
-                "BoomerangPauseDuration",
-                "BoomerangStunsZombies"
-            ],
-            "BloomingHeartsProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "PlantfoodProjectilesToFire"
-            ],
-            "BloverProps": [
-                "WindAccel",
-                "UpPercent",
-                "WindGiveHelpLimit"
-            ],
-            "BoingsettaProps": [
-                "ZombiePlantfoodDamage",
-                "KnockbackTime",
-                "KnockbackHeight",
-                "KnockbackOffset",
-                "PlantfoodKnockbackTime",
-                "PlantfoodKnockbackHeight",
-                "PlantfoodKnockbackOffset"
-            ],
-            "BombardmintProps": [
-                "ref:EmpowermintProps",
-                "TimeBetweenExplosions",
-                "NumExplosions"
-            ],
-            "BoomFlowerProps": [
-                "ref:PlantLauncherProps",
-                "BalloonSplashDamage",
-                "BalloonDamage",
-                "PFBalloonSplashDamage",
-                "PFBalloonDamage",
-                "NormalRechargeSeconds"
-            ],
-            "BowlingBulbProps": [
-                "MaxAmmo",
-                "AmmoRefreshTime",
-                "RegenOrder"
-            ],
-            "BrambleBushProps": [
-                "TrapNumber",
-                "KnockbackDistance",
-                "KnockbackHeight",
-                "KnockbackTime",
-                "RetrapDelay",
-                "ZombieDragSpeed",
-                "ZombieTrapExcludelist",
-                "ZombieTrapUseExcludelist"
-            ],
-            "BurnadeProps": [
-                "MaxUsesAfterPlantfood",
-                "TimedExplosionProps"
-            ],
-            "ButtercupProps": [
-                "AmountToAimLeftOfZombie",
-                "ZombiesExcludeList",
-                "NormalLaunchProps",
-                "PlantfoodLaunchProps",
-                "ButterLifetime",
-                "PFButterLifetime",
-                "ButterConditionDuration",
-                "PFButterConditionDuration"
-            ],
-            "CabbagepultProps": [
-                "NormalLaunchProps",
-                "PlantfoodLaunchProps"
-            ],
-            "CactusProps": [
-                "DuckAndCoverRange",
-                "StayDuckedRange",
-                "SpikeRange",
-                "SpikeDamage",
-                "SpikeCooldown",
-                "PFSpikeDamage",
-                "PFSpikeCooldown",
-                "ZombiesWhichDoNotCauseCower"
-            ],
-            "CaulipowerProps": [
-                "PlantFoodTargets",
-                "PlantFoodAttackCooldown",
-                "PlantFoodPushBackDistance",
-                "PlantFoodPushBackHeight",
-                "PlantFoodPushBackTime",
-                "NormalHypnoTargets",
-                "NormalAttackCooldown",
-                "HealsOnHypnosis",
-                "HypnotismHealPercentage",
-                "WeightTargetNormalZombie",
-                "WeightTargetGargantuarZombie",
-                "WeightTargetOtherZombie",
-                "CannotBeHypnotized"
-            ],
-            "CeleryStalkerProps": [
-                "PlantFoodPlantsToSpawn",
-                "RetractionDelay",
-                "HitPointRemainingForDamage1",
-                "HitPointRemainingForDamage2"
-            ],
-            "ChardGuardProps": [
-                "PushesPerLeaf",
-                "KnockbackTime",
-                "KnockbackOffset",
-                "KnockbackHeight",
-                "PFKnockbackTime",
-                "PFKnockbackOffset",
-                "PFKnockbackHeight",
-                "RectZombieProximity"
-            ],
-            "ChilibeanProps": [
-                "DuplicationInformation"
-            ],
-            "ChomperProps": [
-                "NumberOfPlantfoodTargets",
-                "ChewDamage",
-                "PFChewDamage",
-                "SuctionSpeed",
-                "BurpingSpeed",
-                "ChewTimeSeconds",
-                "BurpingTimeSeconds",
-                "ZombieChewExcludelist",
-                "GobbleCapacity"
-            ],
-            "CitronProps": [
-                "ChargeTimeMultiplier"
-            ],
-            "CoconutCannonProps": [
-                "MinimumSpeedScaleWhilePushing",
-                "NumPushedZombiesForMinSpeed",
-                "ExplodeAtXPosition"
-            ],
-            "ConcealmintProps": [
-                "ref:EmpowermintProps",
-                "NumSwallowTargets",
-                "CannotBeSwallowed",
-                "BoostRadius"
-            ],
-            "ContainmintProps": [
-                "ref:EmpowermintProps",
-                "StunDuration"
-            ],
-            "DandelionProps": [
-                "PlantfoodProjectilesToFire",
-                "WindHelperProjectilesToFire",
-                "WindHelperCooldown",
-                "WindHelpProjectilePeriod"
-            ],
-            "DartichokeProps": [
-                "ThistlePlantfoodUnaimedRepeatCount",
-                "ThistleUnaimedOffsetStart",
-                "ThistleAimedOffsetStart",
-                "ThistleUnaimedSlotDegrees",
-                "DartichokeNormalBoostChance",
-                "MainTargetPriority",
-                "PlantfoodStartOffset",
-                "DartichokeMaxAmmo",
-                "DartichokeOutOfAmmoSadSeconds"
-            ],
-            "DraftodilProps": [
-                "FlyingZombieBlowingSpeed",
-                "FlyingZombieUpAccelerationFactor",
-                "SlowDuration",
-                "SlowdownPercentage",
-                "BlowDuration",
-                "WindGiveHelpLimit",
-                "PFShots",
-                "LightweightZombieFlickChance",
-                "PFLightweightZombieFlickChance"
-            ],
-            "DusklobberProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "PlantfoodProjectilesToFire"
-            ],
-            "EMPeaProps": [
-                "ActivateImmediately",
-                "TapToActivate",
-                "AffectedZombieTypes",
-                "ActivationRadius",
-                "ActivationRecoveryTime",
-                "StunTime"
-            ],
-            "ElectricBlueberryProps": [
-                "PlantFoodLightningTargets",
-                "PlantFoodCloudSpeed",
-                "PlantFoodLightningBoltDamage",
-                "PlantFoodResistantLightningBoltDamage",
-                "PlantFoodAttackCooldown",
-                "NormalLightningTargets",
-                "NormalCloudSpeed",
-                "NormalLightningBoltDamage",
-                "NormalResistantLightningBoltDamage",
-                "NormalAttackCooldown",
-                "WeightTargetNormalZombie",
-                "WeightTargetGargantuarZombie",
-                "WeightTargetOtherZombie"
-            ],
-            "ElectricCurrantProps": [
-                "FromEating",
-                "ZombiesAffectedByEating",
-                "KnockbackDetails",
-                "KnockbackHeight",
-                "KnockbackDistance"
-            ],
-            "ElectricPeashooterProps": [
-                "BoltFrequency",
-                "BoltCount",
-                "BoltRange",
-                "BoltDamage",
-                "PFProjectileSpawnCount",
-                "PFSubProjectileSpawnCount"
-            ],
-            "ElectriciteaProps": [
-                "BoltCount",
-                "BoltRange",
-                "ElectricBurstBoltCount",
-                "ElectricBurstBoltRange",
-                "ElectricBurstNumBounces",
-                "ElectricBurstBounceDamagePercent",
-                "ElectricBurstDecayDelay",
-                "ElectricBurstBounceDelay"
-            ],
-            "EmpowermintProps": [
-                "PlantLifetime",
-                "PowerUpRegion",
-                "HealPlants",
-                "PlantfoodPlants",
-                "BoardFlashColor",
-                "GlowEffectColor"
-            ],
-            "EnchantmintProps": [
-                "ref:EmpowermintProps",
-                "NumHypnotizeTargets",
-                "CannotBeHypnotized",
-                "HealsOnHypnosis",
-                "HypnotismHealPercentage"
-            ],
-            "EndurianProps": [
-                "PlantFoodShieldHitpoints"
-            ],
-            "EnforcemintProps": [
-                "ref:EmpowermintProps",
-                "ShrinkTime",
-                "NumShrinkTargets",
-                "CannotBeShrunk"
-            ],
-            "EscapeRootProps": [
-                "UnswappablePlants",
-                "ExplodingPlantWeights",
-                "TimeUntilArmed",
-                "SwapCooldownTime",
-                "PlantfoodAttackCount"
-            ],
-            "ExplodeOVineProps": [
-                "InitialExplosionDamage",
-                "RegularExplosionDamage",
-                "PFExplosionDamage",
-                "KnockbackRadius",
-                "KnockbackDistance",
-                "KnockbackTime",
-                "KnockbackHeight"
-            ],
-            "FilamintProps": [
-                "ref:EmpowermintProps",
-                "NumShotBounces",
-                "BounceDamagePercent",
-                "BounceDelay",
-                "DecayDelay"
-            ],
-            "FirePeashooterProps": [
-                "FlameThrowerLengthInNumTiles",
-                "PercentChanceOfPlasmaPea",
-                "NormalWarmingRadius",
-                "PlantfoodWarmingRadius"
-            ],
-            "FumeshroomProps": [
-                "PlantFoodPushSpeed"
-            ],
-            "GarlicProps": [
-                "FromEating",
-                "FromPlantfood",
-                "PlantFoodGasEffectDelay",
-                "ZombiesAffectedByEating",
-                "ZombiesAffectedByPlantfood",
-                "EatDuration",
-                "RegretfulDuration",
-                "LaneChangeDuration",
-                "StunDuration",
-                "IndifferenceDuration",
-                "SoundOfRegret",
-                "SoundOfMoveUp",
-                "SoundOfMoveDown",
-                "ShouldRegret"
-            ],
-            "GhostPepperProps": [
-                "DamagePerPulse",
-                "RateOfDamagePulsing",
-                "ChainDamage",
-                "NumChainJumps",
-                "Lifetime",
-                "DeathExplosionDamage",
-                "DeathExplosionRadius",
-                "PlantfoodDamageMult",
-                "PlantfoodDamageRadiusMult"
-            ],
-            "GloomVineProps": [
-                "BoostRadius"
-            ],
-            "GraveBusterProps": [
-                "EatTime",
-                "DirtFadeTime"
-            ],
-            "GrimroseProps": [
-                "MaxPlantfoodKills",
-                "NumTimesToActivateWhenNotPowered",
-                "NumTimesToActivateWhenPowered",
-                "ShadowStretcherProps",
-                "ZombieDeathExcludeList",
-                "SlapDamage"
-            ],
-            "GumnutProps": [
-                "GumZombieType",
-                "BaseGumHealth",
-                "ZombieGumHealthPercent",
-                "PFZombiesGummed",
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "TargetPriorityBuckets"
-            ],
-            "HeadbutterLettuceProps": [
-                "ButterChance",
-                "MinButterQuantity",
-                "MaxButterQuantity",
-                "PFButterQuantity",
-                "ButterDuration",
-                "ButterTimeOfFlight",
-                "ButterLobHeight"
-            ],
-            "HeathSeekerProps": [
-                "DartCount",
-                "DartStartOffset",
-                "DartSlotDegree",
-                "PiercingDamage",
-                "FinalDamage",
-                "MaxTargets",
-                "DartsDiffTime"
-            ],
-            "HocusCrocusProps": [
-                "TeleportRechargeTime",
-                "TeleportInitialDelay",
-                "TimeZombieGone",
-                "TeleportDamage",
-                "PFZombiesTeleported",
-                "CannotTeleport"
-            ],
-            "HollyBarrierLeafProps": [
-                "AttackEffectPopAnimID",
-                "AttackEffectAnim",
-                "DamagePhases",
-                "IsFromPlantFood"
-            ],
-            "HollyKnightProps": [
-                "ref:PlantLauncherProps",
-                "PlantfoodMinTargets",
-                "PlantfoodUnaimedRepeatCount",
-                "PlantfoodUnaimedOffsetStart",
-                "PlantfoodUnaimedSlotDegrees",
-                "StartingNumCharges",
-                "DamagePhases",
-                "ProjectileDamage",
-                "ProjectileDamagePF",
-                "ProjectileKnockback",
-                "ProjectileKnockbackPF",
-                "BarrierLeafHitpoints",
-                "BarrierLeafDamage",
-                "BarrierLeafHitpointsPF",
-                "BarrierLeafDamagePF",
-                "AttackDamage"
-            ],
-            "HolonutProps": [
-                "RegenAfterDamage",
-                "DelayBeforeRegenFromDamage",
-                "RegenAfterDeath",
-                "DelayBeforeRecoverFromDeath",
-                "SoundOnRegen"
-            ],
-            "HomingThistleProps": [
-                "ThistlePlantfoodMinTargets",
-                "ThistlePlantfoodUnaimedRepeatCount",
-                "ThistleUnaimedOffsetStart",
-                "ThistleAimedOffsetStart",
-                "ThistleUnaimedSlotDegrees"
-            ],
-            "HotDateProps": [
-                "ref:SweetPotatoProps",
-                "NormalWarmingRadius"
-            ],
-            "HotPotatoProps": [
-                "BlockMeltingDuration",
-                "ProximityDPS",
-                "CanRemoveOctopus"
-            ],
-            "HurrikaleProps": [
-                "FlyingZombieBlowingSpeed",
-                "FlyingZombieUpAccelerationFactor",
-                "GroundZombieBlowingSpeed",
-                "BlowDuration",
-                "ChillDuration",
-                "WindGiveHelpLimit"
-            ],
-            "HypnoShroomProps": [
-                "HealsOnHypnosis",
-                "HypnotismHealPercentage",
-                "CannotBeHypnotized"
-            ],
-            "IceBloomProps": [
-                "IceBlockDamagePhases",
-                "IceBlockHealth"
-            ],
-            "IceweedProps": [
-                "PFSpikeDamage",
-                "PFSpikeOffset",
-                "PlantFoodDPS",
-                "PFSpikes",
-                "PFBladeDistance",
-                "PFBladeKnockback",
-                "HitPointsUpgraded"
-            ],
-            "ImitaterProps": [
-                "NewPlantFadeInTime"
-            ],
-            "ImpPearProps": [
-                "PFZombiesImped",
-                "ImpIndigestion",
-                "ZombiePFExcludelist",
-                "ImpType"
-            ],
-            "InfernoProps": [
-                "TornadoDuration",
-                "PFTornadoDuration",
-                "CycloneZombieCap"
-            ],
-            "IntensiveCarrotProps": [
-                "PercentageOfHealthForRaisedPlant",
-                "NewPlantFadeInTime"
-            ],
-            "JackOLanternProps": [
-                "WarmingRadius",
-                "FlameOffset",
-                "GridLengthOfFlamethrower",
-                "FlamethrowerDPS",
-                "MaximumFireAmount",
-                "FlamethrowerActivateCost",
-                "FlamethrowerSustainCostPerSecond",
-                "FlamethrowerDamageIncrementTime",
-                "FlamethrowerDamageIncrementPercent",
-                "FireRegenerationPerSecond",
-                "PFWispCount"
-            ],
-            "KernelpultProps": [
-                "ButterChance",
-                "ButterStormDuration",
-                "AdditionalButterStormMissiles",
-                "ButterStormDelay",
-                "ButterStormMissileSpeed",
-                "ButterDuration",
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight"
-            ],
-            "KiwiBeastProps": [
-                "GrowthStageOneDamageLimit",
-                "GrowthStageTwoDamageLimit",
-                "GrowthStageOneDamageRadius",
-                "GrowthStageTwoDamageRadius",
-                "GrowthStageThreeDamageRadius",
-                "PlantfoodDamageRadius"
-            ],
-            "LavaGuavaProps": [
-                "ExplosionRadius",
-                "ExplosionDamage",
-                "CrackLengthInNumTiles",
-                "NormalWarmingRadius",
-                "PlantfoodWarmingRadius"
-            ],
-            "LevitaterProps": [
-                "LevitateAttackCoolDown",
-                "ZombieFloatTime",
-                "ZombieFloatTimePF",
-                "ChanceTo2ndLevitate",
-                "ChanceToLevitatePF",
-                "ChanceTo2ndLevitatePF",
-                "FlickHeight",
-                "RotationVelocity",
-                "PFLevitationFrequency",
-                "NoOfTilesToLevitate",
-                "ZombiesExcludeList",
-                "ZombiesDestroyList"
-            ],
-            "LightningReedProps": [
-                "NumShotBounces",
-                "BounceDamagePercent",
-                "BounceDelay",
-                "DecayDelay",
-                "PlantFoodCloudSpeed",
-                "PlantFoodLightningBoltDamage",
-                "PlantFoodAttackCooldown",
-                "PlantFoodCloudDuration"
-            ],
-            "MagnetShroomProps": [
-                "GridSquareRangeWidth",
-                "GridSquareRangeHeight",
-                "InitialPulledObjectSpeed",
-                "PulledObjectAcceleration",
-                "DestroyPulledObjectsTime",
-                "MaxPlantFoodObjects",
-                "PlantFoodCollectTime",
-                "PlantFoodProjectileType",
-                "PullableZombieTypes",
-                "PullableZombieHeadTypes"
-            ],
-            "MagnifyingGrassProps": [
-                "SunMoneyPerShot",
-                "SunSuckInTime",
-                "PlantFoodBeamDPS",
-                "PlantFoodBeamMovementRate",
-                "PlantFoodBeamStartOffset",
-                "PlantFoodOriginArtOffset",
-                "PlantFoodBeamStartArtOffset",
-                "PlantFoodBeamEndArtOffset",
-                "PlantFoodHitEffectPivotOffset",
-                "PlantFoodBeamMaxTargetingAngleDegrees",
-                "PlantFoodBeamMaxTargetingDistance",
-                "PlantFoodPulseDamage",
-                "SunproducerTypes",
-                "SunproducerOriginatingPlantOffset",
-                "SunproducerTargetMagnifyingGrassOffset",
-                "SunproducerExtendTime",
-                "SunproducerContractTime",
-                "SunproducerBeamStartOffset",
-                "SunproducerBeamEndOffset"
-            ],
-            "MegaGatlingProps": [
-                "ChanceToPF",
+    "Files": {
+        "Allowed_Universal_Links": {
+            "Main": [
+                "Version",
+				"Entries"
+            ],
+            "Sub": {
+                "UniversalLinkTranslationPropertySheet": []
+            }
+        },
+        "Arcade_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Autocado": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Award_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "CDN_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Calendar_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Calendar_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Calendar_Themes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "CollectableTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Colors": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Colors_Aliases": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "CreatureTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "DailyQuest_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "EASquared_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "EffectObjectTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Event_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Fonts": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Fonts_Aliases": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "ForceUpdateConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "GameFeatures": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "GriditemProps": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "GriditemTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "HeroTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "HotUIConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_CrownRewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Leaderboards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Levels": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Profile": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_ProgressiveRewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Season_Rewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_Season_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Joust_TournamentRewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LOD_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LOD_Events": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LOD_Holidays": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LOD_Rewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LevelGen": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LevelModulesDifficulty": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LevelMutatorModules": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LevelMutatorTables": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LevelScoringRules": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LiveConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Loading_Text": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "LootModifierSchedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Magento_Filter": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Manifest": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Market_Layout": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Market_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "NPCs": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "NewMapConversionMapping": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "News": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "OldMapDataMapping": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "OttoBot": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PersonalConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PinataCoreLoot": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PinataTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PlantAlmanacData": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PlantFamilyTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PlantMastery": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PlantPowerups": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Plant_RV_Rental_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PlayerSegments": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Powers": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PowerupTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PresentTables": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PresentTypes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "PropertySheets": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Quest_Categories": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Quest_Rewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Quest_Themes": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Quests": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Event_Config": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_First_Clear_Rewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Level_Unlocks": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Perk_Progression": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Perks": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Sub_Event": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Rift_Zomboss_Rewards": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "ServerConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "StartupConfig": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "StreamingWaves": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Thymed_Event_Schedule": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Thymed_Event_Track_Definitions": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "ToolPackets": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "UI_Layout": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "Version": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "ZombieActions": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "#LevelModules": {
+            "Main": [],
+            "Sub": {
+                "": []
+            }
+        },
+        "ArmorTypes": {
+            "Main": [
+                "ClassName",
+                "ArmorType",
+                "BaseHealth",
+                "ArmorFlags",
+                "ArmorLayerHealth",
+                "ArmorLayers",
+                "ParticleLayerOverride",
+                "ImpactSoundEvent",
+                "DropSoundEvent"
+            ],
+            "Sub": {
+                "ArmorPropertySheet": [],
+                "ArmorPropertySheetUtils": [
+                    "ToggleLayers"
+                ],
+                "NewspaperArmorPropertySheet": [
+                    "FireLayer"
+                ]
+            }
+        },
+        "BoardGridMaps": {
+            "Main": [
+                "Values"
+            ],
+            "Sub": {
+                "BoardGridMapProps": []
+            }
+        },
+        "LawnStrings-DE-DE": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "LawnStrings-EN-US": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "LawnStrings-ES-ES": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "LawnStrings-FR-FR": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "LawnStrings-IT-IT": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "LawnStrings-PT-BR": {
+            "Main": [
+                "LocStringValues"
+            ],
+            "Sub": {
+                "LawnStringsData": []
+            }
+        },
+        "PlantLevels": {
+            "Main": [],
+            "Sub": {
+                "PlantLevelStats": []
+            }
+        },
+        "PlantProperties": {
+            "Main": [
+                "TypeName",
+                "Cost",
+                "BeghouledCost",
+                "Hitpoints",
+                "PacketCooldown",
+                "StartingCooldown",
+                "PlantGridType",
+                "MultiPlantLayer",
+                "Height",
+                "ArtCenter",
+                "Actions",
+                "Powers",
+                "PlantStats",
+                "ScaledProps",
+                "ZenGardenSproutWeight",
+                "ZenGardenBoostCost",
+                "ZenGardenDurationOverrideSeconds",
+                "Boosts",
+                "IsZenGardenTreasurePlant",
+                "IsZenGardenWaterPlant",
+                "ValidStages",
                 "PlantFoodDurationSeconds",
-                "PlantFoodProjectileCount"
-            ],
-            "MelonpultProps": [
-                "NormalProjectileLobHeight",
-                "NormalProjectileTimeOfFlight",
-                "PlantfoodProjectileLobHeight",
-                "PlantfoodProjectileTimeOfFlight"
-            ],
-            "MiniPeashooterProps": [
-                "MiniPeasNeededBetweenTiers",
-                "MaxDamageTier",
-                "BaseDamageMultiplier",
-                "DamageTierMultiplier"
-            ],
-            "MissileToeProps": [
-                "NumPlantfoodRockets",
-                "FireTime",
-                "PlantfoodFireTime",
-                "TargetOffset",
-                "ChillDuration",
-                "FreezeDuration"
-            ],
-            "MoonFlowerProps": [
-                "BoostRadius",
-                "SunPerNeighbor",
-                "MaxSunProduction",
-                "ShadowBoostable"
-            ],
-            "MurkadamiaProps": [
-                "MurkRegenerationDelay",
-                "MurkRegenerationDPS",
-                "MurkArmorMax",
-                "MurkArmorInitial",
-                "MurkReflectionDamage",
-                "MurkDamageAnimThreshold",
-                "MurkUnboostedLayers",
-                "MurkBoostedLayers",
-                "BoostAnimLayers"
-            ],
-            "NightshadeProps": [
-                "MeleeDamage",
-                "PFMeleeDamage",
-                "LeafRespawnCooldown",
-                "TargetProps"
-            ],
-            "NoctarineCloudProps": [
-                "BoostRadius"
-            ],
-            "NoctarineProps": [
-                "PoweredActionDamage",
-                "ExplosionPAMOffset",
-                "ActionDamageCloud",
-                "PoweredActionDamageCloud",
-                "GasDamageBonus",
-                "PoweredGasDamageBonus",
-                "GasDuration",
-                "PoweredGasDuration",
-                "PoweredSlowDuration",
-                "PoweredExplosionChance",
-                "CorpseExplosionDamage",
-                "CorpseExplosionGridSquareHeight",
-                "CorpseExplosionGridSquareWidth",
-                "ZombieExcludeList"
-            ],
-            "OlivePitProps": [
-                "PitCapacity",
-                "ChewTime",
-                "PitExcludelist",
-                "PitCapacityExcludelist",
-                "OilItemName",
-                "OilSpitRecharge",
-                "OilSpitRange",
-                "OilDuration",
-                "OilCondition",
-                "CanBeTargetedByList",
-                "ZombieFallTime",
-                "PFZombiePullTime",
-                "PFZombieFallTime"
-            ],
-            "PeanutProps": [
-                "ref:PeashooterProps",
-                "PlantFoodShieldHitpoints"
-            ],
-            "PeashooterProps": [
-                "PlantFoodProjectileCount"
-            ],
-            "PeppermintProps": [
-                "ref:EmpowermintProps",
-                "FireDuration",
-                "FireDamageTick",
-                "FireDamagePerTick"
-            ],
-            "PepperpultProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "PlantfoodProjectilesToFire"
-            ],
-            "PhatBeetProps": [
-                "PowerfulAttackRatioMin",
-                "PowerfulAttackRatioMax"
-            ],
-            "PlantCoinDispenserProps": [
-                "PlantFoodCoinsToSpawn"
-            ],
-            "PlantLauncherProps": [
-                "NumPlantfoodRockets",
-                "FireTime",
-                "PlantfoodFireTime",
-                "TargetOffset"
-            ],
-            "PlantPerfumeShroomProps": [
-                "CharmBurstProps"
-            ],
-            "PlantPropertySheet": [],
-            "PlantReincarnationProps": [
-                "PetalAmount",
-                "RecoveryTime"
-            ],
-            "PlantSolarTomatoProps": [
-                "SolarFlareStunDuration",
-                "SolarFlareDamage",
-                "ExplosionWidth",
-                "ExplosionHeight"
-            ],
-            "PoisonPeashooterProps": [
-                "MaxStacks",
-                "PoisonDPSPerStack",
-                "SpeedPercentDecreasePerStack",
-                "PoisonAndSlowDuration",
-                "PlantfoodPoisonDPS",
-                "PlantfoodSpeedPercentDecrease",
-                "PlantfoodPoisonAndSlowDuration",
-                "PlantfoodKnockBackDistance",
-                "PlantfoodKnockBackTime",
-                "PlantfoodKnockBackHeight",
-                "GridItemLifetime",
-                "GridItemPoisonAndSlowDuration",
-                "GridItemSpeedPercentDebuff",
-                "GridItemPoisonDPS"
-            ],
-            "PokraProps": [
-                "RecoveryTime",
-                "SlowDuration",
-                "SlowDurationFinal",
-                "SlowDurationPF",
-                "TimeBetweenAttacks",
-                "PhaseOneAttackRateOverrideValue",
-                "PhaseTwoAttackRateOverrideValue",
-                "PhaseThreeAttackRateOverrideValue",
-                "PhaseFourAttackRateOverrideValue",
-                "BasicProjectileAttackRateOverrideValue",
-                "PlantfoodProjectileAttackRateOverrideValue"
-            ],
-            "PotatomineProps": [
-                "DuplicationInformation",
-                "ExplodeRadius",
-                "TimeUntilArmed"
-            ],
-            "PowerPlantProps": [
-                "NumberOfFreeTiles",
-                "FirstNonFreeCost",
-                "CostMultiplier"
-            ],
-            "PowerVineProps": [
-                "PFRotationAngleDegrees",
-                "NetworkPlantMin",
-                "NetworkShots",
-                "NetworkedPlantFoodPlayCount",
-                "NetworkShotCooldown",
-                "PFEmpBurstIncludeList",
-                "EmpBurstActivationRadius",
-                "EmpBurstStunTime",
-                "PFProjectileRotationOffset"
-            ],
-            "PrimalWallnutProps": [
-                "SmashDamage"
-            ],
-            "PuffballProps": [
-                "DecayPoisonDPS",
-                "ConfettiPropagationDelay"
-            ],
-            "PuffshroomProps": [
-                "PlantFoodProjectileCount",
-                "ExpirationDurationSeconds",
-                "ExpirationBlinkTime",
-                "PlantfoodPropagationDelayBaseSeconds",
-                "PlantfoodPropagationDelayPerTileDistanceSeconds",
-                "PlantfoodResetsDecayForAllPuffshrooms"
-            ],
-            "PvineProps": [
-                "PlantFoodProjectileCount",
-                "BoostRadius"
-            ],
-            "PyreVineProps": [
-                "WarmingRadius",
-                "FlameOffset",
-                "PFFlameDamage",
-                "GridLengthOfFlamethrower",
-                "FlamethrowerDPS"
-            ],
-            "ReinforcemintProps": [
-                "ref:EmpowermintProps",
-                "KnockbackTime",
-                "KnockbackHeight",
-                "KnockbackDistance"
-            ],
-            "RepeaterProps": [
-                "PlantFoodProjectileCount"
-            ],
-            "RhubarbarianProps": [
-                "LifespanTimer",
-                "TimerPauseDuration",
-                "InitialSmashDamage",
-                "InitialStunDuration",
-                "InitialSmashDamageWidth",
-                "InitialSmashDamageHeight",
-                "LeapStunDamageWidth",
-                "LeapStunDamageHeight",
-                "LeapDistanceCap",
-                "LeapStunDuration",
-                "LeapDamage",
-                "LeapProps",
-                "ZombieFlickExcludeList",
-                "FlightTime",
-                "ApexHeight"
-            ],
-            "SapflingProps": [
-                "PlantfoodPineconeCount",
-                "AmountToAimLeftOfZombie",
-                "TargetableZombieTypes",
-                "NormalLaunchProps",
-                "PlantfoodLaunchProps"
-            ],
-            "ShadowPeashooterProps": [
-                "PlantFoodProjectileCount",
-                "PoweredAttackSlowDuration",
-                "PoweredAttackSlowMinimumDuration",
-                "PoweredAttackDecayPerZombieHit",
-                "ShadowBoostedZombieSwallows",
-                "PlantFoodBombTravelTime",
-                "ZombieSwallowExcludeList"
-            ],
-            "ShadowShroomProps": [
-                "PoisonDPS",
-                "PoisonDuration",
-                "CannotBePoisoned"
-            ],
-            "ShineVineProps": [
-                "SunProductionModifier",
-                "SunProducerExcludelist"
-            ],
-            "ShrinkingVioletProps": [
-                "ShrinkTime",
-                "DamageMultiplier",
-                "UnshrinkableZombies"
-            ],
-            "SnapPeaProps": [
-                "ChewTimeSeconds",
-                "FiredZombieHeadAttackCooldownSeconds",
-                "CouldNotEatAttackCooldownSeconds",
-                "PlantfoodTargetCount",
-                "ZombieEatTypeExcludelist",
-                "ZombieEatExcludelist",
-                "ZombieBurrowAttackExcludelist"
-            ],
-            "SnapdragonProps": [
-                "ProjectilePAM"
-            ],
-            "SnowPeaProps": [
-                "PlantFoodProjectileCount",
-                "PercentChanceOfFreezingPea"
-            ],
-            "SolarSageProps": [
-                "IlluminationExcludeList",
-                "SunSpawnOffset",
-                "InfectivityPercentage",
-                "InfectivityPercentagePF",
-                "SunProductionTimer",
-                "SunProductionTimerCap",
-                "InfectivityCooldown",
-                "InfectivityRange"
-            ],
-            "SpearmintProps": [
-                "ref:EmpowermintProps",
-                "NumPlantsToSpawn",
-                "LevelOfSpawnedPlants",
-                "PlantTypeToSpawn"
-            ],
-            "SpikeweedProps": [
-                "PFSpikeDamage",
-                "PFSpikeCooldown",
-                "PFSpikeOffset",
-                "PlantFoodDPS",
-                "PFConveyorSpeed"
-            ],
-            "SplitpeaProps": [
-                "PlantFoodForwardProjectileCount",
-                "PlantFoodBackwardProjectileCount"
-            ],
-            "SporeshroomProps": [
-                "DuplicatableZombies",
-                "NormalLaunchProps",
-                "PlantfoodLaunchProps"
-            ],
-            "SpringbeanProps": [
-                "KnockbackTime",
-                "KnockbackOffset",
-                "KnockbackHeight",
-                "AttackRecoveryTime",
-                "RectZombieProximity"
-            ],
-            "SproutProps": [
-                "TimeToGerminate",
-                "PlantWeights"
-            ],
-            "SquashProps": [
-                "SquashRadius",
-                "PlantfoodZombiesToTarget",
-                "NormalZombiesToTarget",
-                "Number",
-                "Weight"
-            ],
-            "StalliaProps": [
-                "Knockback",
-                "StallDuration",
-                "PlantfoodStallDuration"
-            ],
-            "StarFruitProps": [
-                "PlantFoodProjectileCount",
-                "FireHeight"
-            ],
-            "StickybombRiceProps": [
-                "ProjectileLobHeight",
-                "ProjectileTimeOfFlight",
-                "ProjectileCount",
-                "CreatedBombTimer",
-                "CreatedBombExplodeRadius",
-                "CreatedBombBaseDamage",
-                "CreatedBombPropagationMultiplier",
-                "PlantfoodCreatedBombTimer",
-                "PlantfoodCreatedBombExplodeRadius",
-                "PlantfoodCreatedBombBaseDamage",
-                "PlantfoodCreatedBombPropagationMultiplier"
-            ],
-            "StrawburstProps": [
-                "MinimumSpeedScaleWhilePushing",
-                "NumPushedZombiesForMinSpeed",
-                "ExplodeAtXPosition",
-                "NormalLaunchProps"
-            ],
-            "StunionProps": [
-                "PlantfoodProjectileDistance",
-                "PoisonDPS",
-                "StaticGasCloudPAMOffset"
-            ],
-            "SunBeanProps": [
-                "SunMultiplierOnPlantfoodBurst",
-                "MaxSunPerZombieOnPlantfoodBurst",
-                "SunPerHitpoint",
-                "MaxSunPerZombie",
-                "OnlyLargeSun"
-            ],
-            "SunGunProps": [
-                "AngleVarianceInDegrees"
-            ],
-            "SunflowerProps": [
-                "PlantFoodSunCount"
-            ],
-            "SunpodProps": [
-                "SunBankPerTier"
-            ],
-            "SunshroomProps": [
-                "ref:SunflowerProps"
-            ],
-            "SweetPotatoProps": [
-                "MovableZombies",
-                "NormalAttractRect",
-                "PlantfoodAttractRect",
-                "LaneChangeTime",
-                "TimeBetweenLaneChanges",
-                "DrawAttractRects"
-            ],
-            "TangleKelpProps": [
-                "MinPlantfoodWaterKills",
-                "MaxPlantfoodWaterKills",
-                "MaxNormalWaterKills",
-                "ZombieDrownExcludeList",
-                "SlapDamage"
-            ],
-            "TeleportatoMineProps": [
-                "ArmingTime",
-                "TeleportationUnitLimit",
-                "CannotTeleport",
-                "TimeOfWarpOut",
-                "TimeZombieIsGone",
-                "TimeOfWarpIn",
-                "ConditionsRemovedByWarping"
-            ],
-            "ThymeWarpProps": [
-                "TimeBeforeWarpStart",
-                "TimeOfWarpOut",
-                "TimeZombieIsGone",
-                "TimeOfWarpIn",
-                "WarpZombieHP",
-                "ConditionsRemovedByWarping"
-            ],
-            "TigerGrassProps": [
-                "TigerHealing",
-                "TigerRegenTime",
-                "GrowthTime",
-                "TigerHealth",
-                "GlobalGrowthMultiplier",
-                "TigerPFHealth",
-                "PounceDamageMultiplier",
-                "TigerTypeToSpawn",
-                "NormalLaunchProps",
-                "ZombiesExcludeList"
-            ],
-            "ToadstoolProps": [
-                "ZombieChewExcludelist",
-                "TongueOffRowRangeOffset",
-                "TimeBetweenBites",
-                "RectInstantGulpTriggerRange",
-                "NormalTongueStretcherProps",
-                "NormalTongueRange",
-                "NormalTongueSlapDamage",
-                "NormalTongueWaitTimeSeconds",
-                "NormalChewTimeSeconds",
-                "NormalAmountOfSunProducedPerZombie",
-                "PFTongueStretcherProps",
-                "PFTargetSearchExpirationSeconds",
-                "PFMaxNumberOfTargets",
-                "PFTongueRange",
-                "PFTongueSlapDamage",
-                "PFTongueWaitTimeSeconds",
-                "PFChewTimeSeconds",
-                "PFAmountOfSunProducedPerZombie"
-            ],
-            "TombTanglerProps": [
-                "FogZombieSlowDownPercentage",
-                "HealthConversionPercentage",
-                "FogPullChance",
-                "FogPullChanceTickTime",
-                "PFTargets",
-                "UndergroundDamage",
-                "PullZombieExcludelist",
-                "SlowDownExcludelist",
-                "InvulnerableZombieIncludelist",
-                "PullExcludeZombieConditions",
-                "mX",
-                "mY",
-                "mWidth",
-                "mHeight",
-                "Type",
-                "Context",
-                "Props",
-                "List",
-                "Type",
-                "Projectile",
-                "ExplodeType",
-                "ExplodeRadius",
-                "TriggerType",
-                "DieAfterExplode",
-                "InitialMinCooldownTime",
-                "CooldownTimeMin",
-                "CooldownTimeMax",
-                "XVelocityOverride",
-                "Damage",
+                "PlantFoodPlayCount",
+                "PlantFoodShineTime",
+                "PlantFoodActivationSound",
+                "HelpedActivationSound",
+                "GridWidth",
+                "GridHeight",
+                "GridItemDamage",
+                "PlantingOffsetY",
+                "CursorPreviewOffset",
+                "ZenGardenOffset",
+                "ZenGardenSmallScale",
+                "ZenGardenLargeScale",
+                "HitRectAdjust",
+                "DangerRoomWeight",
+                "SuggestionAlts",
+                "RestrictPlantingToGridArea",
+                "CanReceiveFirstAid",
+                "IsConsumable",
+                "IsInstant",
+                "CanLiveOnWaves",
+                "IdleAnimationWeights",
+                "AnimRigProps",
+                "HidePlantingEffects",
+                "MasteryBoostChance",
+                "MasteryResistancePiercing",
+                "CanPlantAgainToUpgrade"
+            ],
+            "Sub": {
+                "AilmintProps": [
+                    "ref:EmpowermintProps",
+                    "PoisonDuration",
+                    "PoisonDamage"
+                ],
+                "AkeeProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "NormalProjectileBounceCount",
+                    "PFProjectileBounceCount"
+                ],
+                "AloeProps": [
+                    "HealCooldown",
+                    "TargetHPTriggerPercent",
+                    "TargetHPHealAmount",
+                    "PFTargetHPHealPercent",
+                    "UnhealablePlants"
+                ],
+                "AppeasemintProps": [
+                    "ref:EmpowermintProps",
+                    "NumberOfProjectiles",
+                    "NumberOfChildProjectiles",
+                    "TimeBetweenShots"
+                ],
+                "AppleMortarProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight"
+                ],
+                "ArmamintPeashooterProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "NumberOfShots",
+                    "NumberOfPlantFoodShots"
+                ],
+                "ArmamintProps": [
+                    "ref:EmpowermintProps",
+                    "StunDuration",
+                    "FireTime",
+                    "NumProjectiles",
+                    "TargetOffset"
+                ],
+                "BananaProps": [
+                    "NumPlantfoodRockets",
+                    "FireTime",
+                    "PlantfoodFireTime",
+                    "TargetOffset"
+                ],
+                "BlastberryProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "PlantfoodProjectilesToFire",
+                    "ChildProjectileNum",
+                    "PFChildProjectileNum",
+                    "ChildDamage",
+                    "PFChildDamage",
+                    "ChildSplashRadius",
+                    "PFChildSplashRadius"
+                ],
+                "BlockoliProps": [
+                    "ShieldSmashStunDuration",
+                    "ShieldSmashCooldown"
+                ],
+                "BloomerangProps": [
+                    "PlantFoodProjectileCount",
+                    "BoomerangHitCount",
+                    "BoomerangSlowdownRadius",
+                    "BoomerangMinSpeedPercentage",
+                    "BoomerangPauseDuration",
+                    "BoomerangStunsZombies"
+                ],
+                "BloomingHeartsProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "PlantfoodProjectilesToFire"
+                ],
+                "BloverProps": [
+                    "WindAccel",
+                    "UpPercent",
+                    "WindGiveHelpLimit"
+                ],
+                "BoingsettaProps": [
+                    "ZombiePlantfoodDamage",
+                    "KnockbackTime",
+                    "KnockbackHeight",
+                    "KnockbackOffset",
+                    "PlantfoodKnockbackTime",
+                    "PlantfoodKnockbackHeight",
+                    "PlantfoodKnockbackOffset"
+                ],
+                "BombardmintProps": [
+                    "ref:EmpowermintProps",
+                    "TimeBetweenExplosions",
+                    "NumExplosions"
+                ],
+                "BoomFlowerProps": [
+                    "ref:PlantLauncherProps",
+                    "BalloonSplashDamage",
+                    "BalloonDamage",
+                    "PFBalloonSplashDamage",
+                    "PFBalloonDamage",
+                    "NormalRechargeSeconds"
+                ],
+                "BowlingBulbProps": [
+                    "MaxAmmo",
+                    "AmmoRefreshTime",
+                    "RegenOrder"
+                ],
+                "BrambleBushProps": [
+                    "TrapNumber",
+                    "KnockbackDistance",
+                    "KnockbackHeight",
+                    "KnockbackTime",
+                    "RetrapDelay",
+                    "ZombieDragSpeed",
+                    "ZombieTrapExcludelist",
+                    "ZombieTrapUseExcludelist"
+                ],
+                "BurnadeProps": [
+                    "MaxUsesAfterPlantfood",
+                    "TimedExplosionProps"
+                ],
+                "ButtercupProps": [
+                    "AmountToAimLeftOfZombie",
+                    "ZombiesExcludeList",
+                    "NormalLaunchProps",
+                    "PlantfoodLaunchProps",
+                    "ButterLifetime",
+                    "PFButterLifetime",
+                    "ButterConditionDuration",
+                    "PFButterConditionDuration"
+                ],
+                "CabbagepultProps": [
+                    "NormalLaunchProps",
+                    "PlantfoodLaunchProps"
+                ],
+                "CactusProps": [
+                    "DuckAndCoverRange",
+                    "StayDuckedRange",
+                    "SpikeRange",
+                    "SpikeDamage",
+                    "SpikeCooldown",
+                    "PFSpikeDamage",
+                    "PFSpikeCooldown",
+                    "ZombiesWhichDoNotCauseCower"
+                ],
+                "CaulipowerProps": [
+                    "PlantFoodTargets",
+                    "PlantFoodAttackCooldown",
+                    "PlantFoodPushBackDistance",
+                    "PlantFoodPushBackHeight",
+                    "PlantFoodPushBackTime",
+                    "NormalHypnoTargets",
+                    "NormalAttackCooldown",
+                    "HealsOnHypnosis",
+                    "HypnotismHealPercentage",
+                    "WeightTargetNormalZombie",
+                    "WeightTargetGargantuarZombie",
+                    "WeightTargetOtherZombie",
+                    "CannotBeHypnotized"
+                ],
+                "CeleryStalkerProps": [
+                    "PlantFoodPlantsToSpawn",
+                    "RetractionDelay",
+                    "HitPointRemainingForDamage1",
+                    "HitPointRemainingForDamage2"
+                ],
+                "ChardGuardProps": [
+                    "PushesPerLeaf",
+                    "KnockbackTime",
+                    "KnockbackOffset",
+                    "KnockbackHeight",
+                    "PFKnockbackTime",
+                    "PFKnockbackOffset",
+                    "PFKnockbackHeight",
+                    "RectZombieProximity"
+                ],
+                "ChilibeanProps": [
+                    "DuplicationInformation"
+                ],
+                "ChomperProps": [
+                    "NumberOfPlantfoodTargets",
+                    "ChewDamage",
+                    "PFChewDamage",
+                    "SuctionSpeed",
+                    "BurpingSpeed",
+                    "ChewTimeSeconds",
+                    "BurpingTimeSeconds",
+                    "ZombieChewExcludelist",
+                    "GobbleCapacity"
+                ],
+                "CitronProps": [
+                    "ChargeTimeMultiplier"
+                ],
+                "CoconutCannonProps": [
+                    "MinimumSpeedScaleWhilePushing",
+                    "NumPushedZombiesForMinSpeed",
+                    "ExplodeAtXPosition"
+                ],
+                "ConcealmintProps": [
+                    "ref:EmpowermintProps",
+                    "NumSwallowTargets",
+                    "CannotBeSwallowed",
+                    "BoostRadius"
+                ],
+                "ContainmintProps": [
+                    "ref:EmpowermintProps",
+                    "StunDuration"
+                ],
+                "DandelionProps": [
+                    "PlantfoodProjectilesToFire",
+                    "WindHelperProjectilesToFire",
+                    "WindHelperCooldown",
+                    "WindHelpProjectilePeriod"
+                ],
+                "DartichokeProps": [
+                    "ThistlePlantfoodUnaimedRepeatCount",
+                    "ThistleUnaimedOffsetStart",
+                    "ThistleAimedOffsetStart",
+                    "ThistleUnaimedSlotDegrees",
+                    "DartichokeNormalBoostChance",
+                    "MainTargetPriority",
+                    "PlantfoodStartOffset",
+                    "DartichokeMaxAmmo",
+                    "DartichokeOutOfAmmoSadSeconds"
+                ],
+                "DraftodilProps": [
+                    "FlyingZombieBlowingSpeed",
+                    "FlyingZombieUpAccelerationFactor",
+                    "SlowDuration",
+                    "SlowdownPercentage",
+                    "BlowDuration",
+                    "WindGiveHelpLimit",
+                    "PFShots",
+                    "LightweightZombieFlickChance",
+                    "PFLightweightZombieFlickChance"
+                ],
+                "DusklobberProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "PlantfoodProjectilesToFire"
+                ],
+                "EMPeaProps": [
+                    "ActivateImmediately",
+                    "TapToActivate",
+                    "AffectedZombieTypes",
+                    "ActivationRadius",
+                    "ActivationRecoveryTime",
+                    "StunTime"
+                ],
+                "ElectricBlueberryProps": [
+                    "PlantFoodLightningTargets",
+                    "PlantFoodCloudSpeed",
+                    "PlantFoodLightningBoltDamage",
+                    "PlantFoodResistantLightningBoltDamage",
+                    "PlantFoodAttackCooldown",
+                    "NormalLightningTargets",
+                    "NormalCloudSpeed",
+                    "NormalLightningBoltDamage",
+                    "NormalResistantLightningBoltDamage",
+                    "NormalAttackCooldown",
+                    "WeightTargetNormalZombie",
+                    "WeightTargetGargantuarZombie",
+                    "WeightTargetOtherZombie"
+                ],
+                "ElectricCurrantProps": [
+                    "FromEating",
+                    "ZombiesAffectedByEating",
+                    "KnockbackDetails",
+                    "KnockbackHeight",
+                    "KnockbackDistance"
+                ],
+                "ElectricPeashooterProps": [
+                    "BoltFrequency",
+                    "BoltCount",
+                    "BoltRange",
+                    "BoltDamage",
+                    "PFProjectileSpawnCount",
+                    "PFSubProjectileSpawnCount"
+                ],
+                "ElectriciteaProps": [
+                    "BoltCount",
+                    "BoltRange",
+                    "ElectricBurstBoltCount",
+                    "ElectricBurstBoltRange",
+                    "ElectricBurstNumBounces",
+                    "ElectricBurstBounceDamagePercent",
+                    "ElectricBurstDecayDelay",
+                    "ElectricBurstBounceDelay"
+                ],
+                "EmpowermintProps": [
+                    "PlantLifetime",
+                    "PowerUpRegion",
+                    "HealPlants",
+                    "PlantfoodPlants",
+                    "BoardFlashColor",
+                    "GlowEffectColor"
+                ],
+                "EnchantmintProps": [
+                    "ref:EmpowermintProps",
+                    "NumHypnotizeTargets",
+                    "CannotBeHypnotized",
+                    "HealsOnHypnosis",
+                    "HypnotismHealPercentage"
+                ],
+                "EndurianProps": [
+                    "PlantFoodShieldHitpoints"
+                ],
+                "EnforcemintProps": [
+                    "ref:EmpowermintProps",
+                    "ShrinkTime",
+                    "NumShrinkTargets",
+                    "CannotBeShrunk"
+                ],
+                "EscapeRootProps": [
+                    "UnswappablePlants",
+                    "ExplodingPlantWeights",
+                    "TimeUntilArmed",
+                    "SwapCooldownTime",
+                    "PlantfoodAttackCount"
+                ],
+                "ExplodeOVineProps": [
+                    "InitialExplosionDamage",
+                    "RegularExplosionDamage",
+                    "PFExplosionDamage",
+                    "KnockbackRadius",
+                    "KnockbackDistance",
+                    "KnockbackTime",
+                    "KnockbackHeight"
+                ],
+                "FilamintProps": [
+                    "ref:EmpowermintProps",
+                    "NumShotBounces",
+                    "BounceDamagePercent",
+                    "BounceDelay",
+                    "DecayDelay"
+                ],
+                "FirePeashooterProps": [
+                    "FlameThrowerLengthInNumTiles",
+                    "PercentChanceOfPlasmaPea",
+                    "NormalWarmingRadius",
+                    "PlantfoodWarmingRadius"
+                ],
+                "FumeshroomProps": [
+                    "PlantFoodPushSpeed"
+                ],
+                "GarlicProps": [
+                    "FromEating",
+                    "FromPlantfood",
+                    "PlantFoodGasEffectDelay",
+                    "ZombiesAffectedByEating",
+                    "ZombiesAffectedByPlantfood",
+                    "EatDuration",
+                    "RegretfulDuration",
+                    "LaneChangeDuration",
+                    "StunDuration",
+                    "IndifferenceDuration",
+                    "SoundOfRegret",
+                    "SoundOfMoveUp",
+                    "SoundOfMoveDown",
+                    "ShouldRegret"
+                ],
+                "GhostPepperProps": [
+                    "DamagePerPulse",
+                    "RateOfDamagePulsing",
+                    "ChainDamage",
+                    "NumChainJumps",
+                    "Lifetime",
+                    "DeathExplosionDamage",
+                    "DeathExplosionRadius",
+                    "PlantfoodDamageMult",
+                    "PlantfoodDamageRadiusMult"
+                ],
+                "GloomVineProps": [
+                    "BoostRadius"
+                ],
+                "GraveBusterProps": [
+                    "EatTime",
+                    "DirtFadeTime"
+                ],
+                "GrimroseProps": [
+                    "MaxPlantfoodKills",
+                    "NumTimesToActivateWhenNotPowered",
+                    "NumTimesToActivateWhenPowered",
+                    "ShadowStretcherProps",
+                    "ZombieDeathExcludeList",
+                    "SlapDamage"
+                ],
+                "GumnutProps": [
+                    "GumZombieType",
+                    "BaseGumHealth",
+                    "ZombieGumHealthPercent",
+                    "PFZombiesGummed",
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "TargetPriorityBuckets"
+                ],
+                "HeadbutterLettuceProps": [
+                    "ButterChance",
+                    "MinButterQuantity",
+                    "MaxButterQuantity",
+                    "PFButterQuantity",
+                    "ButterDuration",
+                    "ButterTimeOfFlight",
+                    "ButterLobHeight"
+                ],
+                "HeathSeekerProps": [
+                    "DartCount",
+                    "DartStartOffset",
+                    "DartSlotDegree",
+                    "PiercingDamage",
+                    "FinalDamage",
+                    "MaxTargets",
+                    "DartsDiffTime"
+                ],
+                "HocusCrocusProps": [
+                    "TeleportRechargeTime",
+                    "TeleportInitialDelay",
+                    "TimeZombieGone",
+                    "TeleportDamage",
+                    "PFZombiesTeleported",
+                    "CannotTeleport"
+                ],
+                "HollyBarrierLeafProps": [
+                    "AttackEffectPopAnimID",
+                    "AttackEffectAnim",
+                    "DamagePhases",
+                    "IsFromPlantFood"
+                ],
+                "HollyKnightProps": [
+                    "ref:PlantLauncherProps",
+                    "PlantfoodMinTargets",
+                    "PlantfoodUnaimedRepeatCount",
+                    "PlantfoodUnaimedOffsetStart",
+                    "PlantfoodUnaimedSlotDegrees",
+                    "StartingNumCharges",
+                    "DamagePhases",
+                    "ProjectileDamage",
+                    "ProjectileDamagePF",
+                    "ProjectileKnockback",
+                    "ProjectileKnockbackPF",
+                    "BarrierLeafHitpoints",
+                    "BarrierLeafDamage",
+                    "BarrierLeafHitpointsPF",
+                    "BarrierLeafDamagePF",
+                    "AttackDamage"
+                ],
+                "HolonutProps": [
+                    "RegenAfterDamage",
+                    "DelayBeforeRegenFromDamage",
+                    "RegenAfterDeath",
+                    "DelayBeforeRecoverFromDeath",
+                    "SoundOnRegen"
+                ],
+                "HomingThistleProps": [
+                    "ThistlePlantfoodMinTargets",
+                    "ThistlePlantfoodUnaimedRepeatCount",
+                    "ThistleUnaimedOffsetStart",
+                    "ThistleAimedOffsetStart",
+                    "ThistleUnaimedSlotDegrees"
+                ],
+                "HotDateProps": [
+                    "ref:SweetPotatoProps",
+                    "NormalWarmingRadius"
+                ],
+                "HotPotatoProps": [
+                    "BlockMeltingDuration",
+                    "ProximityDPS",
+                    "CanRemoveOctopus"
+                ],
+                "HurrikaleProps": [
+                    "FlyingZombieBlowingSpeed",
+                    "FlyingZombieUpAccelerationFactor",
+                    "GroundZombieBlowingSpeed",
+                    "BlowDuration",
+                    "ChillDuration",
+                    "WindGiveHelpLimit"
+                ],
+                "HypnoShroomProps": [
+                    "HealsOnHypnosis",
+                    "HypnotismHealPercentage",
+                    "CannotBeHypnotized"
+                ],
+                "IceBloomProps": [
+                    "IceBlockDamagePhases",
+                    "IceBlockHealth"
+                ],
+                "IceweedProps": [
+                    "PFSpikeDamage",
+                    "PFSpikeOffset",
+                    "PlantFoodDPS",
+                    "PFSpikes",
+                    "PFBladeDistance",
+                    "PFBladeKnockback",
+                    "HitPointsUpgraded"
+                ],
+                "ImitaterProps": [
+                    "NewPlantFadeInTime"
+                ],
+                "ImpPearProps": [
+                    "PFZombiesImped",
+                    "ImpIndigestion",
+                    "ZombiePFExcludelist",
+                    "ImpType"
+                ],
+                "InfernoProps": [
+                    "TornadoDuration",
+                    "PFTornadoDuration",
+                    "CycloneZombieCap"
+                ],
+                "IntensiveCarrotProps": [
+                    "PercentageOfHealthForRaisedPlant",
+                    "NewPlantFadeInTime"
+                ],
+                "JackOLanternProps": [
+                    "WarmingRadius",
+                    "FlameOffset",
+                    "GridLengthOfFlamethrower",
+                    "FlamethrowerDPS",
+                    "MaximumFireAmount",
+                    "FlamethrowerActivateCost",
+                    "FlamethrowerSustainCostPerSecond",
+                    "FlamethrowerDamageIncrementTime",
+                    "FlamethrowerDamageIncrementPercent",
+                    "FireRegenerationPerSecond",
+                    "PFWispCount"
+                ],
+                "KernelpultProps": [
+                    "ButterChance",
+                    "ButterStormDuration",
+                    "AdditionalButterStormMissiles",
+                    "ButterStormDelay",
+                    "ButterStormMissileSpeed",
+                    "ButterDuration",
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight"
+                ],
+                "KiwiBeastProps": [
+                    "GrowthStageOneDamageLimit",
+                    "GrowthStageTwoDamageLimit",
+                    "GrowthStageOneDamageRadius",
+                    "GrowthStageTwoDamageRadius",
+                    "GrowthStageThreeDamageRadius",
+                    "PlantfoodDamageRadius"
+                ],
+                "LavaGuavaProps": [
+                    "ExplosionRadius",
+                    "ExplosionDamage",
+                    "CrackLengthInNumTiles",
+                    "NormalWarmingRadius",
+                    "PlantfoodWarmingRadius"
+                ],
+                "LevitaterProps": [
+                    "LevitateAttackCoolDown",
+                    "ZombieFloatTime",
+                    "ZombieFloatTimePF",
+                    "ChanceTo2ndLevitate",
+                    "ChanceToLevitatePF",
+                    "ChanceTo2ndLevitatePF",
+                    "FlickHeight",
+                    "RotationVelocity",
+                    "PFLevitationFrequency",
+                    "NoOfTilesToLevitate",
+                    "ZombiesExcludeList",
+                    "ZombiesDestroyList"
+                ],
+                "LightningReedProps": [
+                    "NumShotBounces",
+                    "BounceDamagePercent",
+                    "BounceDelay",
+                    "DecayDelay",
+                    "PlantFoodCloudSpeed",
+                    "PlantFoodLightningBoltDamage",
+                    "PlantFoodAttackCooldown",
+                    "PlantFoodCloudDuration"
+                ],
+                "MagnetShroomProps": [
+                    "GridSquareRangeWidth",
+                    "GridSquareRangeHeight",
+                    "InitialPulledObjectSpeed",
+                    "PulledObjectAcceleration",
+                    "DestroyPulledObjectsTime",
+                    "MaxPlantFoodObjects",
+                    "PlantFoodCollectTime",
+                    "PlantFoodProjectileType",
+                    "PullableZombieTypes",
+                    "PullableZombieHeadTypes"
+                ],
+                "MagnifyingGrassProps": [
+                    "SunMoneyPerShot",
+                    "SunSuckInTime",
+                    "PlantFoodBeamDPS",
+                    "PlantFoodBeamMovementRate",
+                    "PlantFoodBeamStartOffset",
+                    "PlantFoodOriginArtOffset",
+                    "PlantFoodBeamStartArtOffset",
+                    "PlantFoodBeamEndArtOffset",
+                    "PlantFoodHitEffectPivotOffset",
+                    "PlantFoodBeamMaxTargetingAngleDegrees",
+                    "PlantFoodBeamMaxTargetingDistance",
+                    "PlantFoodPulseDamage",
+                    "SunproducerTypes",
+                    "SunproducerOriginatingPlantOffset",
+                    "SunproducerTargetMagnifyingGrassOffset",
+                    "SunproducerExtendTime",
+                    "SunproducerContractTime",
+                    "SunproducerBeamStartOffset",
+                    "SunproducerBeamEndOffset"
+                ],
+                "MegaGatlingProps": [
+                    "ChanceToPF",
+                    "PlantFoodDurationSeconds",
+                    "PlantFoodProjectileCount"
+                ],
+                "MelonpultProps": [
+                    "NormalProjectileLobHeight",
+                    "NormalProjectileTimeOfFlight",
+                    "PlantfoodProjectileLobHeight",
+                    "PlantfoodProjectileTimeOfFlight"
+                ],
+                "MiniPeashooterProps": [
+                    "MiniPeasNeededBetweenTiers",
+                    "MaxDamageTier",
+                    "BaseDamageMultiplier",
+                    "DamageTierMultiplier"
+                ],
+                "MissileToeProps": [
+                    "NumPlantfoodRockets",
+                    "FireTime",
+                    "PlantfoodFireTime",
+                    "TargetOffset",
+                    "ChillDuration",
+                    "FreezeDuration"
+                ],
+                "MoonFlowerProps": [
+                    "BoostRadius",
+                    "SunPerNeighbor",
+                    "MaxSunProduction",
+                    "ShadowBoostable"
+                ],
+                "MurkadamiaProps": [
+                    "MurkRegenerationDelay",
+                    "MurkRegenerationDPS",
+                    "MurkArmorMax",
+                    "MurkArmorInitial",
+                    "MurkReflectionDamage",
+                    "MurkDamageAnimThreshold",
+                    "MurkUnboostedLayers",
+                    "MurkBoostedLayers",
+                    "BoostAnimLayers"
+                ],
+                "NightshadeProps": [
+                    "MeleeDamage",
+                    "PFMeleeDamage",
+                    "LeafRespawnCooldown",
+                    "TargetProps"
+                ],
+                "NoctarineCloudProps": [
+                    "BoostRadius"
+                ],
+                "NoctarineProps": [
+                    "PoweredActionDamage",
+                    "ExplosionPAMOffset",
+                    "ActionDamageCloud",
+                    "PoweredActionDamageCloud",
+                    "GasDamageBonus",
+                    "PoweredGasDamageBonus",
+                    "GasDuration",
+                    "PoweredGasDuration",
+                    "PoweredSlowDuration",
+                    "PoweredExplosionChance",
+                    "CorpseExplosionDamage",
+                    "CorpseExplosionGridSquareHeight",
+                    "CorpseExplosionGridSquareWidth",
+                    "ZombieExcludeList"
+                ],
+                "OlivePitProps": [
+                    "PitCapacity",
+                    "ChewTime",
+                    "PitExcludelist",
+                    "PitCapacityExcludelist",
+                    "OilItemName",
+                    "OilSpitRecharge",
+                    "OilSpitRange",
+                    "OilDuration",
+                    "OilCondition",
+                    "CanBeTargetedByList",
+                    "ZombieFallTime",
+                    "PFZombiePullTime",
+                    "PFZombieFallTime"
+                ],
+                "PeanutProps": [
+                    "ref:PeashooterProps",
+                    "PlantFoodShieldHitpoints"
+                ],
+                "PeashooterProps": [
+                    "PlantFoodProjectileCount"
+                ],
+                "PeppermintProps": [
+                    "ref:EmpowermintProps",
+                    "FireDuration",
+                    "FireDamageTick",
+                    "FireDamagePerTick"
+                ],
+                "PepperpultProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "PlantfoodProjectilesToFire"
+                ],
+                "PhatBeetProps": [
+                    "PowerfulAttackRatioMin",
+                    "PowerfulAttackRatioMax"
+                ],
+                "PlantCoinDispenserProps": [
+                    "PlantFoodCoinsToSpawn"
+                ],
+                "PlantLauncherProps": [
+                    "NumPlantfoodRockets",
+                    "FireTime",
+                    "PlantfoodFireTime",
+                    "TargetOffset"
+                ],
+                "PlantPerfumeShroomProps": [
+                    "CharmBurstProps"
+                ],
+                "PlantPropertySheet": [],
+                "PlantReincarnationProps": [
+                    "PetalAmount",
+                    "RecoveryTime"
+                ],
+                "PlantSolarTomatoProps": [
+                    "SolarFlareStunDuration",
+                    "SolarFlareDamage",
+                    "ExplosionWidth",
+                    "ExplosionHeight"
+                ],
+                "PoisonPeashooterProps": [
+                    "MaxStacks",
+                    "PoisonDPSPerStack",
+                    "SpeedPercentDecreasePerStack",
+                    "PoisonAndSlowDuration",
+                    "PlantfoodPoisonDPS",
+                    "PlantfoodSpeedPercentDecrease",
+                    "PlantfoodPoisonAndSlowDuration",
+                    "PlantfoodKnockBackDistance",
+                    "PlantfoodKnockBackTime",
+                    "PlantfoodKnockBackHeight",
+                    "GridItemLifetime",
+                    "GridItemPoisonAndSlowDuration",
+                    "GridItemSpeedPercentDebuff",
+                    "GridItemPoisonDPS"
+                ],
+                "PokraProps": [
+                    "RecoveryTime",
+                    "SlowDuration",
+                    "SlowDurationFinal",
+                    "SlowDurationPF",
+                    "TimeBetweenAttacks",
+                    "PhaseOneAttackRateOverrideValue",
+                    "PhaseTwoAttackRateOverrideValue",
+                    "PhaseThreeAttackRateOverrideValue",
+                    "PhaseFourAttackRateOverrideValue",
+                    "BasicProjectileAttackRateOverrideValue",
+                    "PlantfoodProjectileAttackRateOverrideValue"
+                ],
+                "PotatomineProps": [
+                    "DuplicationInformation",
+                    "ExplodeRadius",
+                    "TimeUntilArmed"
+                ],
+                "PowerPlantProps": [
+                    "NumberOfFreeTiles",
+                    "FirstNonFreeCost",
+                    "CostMultiplier"
+                ],
+                "PowerVineProps": [
+                    "PFRotationAngleDegrees",
+                    "NetworkPlantMin",
+                    "NetworkShots",
+                    "NetworkedPlantFoodPlayCount",
+                    "NetworkShotCooldown",
+                    "PFEmpBurstIncludeList",
+                    "EmpBurstActivationRadius",
+                    "EmpBurstStunTime",
+                    "PFProjectileRotationOffset"
+                ],
+                "PrimalWallnutProps": [
+                    "SmashDamage"
+                ],
+                "PuffballProps": [
+                    "DecayPoisonDPS",
+                    "ConfettiPropagationDelay"
+                ],
+                "PuffshroomProps": [
+                    "PlantFoodProjectileCount",
+                    "ExpirationDurationSeconds",
+                    "ExpirationBlinkTime",
+                    "PlantfoodPropagationDelayBaseSeconds",
+                    "PlantfoodPropagationDelayPerTileDistanceSeconds",
+                    "PlantfoodResetsDecayForAllPuffshrooms"
+                ],
+                "PvineProps": [
+                    "PlantFoodProjectileCount",
+                    "BoostRadius"
+                ],
+                "PyreVineProps": [
+                    "WarmingRadius",
+                    "FlameOffset",
+                    "PFFlameDamage",
+                    "GridLengthOfFlamethrower",
+                    "FlamethrowerDPS"
+                ],
+                "ReinforcemintProps": [
+                    "ref:EmpowermintProps",
+                    "KnockbackTime",
+                    "KnockbackHeight",
+                    "KnockbackDistance"
+                ],
+                "RepeaterProps": [
+                    "PlantFoodProjectileCount"
+                ],
+                "RhubarbarianProps": [
+                    "LifespanTimer",
+                    "TimerPauseDuration",
+                    "InitialSmashDamage",
+                    "InitialStunDuration",
+                    "InitialSmashDamageWidth",
+                    "InitialSmashDamageHeight",
+                    "LeapStunDamageWidth",
+                    "LeapStunDamageHeight",
+                    "LeapDistanceCap",
+                    "LeapStunDuration",
+                    "LeapDamage",
+                    "LeapProps",
+                    "ZombieFlickExcludeList",
+                    "FlightTime",
+                    "ApexHeight"
+                ],
+                "SapflingProps": [
+                    "PlantfoodPineconeCount",
+                    "AmountToAimLeftOfZombie",
+                    "TargetableZombieTypes",
+                    "NormalLaunchProps",
+                    "PlantfoodLaunchProps"
+                ],
+                "ShadowPeashooterProps": [
+                    "PlantFoodProjectileCount",
+                    "PoweredAttackSlowDuration",
+                    "PoweredAttackSlowMinimumDuration",
+                    "PoweredAttackDecayPerZombieHit",
+                    "ShadowBoostedZombieSwallows",
+                    "PlantFoodBombTravelTime",
+                    "ZombieSwallowExcludeList"
+                ],
+                "ShadowShroomProps": [
+                    "PoisonDPS",
+                    "PoisonDuration",
+                    "CannotBePoisoned"
+                ],
+                "ShineVineProps": [
+                    "SunProductionModifier",
+                    "SunProducerExcludelist"
+                ],
+                "ShrinkingVioletProps": [
+                    "ShrinkTime",
+                    "DamageMultiplier",
+                    "UnshrinkableZombies"
+                ],
+                "SnapPeaProps": [
+                    "ChewTimeSeconds",
+                    "FiredZombieHeadAttackCooldownSeconds",
+                    "CouldNotEatAttackCooldownSeconds",
+                    "PlantfoodTargetCount",
+                    "ZombieEatTypeExcludelist",
+                    "ZombieEatExcludelist",
+                    "ZombieBurrowAttackExcludelist"
+                ],
+                "SnapdragonProps": [
+                    "ProjectilePAM"
+                ],
+                "SnowPeaProps": [
+                    "PlantFoodProjectileCount",
+                    "PercentChanceOfFreezingPea"
+                ],
+                "SolarSageProps": [
+                    "IlluminationExcludeList",
+                    "SunSpawnOffset",
+                    "InfectivityPercentage",
+                    "InfectivityPercentagePF",
+                    "SunProductionTimer",
+                    "SunProductionTimerCap",
+                    "InfectivityCooldown",
+                    "InfectivityRange"
+                ],
+                "SpearmintProps": [
+                    "ref:EmpowermintProps",
+                    "NumPlantsToSpawn",
+                    "LevelOfSpawnedPlants",
+                    "PlantTypeToSpawn"
+                ],
+                "SpikeweedProps": [
+                    "PFSpikeDamage",
+                    "PFSpikeCooldown",
+                    "PFSpikeOffset",
+                    "PlantFoodDPS",
+                    "PFConveyorSpeed"
+                ],
+                "SplitpeaProps": [
+                    "PlantFoodForwardProjectileCount",
+                    "PlantFoodBackwardProjectileCount"
+                ],
+                "SporeshroomProps": [
+                    "DuplicatableZombies",
+                    "NormalLaunchProps",
+                    "PlantfoodLaunchProps"
+                ],
+                "SpringbeanProps": [
+                    "KnockbackTime",
+                    "KnockbackOffset",
+                    "KnockbackHeight",
+                    "AttackRecoveryTime",
+                    "RectZombieProximity"
+                ],
+                "SproutProps": [
+                    "TimeToGerminate",
+                    "PlantWeights"
+                ],
+                "SquashProps": [
+                    "SquashRadius",
+                    "PlantfoodZombiesToTarget",
+                    "NormalZombiesToTarget",
+                    "Number",
+                    "Weight"
+                ],
+                "StalliaProps": [
+                    "Knockback",
+                    "StallDuration",
+                    "PlantfoodStallDuration"
+                ],
+                "StarFruitProps": [
+                    "PlantFoodProjectileCount",
+                    "FireHeight"
+                ],
+                "StickybombRiceProps": [
+                    "ProjectileLobHeight",
+                    "ProjectileTimeOfFlight",
+                    "ProjectileCount",
+                    "CreatedBombTimer",
+                    "CreatedBombExplodeRadius",
+                    "CreatedBombBaseDamage",
+                    "CreatedBombPropagationMultiplier",
+                    "PlantfoodCreatedBombTimer",
+                    "PlantfoodCreatedBombExplodeRadius",
+                    "PlantfoodCreatedBombBaseDamage",
+                    "PlantfoodCreatedBombPropagationMultiplier"
+                ],
+                "StrawburstProps": [
+                    "MinimumSpeedScaleWhilePushing",
+                    "NumPushedZombiesForMinSpeed",
+                    "ExplodeAtXPosition",
+                    "NormalLaunchProps"
+                ],
+                "StunionProps": [
+                    "PlantfoodProjectileDistance",
+                    "PoisonDPS",
+                    "StaticGasCloudPAMOffset"
+                ],
+                "SunBeanProps": [
+                    "SunMultiplierOnPlantfoodBurst",
+                    "MaxSunPerZombieOnPlantfoodBurst",
+                    "SunPerHitpoint",
+                    "MaxSunPerZombie",
+                    "OnlyLargeSun"
+                ],
+                "SunGunProps": [
+                    "AngleVarianceInDegrees"
+                ],
+                "SunflowerProps": [
+                    "PlantFoodSunCount"
+                ],
+                "SunpodProps": [
+                    "SunBankPerTier"
+                ],
+                "SunshroomProps": [
+                    "ref:SunflowerProps"
+                ],
+                "SweetPotatoProps": [
+                    "MovableZombies",
+                    "NormalAttractRect",
+                    "PlantfoodAttractRect",
+                    "LaneChangeTime",
+                    "TimeBetweenLaneChanges",
+                    "DrawAttractRects"
+                ],
+                "TangleKelpProps": [
+                    "MinPlantfoodWaterKills",
+                    "MaxPlantfoodWaterKills",
+                    "MaxNormalWaterKills",
+                    "ZombieDrownExcludeList",
+                    "SlapDamage"
+                ],
+                "TeleportatoMineProps": [
+                    "ArmingTime",
+                    "TeleportationUnitLimit",
+                    "CannotTeleport",
+                    "TimeOfWarpOut",
+                    "TimeZombieIsGone",
+                    "TimeOfWarpIn",
+                    "ConditionsRemovedByWarping"
+                ],
+                "ThymeWarpProps": [
+                    "TimeBeforeWarpStart",
+                    "TimeOfWarpOut",
+                    "TimeZombieIsGone",
+                    "TimeOfWarpIn",
+                    "WarpZombieHP",
+                    "ConditionsRemovedByWarping"
+                ],
+                "TigerGrassProps": [
+                    "TigerHealing",
+                    "TigerRegenTime",
+                    "GrowthTime",
+                    "TigerHealth",
+                    "GlobalGrowthMultiplier",
+                    "TigerPFHealth",
+                    "PounceDamageMultiplier",
+                    "TigerTypeToSpawn",
+                    "NormalLaunchProps",
+                    "ZombiesExcludeList"
+                ],
+                "ToadstoolProps": [
+                    "ZombieChewExcludelist",
+                    "TongueOffRowRangeOffset",
+                    "TimeBetweenBites",
+                    "RectInstantGulpTriggerRange",
+                    "NormalTongueStretcherProps",
+                    "NormalTongueRange",
+                    "NormalTongueSlapDamage",
+                    "NormalTongueWaitTimeSeconds",
+                    "NormalChewTimeSeconds",
+                    "NormalAmountOfSunProducedPerZombie",
+                    "PFTongueStretcherProps",
+                    "PFTargetSearchExpirationSeconds",
+                    "PFMaxNumberOfTargets",
+                    "PFTongueRange",
+                    "PFTongueSlapDamage",
+                    "PFTongueWaitTimeSeconds",
+                    "PFChewTimeSeconds",
+                    "PFAmountOfSunProducedPerZombie"
+                ],
+                "TombTanglerProps": [
+                    "FogZombieSlowDownPercentage",
+                    "HealthConversionPercentage",
+                    "FogPullChance",
+                    "FogPullChanceTickTime",
+                    "PFTargets",
+                    "UndergroundDamage",
+                    "PullZombieExcludelist",
+                    "SlowDownExcludelist",
+                    "InvulnerableZombieIncludelist",
+                    "PullExcludeZombieConditions",
+                    "mX",
+                    "mY",
+                    "mWidth",
+                    "mHeight",
+                    "Type",
+                    "Context",
+                    "Props",
+                    "List",
+                    "Type",
+                    "Projectile",
+                    "ExplodeType",
+                    "ExplodeRadius",
+                    "TriggerType",
+                    "DieAfterExplode",
+                    "InitialMinCooldownTime",
+                    "CooldownTimeMin",
+                    "CooldownTimeMax",
+                    "XVelocityOverride",
+                    "Damage",
+                    "SplashDamage",
+                    "Burns",
+                    "PushbackAmount",
+                    "ChillDuration",
+                    "FreezeDuration",
+                    "StunDuration",
+                    "RectTriggerRange",
+                    "ProjectileLaunchSound",
+                    "SpawnOffset",
+                    "SecondaryAction",
+                    "PlantBoostProps",
+                    "Value",
+                    "CooldownDurationSeconds"
+                ],
+                "TorchwoodProps": [
+                    "ConvertProjectiles",
+                    "NormalWarmingRadius",
+                    "PlantfoodWarmingRadius",
+                    "LevelToStartAutoBoost",
+                    "InputType",
+                    "OutputType",
+                    "PFOutputType",
+                    "AudioEventName"
+                ],
+                "TumbleweedProps": [
+                    "BonusTumblersChance",
+                    "BonusTumblersAmount",
+                    "BonusTumblersTimeBetween",
+                    "TumbleStunChance",
+                    "TumbleStunDuration",
+                    "KnockbackDistance",
+                    "KnockbackChance"
+                ],
+                "TurkeypultProps": [
+                    "TurkeyTypeToSpawn",
+                    "PlantfoodTurkeyTypeToSpawn",
+                    "TurkeyLevel",
+                    "NormalLaunchProps",
+                    "PlantfoodLaunchProps"
+                ],
+                "UltomatoProps": [
+                    "BeamStartOffset",
+                    "BeamStartArtOffset",
+                    "BeamEndArtOffset",
+                    "BeamDPSUpgrade1",
+                    "BeamDPSUpgrade2",
+                    "BeamDPSUpgrade3",
+                    "HitpointsUpgrade2",
+                    "HitpointsUpgrade3",
+                    "CostPerExistingPlant",
+                    "ResetLaunchTimeOnUpgrade"
+                ],
+                "WasabiWhipProps": [
+                    "NormalWarmingRadius",
+                    "PlantfoodWarmingRadius",
+                    "TargetCount"
+                ],
+                "WintermelonProps": [
+                    "ref:MelonpultProps",
+                    "ChillDuration"
+                ],
+                "WintermintProps": [
+                    "ref:EmpowermintProps",
+                    "ChillDuration"
+                ],
+                "WitchHazelProps": [
+                    "MagicOffset",
+                    "DecayDelay",
+                    "BasicTransformationType",
+                    "PlantfoodTransformationType",
+                    "BasicTransformationLevel",
+                    "PlantfoodTransformationLevel",
+                    "ZombieTransformationExcludelist",
+                    "ZombieTargetingExcludelist"
+                ],
+                "XShotProps": [
+                    "PlantFoodProjectileCount",
+                    "PlantFoodAngleVarianceInDegrees",
+                    "FireHeight"
+                ],
+                "ZoybeanPodProps": [
+                    "ZombieTypeToSpawn",
+                    "PlantFoodZombieTypeToSpawn",
+                    "ZombieLevel",
+                    "PlantFoodZombieLevel",
+                    "CycleTime"
+                ]
+            }
+        },
+        "PlantTypes": {
+            "Main": [
+                "TypeName",
+                "IntegerID",
+                "PlantFramework",
+                "AnimRigClass",
+                "PopAnim",
+                "Properties",
+                "HomeWorld",
+                "AlmanacBackdropName",
+                "Families",
+                "PlantResourceGroups",
+                "PlantPreviewResourceGroups",
+                "ShadowOffset",
+                "ShadowScale",
+                "HasShadow",
+                "HasStoreShadow",
+                "Premium",
+                "CannotBeImitated",
+                "DenyPlantfoodCooldownReset",
+                "SeedChooserVerticalOffset",
+                "SeedChooserBigVerticalOffset",
+                "SeedChooserBigHorizontalOffset",
+                "SeedChooserBigScale",
+                "BundleVerticalOffset",
+                "SeasonsVerticalOffset",
+                "MasteryType",
+                "HideInPlantViewers",
+                "Enabled"
+            ],
+            "Sub": {
+                "PlantType": [],
+                "PlantTypeCeleryStalker": [],
+                "PlantTypeChardGuard": [],
+                "PlantTypeGoldLeaf": [],
+                "PlantTypeGraveBuster": [],
+                "PlantTypeHollyKnight": [],
+                "PlantTypeHotPotato": [
+                    "TargetableGridItemTypes",
+                    "UnlockedTargetableGridItemTypes",
+                    "UnlockedWorldsAvailable"
+                ],
+                "PlantTypeIntensiveCarrot": [],
+                "PlantTypeLilyPad": [],
+                "PlantTypePeapod": [],
+                "PlantTypePowerPlant": [],
+                "PlantTypeTangleKelp": [],
+                "PlantTypeUltomato": []
+            }
+        },
+        "Products": {
+            "Main": [
+                "Sku",
+                "Name",
+                "LawnShortDescription",
+                "ObjectType",
+                "ObjectItem",
+                "ObjectCount",
+                "PriceGems",
+                "PriceMints",
+                "PriceCoins",
+                "Price",
+                "IsFree",
+                "IsAdPlacement",
+                "IOS_Nimble",
+                "NA_Nimble",
+                "ROW_Nimble",
+                "BundleProps"
+            ],
+            "Sub": {
+                "StoreProductProps": []
+            }
+        },
+        "ProjectileTypes": {
+            "Main": [
+                "ClassName",
+                "BaseDamage",
+                "HealAmount",
                 "SplashDamage",
-                "Burns",
-                "PushbackAmount",
-                "ChillDuration",
-                "FreezeDuration",
-                "StunDuration",
-                "RectTriggerRange",
-                "ProjectileLaunchSound",
-                "SpawnOffset",
-                "SecondaryAction",
-                "PlantBoostProps",
-                "Value",
-                "CooldownDurationSeconds"
-            ],
-            "TorchwoodProps": [
-                "ConvertProjectiles",
-                "NormalWarmingRadius",
-                "PlantfoodWarmingRadius",
-                "LevelToStartAutoBoost",
-                "InputType",
-                "OutputType",
-                "PFOutputType",
-                "AudioEventName"
-            ],
-            "TumbleweedProps": [
-                "BonusTumblersChance",
-                "BonusTumblersAmount",
-                "BonusTumblersTimeBetween",
-                "TumbleStunChance",
-                "TumbleStunDuration",
-                "KnockbackDistance",
-                "KnockbackChance"
-            ],
-            "TurkeypultProps": [
-                "TurkeyTypeToSpawn",
-                "PlantfoodTurkeyTypeToSpawn",
-                "TurkeyLevel",
-                "NormalLaunchProps",
-                "PlantfoodLaunchProps"
-            ],
-            "UltomatoProps": [
-                "BeamStartOffset",
-                "BeamStartArtOffset",
-                "BeamEndArtOffset",
-                "BeamDPSUpgrade1",
-                "BeamDPSUpgrade2",
-                "BeamDPSUpgrade3",
-                "HitpointsUpgrade2",
-                "HitpointsUpgrade3",
-                "CostPerExistingPlant",
-                "ResetLaunchTimeOnUpgrade"
-            ],
-            "WasabiWhipProps": [
-                "NormalWarmingRadius",
-                "PlantfoodWarmingRadius",
-                "TargetCount"
-            ],
-            "WintermelonProps": [
-                "ref:MelonpultProps",
-                "ChillDuration"
-            ],
-            "WintermintProps": [
-                "ref:EmpowermintProps",
-                "ChillDuration"
-            ],
-            "WitchHazelProps": [
-                "MagicOffset",
-                "DecayDelay",
-                "BasicTransformationType",
-                "PlantfoodTransformationType",
-                "BasicTransformationLevel",
-                "PlantfoodTransformationLevel",
-                "ZombieTransformationExcludelist",
-                "ZombieTargetingExcludelist"
-            ],
-            "XShotProps": [
-                "PlantFoodProjectileCount",
-                "PlantFoodAngleVarianceInDegrees",
-                "FireHeight"
-            ],
-            "ZoybeanPodProps": [
-                "ZombieTypeToSpawn",
-                "PlantFoodZombieTypeToSpawn",
-                "ZombieLevel",
-                "PlantFoodZombieLevel",
-                "CycleTime"
-            ]
-        }
-    },
-    "PlantTypes": {
-        "Main": [
-            "TypeName",
-            "IntegerID",
-            "PlantFramework",
-            "AnimRigClass",
-            "PopAnim",
-            "Properties",
-            "HomeWorld",
-            "AlmanacBackdropName",
-            "Families",
-            "PlantResourceGroups",
-            "PlantPreviewResourceGroups",
-            "ShadowOffset",
-            "ShadowScale",
-            "HasShadow",
-            "HasStoreShadow",
-            "Premium",
-            "CannotBeImitated",
-            "DenyPlantfoodCooldownReset",
-            "SeedChooserVerticalOffset",
-            "SeedChooserBigVerticalOffset",
-            "SeedChooserBigHorizontalOffset",
-            "SeedChooserBigScale",
-            "BundleVerticalOffset",
-            "SeasonsVerticalOffset",
-            "MasteryType",
-            "HideInPlantViewers",
-            "Enabled"
-        ],
-        "Sub": {
-            "PlantType": [],
-            "PlantTypeCeleryStalker": [],
-            "PlantTypeChardGuard": [],
-            "PlantTypeGoldLeaf": [],
-            "PlantTypeGraveBuster": [],
-            "PlantTypeHollyKnight": [],
-            "PlantTypeHotPotato": [
-                "TargetableGridItemTypes",
-                "UnlockedTargetableGridItemTypes",
-                "UnlockedWorldsAvailable"
-            ],
-            "PlantTypeIntensiveCarrot": [],
-            "PlantTypeLilyPad": [],
-            "PlantTypePeapod": [],
-            "PlantTypePowerPlant": [],
-            "PlantTypeTangleKelp": [],
-            "PlantTypeUltomato": []
-        }
-    },
-    "# Plant_RV_Rental_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PlayerSegments": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Powers": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PowerupTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PresentTables": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# PresentTypes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "Products": {
-        "Main": [
-            "Sku",
-            "Name",
-            "LawnShortDescription",
-            "ObjectType",
-            "ObjectItem",
-            "ObjectCount",
-            "PriceGems",
-            "PriceMints",
-            "PriceCoins",
-            "Price",
-            "IsFree",
-            "IsAdPlacement",
-            "IOS_Nimble",
-            "NA_Nimble",
-            "ROW_Nimble",
-            "BundleProps"
-        ],
-        "Sub": {
-            "StoreProductProps": []
-        }
-    },
-    "ProjectPath": "C:/Personal/PvZ2/Projects/Impunity/main.675.com.ea.game.pvz2_imp.obb.bundle/packages",
-    "ProjectileTypes": {
-        "Main": [
-            "ClassName",
-            "BaseDamage",
-            "HealAmount",
-            "SplashDamage",
-            "SplashRadius",
-            "SplashRadiusBaseDamageCutoff",
-            "ShakeBoardOnSplash",
-            "CollisionFlags",
-            "DamageFlags",
-            "InitialVelocity",
-            "InitialAcceleration",
-            "InitialVelocityScale",
-            "InitialHeight",
-            "InitialRotation",
-            "InitialAngularVelocity",
-            "InitialScale",
-            "CollisionRect",
-            "AttachedPAM",
-            "AttachedPAMAnimRigClass",
-            "AttachedPAMAnimationToPlay",
-            "AttachedPAMOffset",
-            "AttachedPAMEffectOffset",
-            "SpawnPAM",
-            "SpawnPAMAnimationToPlay",
-            "SpawnPAMOffset",
-            "ImpactPAM",
-            "ImpactPAMAnimationToPlay",
-            "ImpactOffset",
-            "ImpactShowsAtZombieFeet",
-            "RenderColor",
-            "RenderImage",
-            "ShadowImage",
-            "ImpactSoundEvent",
-            "ImpactSoundThrottleTimer",
-            "ImpactSoundForce",
-            "HasShadow",
-            "FollowsGround",
-            "RotateToMatchVelocity",
-            "DiesOnImpact",
-            "StunDuration",
-            "OverrideStunCondition",
-            "Conditions"
-        ],
-        "Sub": {
-            "AkeeProjectileProps": [
-                "ProjectileRetargetingRadius",
-                "PropertyReductionMultiplierPerBounce",
-                "DamageReductionAmountPerBounce"
-            ],
-            "BlastberryMainProjectileProps": [
-                "ChildProjectileType",
-                "ChildProjectileXStart",
-                "ChildProjectileXSpacing"
-            ],
-            "BloomingHeartsProjectileProps": [
-                "MaximumStacks",
-                "StacksToAdd",
-                "AdditionalDamagePerStack"
-            ],
-            "BoomFlowerProjectileProps": [
-                "BalloonLifetime",
-                "BalloonMaxMerge"
-            ],
-            "BoulderProjectileProps": [
-                "RollingVelocity",
-                "BounceElasticity",
-                "BounceThreshold"
-            ],
-            "BouncingAndRollingProjectileProps": [
-                "BounceAngleInRadians",
-                "BounceOutwardTendency"
-            ],
-            "BowlingBulbProjectileProps": [
-                "ref:BouncingAndRollingProjectileProps",
-                "HitsUntilFirstAward",
-                "HitsUntilRepeatAward",
-                "LootAwardOnHits"
-            ],
-            "ButtercupProjectileProps": [
-                "ButterItemName"
-            ],
-            "CactusProjectileProps": [
-                "InitialPierceChance",
-                "PierceChanceReductionPerHit"
-            ],
-            "CaulipowerProjectileProps": [
-                "InitialPositionOffset"
-            ],
-            "DandelionProjectileProps": [
-                "ResistancePerSecond",
-                "LaneChangeStartOffsetY",
-                "LaneChangeStartVelocityY",
-                "DriftDecayZPeriod",
-                "DriftDecayZTargetVelocity",
-                "DriftDecayXPeriod",
-                "DriftDecayXTargetVelocity"
-            ],
-            "DartichokeLeafProps": [
-                "MaxRotationsPerSecond",
-                "Lifetime"
-            ],
-            "DraftodilProjectileProps": [
-                "WindAccel",
-                "UpPercent",
-                "CanBlowAway"
-            ],
-            "DusklobberPlantfoodProjectileProps": [
-                "ShrapnelDamage",
-                "ShrapnelRadius",
-                "PauseBeforeStartingFlower"
-            ],
-            "ElectricPeaPlantfoodSubProps": [
-                "SlowDownPercentage",
-                "SlowDownTime"
-            ],
-            "GiantPlasmaProjectileProps": [
-                "MinTossAngle",
-                "MaxTossAngle",
-                "TossSpeed",
-                "TossSpinRadiansPerSecond"
-            ],
-            "GrapeshotProjectileProps": [
-                "BounceAngleInRadians",
-                "BounceOutwardTendency",
-                "BouncesUntilSelfDestruct",
-                "EndingPAM"
-            ],
-            "GuacodileProjectileProps": [
-                "ChompsPerSecond",
-                "DamagePerChomp"
-            ],
-            "HeathSeekerProjectileProps": [
-                "MaxRotationsPerSecond",
-                "Lifetime"
-            ],
-            "HollyKnightLeafProps": [
-                "KnockbackChance",
-                "KnockbackTime",
-                "KnockbackHeight",
-                "ShieldType",
-                "IsFromPlantFood"
-            ],
-            "HomingThistleLeafProps": [
-                "MaxRotationsPerSecond",
-                "Lifetime"
-            ],
-            "InfernoPFProjectileProps": [
-                "ref:InfernoProjectileProps",
-                "LaneChangeTime",
-                "TimeBetweenLaneChanges",
-                "CyclonePullSquareRange"
-            ],
-            "InfernoProjectileProps": [
-                "TimeBetweenDamagePulses",
-                "DamagePulseMultiple",
-                "UnmovableZombies",
-                "MeltableGridItems",
-                "InitialExtraVelocityStart",
-                "InitialExtraVelocitySeconds",
-                "InitialExtraVelocityCurve"
-            ],
-            "ParsnipProjectileProps": [
-                "ChompsPerSecond",
-                "DamagePerChomp"
-            ],
-            "PowerDrinkProjectileProps": [
-                "ConditionToApply"
-            ],
-            "PrimalPeashooterProjectileProps": [
-                "StunDuration",
-                "KnockbackChance",
-                "KnockbackDistance",
-                "KnockbackTime",
-                "KnockbackHeight"
-            ],
-            "ProjectilePropertySheet": [],
-            "SandbagProjectileProps": [
-                "ImpactRadiusX",
-                "ImpactRadiusY"
-            ],
-            "SapflingProjectileProps": [
-                "SapItemName"
-            ],
-            "SnapPeaMedusaProjectileProps": [
-                "PetrificationArea",
-                "CannotBePetrified",
-                "PetrifiedHealthMultiplier",
-                "PetrifiedZombieType"
-            ],
-            "SnowPeaFreezingProjectileProps": [
-                "LinearAOE"
-            ],
-            "SnowPeaProjectileProps": [
-                "LinearAOE"
-            ],
-            "SnowballProjectileProps": [
-                "MinZombieDamagePct",
-                "MaxDamage"
-            ],
-            "TumbleweedProjectileProps": [
-                "ref:BouncingAndRollingProjectileProps",
-                "KnockbackTime",
-                "KnockbackHeight",
-                "TossChanceBuckets",
-                "TossChance"
-            ]
-        }
-    },
-    "# PropertySheets": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Quest_Categories": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Quest_Rewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Quest_Themes": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Quests": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Event_Config": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_First_Clear_Rewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Level_Unlocks": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Perk_Progression": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Perks": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Sub_Event": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Rift_Zomboss_Rewards": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# ServerConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# StartupConfig": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# StreamingWaves": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Thymed_Event_Schedule": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Thymed_Event_Track_Definitions": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# ToolPackets": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# UI_Layout": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "# Version": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "WorldMapList": {
-        "Main": [
-            "MapList",
-            "MapResourceGrid",
-            "MapResourceGridWidth",
-            "MapResourceGridHeight",
-            "MapResourceGridOffsetX",
-            "MapResourceGridOffsetY"
-        ],
-        "Sub": {
-            "WorldMapList": []
-        }
-    },
-    "WorldMapList_Rift": {
-        "Main": [
-            "MapList",
-            "MapResourceGrid",
-            "MapResourceGridWidth",
-            "MapResourceGridHeight",
-            "MapResourceGridOffsetX",
-            "MapResourceGridOffsetY"
-        ],
-        "Sub": {
-            "WorldMapList": []
-        }
-    },
-    "WorldMapList_Utility": {
-        "Main": [
-            "MapList",
-            "MapResourceGrid",
-            "MapResourceGridWidth",
-            "MapResourceGridHeight",
-            "MapResourceGridOffsetX",
-            "MapResourceGridOffsetY"
-        ],
-        "Sub": {
-            "WorldMapList": []
-        }
-    },
-    "# ZombieActions": {
-        "Main": [],
-        "Sub": {
-            "": []
-        }
-    },
-    "ZombieProperties": {
-        "Main": [
-            "Hitpoints",
-            "EatDPS",
-            "Speed",
-            "SpeedVariance",
-            "WavePointCost",
-            "Weight",
-            "Size",
-            "GroundTrackName",
-            "ZombieArmorProps",
-            "AlmanacScale",
-            "AlmanacOffset",
-            "ArtCenter",
-            "ArtScale",
-            "ArtCenterBurnEffectOffset",
-            "ShrunkenScale",
-            "HitRect",
-            "AttackRect",
-            "ShadowOffset",
-            "ShadowScaling",
-            "GridExtents",
-            "HypnoshroomEffectOffset",
-            "StreetSize",
-            "StreetCriticalSize",
-            "StreetOffset",
-            "CanSpawnPlantFood",
-            "CanSurrender",
-            "CanTriggerZombieWin",
-            "ExplodesWhenMowed",
-            "NormalDeathWhenMowed",
-            "NormalDeathOnExplosion",
-            "IsSpawnedFlying",
-            "CanBePlantTossedWeak",
-            "CanBePlantTossedStrong",
-            "CanBeFlicked",
-            "CanBeFlickedOff",
-            "FlickIsLaneRestricted",
-            "IsValidPinchTarget",
-            "ChillInsteadOfFreeze",
-            "SkipHeadDropState",
-            "IgnoreWaterLine",
-            "MaxTideLoweredPercent",
-            "Helm",
-            "HelmHitpoints",
-            "HelmDamageLayerIndices",
-            "HelmAbsorbsOverflowDamage",
-            "TimeToKillInSeconds",
-            "ArmDropFraction",
-            "ScoreOverride",
-            "PowerUpDamageModifier",
-            "FireDamageMultiplier",
-            "FoeEatDamageReflectPct",
-            "SoundOnDeath",
-            "SoundOnTakeDamage",
-            "SoundOnWalk",
-            "SoundOnEat",
-            "SoundOnIdle",
-            "SoundOnAsh",
-            "SoundOnElectrocute",
-            "ConditionImmunities",
-            "Ammo",
-            "MetallicBodyParts",
-            "ZombieStats",
-            "ScaledProps",
-            "Cost",
-            "GridHeight"
-        ],
-        "Sub": {
-            "ZombieBarrelProps": [
-                "TargetByIncludelist",
-                "PlantsWhichBreakBarrelOnCollision",
-                "BurstDelay",
-                "ImpType"
-            ],
-            "ZombieBarrelPusherProps": [
-                "BarrelType"
-            ],
-            "ZombieBeachFastSwimmerProps": [
-                "SwimSpeedMultiplier"
-            ],
-            "ZombieBeachFishermanProps": [
-                "DelayBetweenCasting",
-                "DelayBeforeReeling",
-                "CastingAreaMinRange",
-                "CastingAreaMaxRange",
-                "CastingAreaHeight",
-                "CastTimePerGridSquare",
-                "ReelTimePerGridSquare",
-                "PlantablePlants",
-                "AllowedLowPlants"
-            ],
-            "ZombieBeachOctopusProps": [
-                "ref:ZombieWithActionsProps"
-            ],
-            "ZombieBeachSnorkelProps": [
-                "TargetByIncludelist",
-                "DamageWhileSubmerged",
-                "DamageWhileSubmergedPlantfoodOnly"
-            ],
-            "ZombieBeachSurferProps": [
-                "SurfSpeedMultiplier",
-                "SurfboardAttackRectOffsetX",
-                "BreaksSurfboard",
-                "BlocksSurfboard"
-            ],
-            "ZombieBugProps": [
-                "SpawnedZombieName",
-                "BasicHelm",
-                "DamageFraction",
-                "PlantsWhichAlsoKillBasic",
-                "DamageAmountWhichAlsoKillsBasic"
-            ],
-            "ZombieBullProps": [
-                "BuckRect",
-                "BullRunSpeed",
-                "BullPawLocation",
-                "BullEnterSpeed"
-            ],
-            "ZombieBullRiderProps": [
-                "LaunchDistance",
-                "LaunchHeight",
-                "LaunchAirTime"
-            ],
-            "ZombieBullVeteranProps": [
-                "ref:ZombieBullProps",
-                "BullRunAgainDelay",
-                "BullRammingDamage"
-            ],
-            "ZombieCakeTankProps": [
-                "ref:ZombieGeneralProps",
-                "CustomDamageSteps"
-            ],
-            "ZombieCamelProps": [
-                "CamelSegmentOffset",
-                "CamelSegmentTooCloseBuffer",
-                "CamelSegmentTooFarBuffer",
-                "WalkCycleOffset",
-                "SpawnManyCamelSegmentAtPosition",
-                "PropagateSignDestruction",
-                "OnlyHeadZombieEats",
-                "SurprisedTime",
-                "DropArmOnSignDrop",
-                "SwitchToHeadCamelSign"
-            ],
-            "ZombieCamelTouchProps": [
-                "ref:ZombieCamelProps",
-                "PostMatchStunChance",
-                "PostMatchStunDuration"
-            ],
-            "ZombieCarnieFireBreatherProps": [
-                "FlamePAMOffset",
-                "FlameRange",
-                "FlameDamagePerSecond",
-                "FlameCooldownTime",
-                "DeathExplosionDamage",
-                "DeathExplosionRadius"
-            ],
-            "ZombieCarnieGrinderheadProps": [
-                "MonkeyAudioFrequency",
-                "Percent",
-                "Condition"
-            ],
-            "ZombieCarnieImpTwinsProps": [
-                "SpawnImpType"
-            ],
-            "ZombieCarnieMagicianDoveProps": [
-                "ref:ZombiePirateCaptainParrotProps",
-                "FeatherEffectSpawnOffset"
-            ],
-            "ZombieCarnieMagicianProps": [
-                "ref:ZombieWithActionsProps",
-                "TeleportOtherStartTime",
-                "TeleportSelfStartTime",
-                "DoveSpawnStartTime",
-                "TimeBetweenTeleportOther",
-                "TimeBetweenTeleportSelf",
-                "TimeBetweenDoveSpawn",
-                "TeleportationFailPercentage",
-                "ImmuneToPlantRestrictionSet"
-            ],
-            "ZombieCarnieMonkeyProps": [
-                "ref:ZombieChickenProps",
-                "PercentageChanceToDropCoin",
-                "CoinType"
-            ],
-            "ZombieChickenFarmerProps": [
-                "ChickeningHealthPercentage",
-                "ChickenTypeName",
-                "ChickeningSound",
-                "ChickeningDuration",
-                "ChickeningDurationVariance",
-                "ChickeningInterval",
-                "ChickeningIntervalVariance"
-            ],
-            "ZombieChickenProps": [
-                "BucketPercentage",
-                "ElectrocutePAMName",
-                "AffectedBySliders"
-            ],
-            "ZombieCrystalSkullProps": [
-                "ChargingTime",
-                "ChargingTimeDecrementPerFiveSun",
-                "LaserBeamLength",
-                "LaserBeamDamage",
-                "LaserCooldownTime"
-            ],
-            "ZombieDarkJugglerProps": [
-                "LaunchVelocity",
-                "LaunchAcceleration",
-                "LaunchHeight",
-                "MaxProjectilesToJuggle",
-                "JuggleLaunchDelay",
-                "MoveSpeedMultiplierWhileJuggling",
-                "CatchArcDegrees",
-                "JuggleableProjectiles",
-                "UnthrowableProjectiles",
-                "AngleAgnosticProjectiles"
-            ],
-            "ZombieDarkKingProps": [
-                "DelayBetweenKnightings",
-                "KnightingAreaX",
-                "KnightingAreaY",
-                "KnightHelm",
-                "KnightHelmHitpoints",
-                "ValidKnightTargets",
-                "PlantablePlants"
-            ],
-            "ZombieDarkWizardProps": [
-                "ref:ZombieWithActionsProps"
-            ],
-            "ZombieDinoBullyVeteranProps": [
-                "SmashDuration",
-                "SmashDamage",
-                "SoundOnSmash",
-                "CraterLifetime"
-            ],
-            "ZombieEightiesArcadeProps": [
-                "ref:ZombieWithActionsProps",
-                "JamStyle"
-            ],
-            "ZombieEightiesBoomboxProps": [
-                "PlantBoomRestrictionSet",
-                "JamStyle",
-                "BoomBoxDuration",
-                "PlantFreezeRadius",
-                "BoomBoxColumn"
-            ],
-            "ZombieEightiesBreakDancerProps": [
-                "JamStyle",
-                "JamWalkSpeedMult",
-                "TossTime",
-                "TossHeight",
-                "TossDistance",
-                "TossTargetRect",
-                "ZombiesToNotKick"
-            ],
-            "ZombieEightiesGargantuarProps": [
-                "ref:ZombieGargantuarProps",
-                "JamStyle",
-                "ArbitrarySmashDelay",
-                "ArbitrarySmashDelayVariance",
-                "ShockWaveSpawnOffset"
-            ],
-            "ZombieEightiesGlitterProps": [
-                "JamStyle",
-                "RainbowTrailLength"
-            ],
-            "ZombieEightiesMCProps": [
-                "JamStyle",
-                "JamAttackRadius",
-                "JamAttackDamage"
-            ],
-            "ZombieEightiesPunkProps": [
-                "JamStyle",
-                "PushCooldown",
-                "PushDamageToZombies",
-                "KickFallbackDPS",
-                "PlantsToKickInsteadOfPush"
-            ],
-            "ZombieExcavatorProps": [
-                "CatchArcDegrees",
-                "PreferredDistanceToThrowPlant",
-                "ShovelAttackRectOffsetX",
-                "ShovelRect",
-                "PlantsShovelableWhileInvincible",
-                "PlantsToBashInsteadOfShovel",
-                "ProjectileClassesToNeverBlock"
-            ],
-            "ZombieExplorerProps": [
-                "MaxTorchReach"
-            ],
-            "ZombieFutureJetpackProps": [
-                "DiscoMode"
-            ],
-            "ZombieFutureProtectorProps": [
-                "ref:ZombieMechProps",
-                "ShieldActivationColumn",
-                "ShieldSizeX",
-                "ShieldSizeY",
-                "ShieldHP",
-                "ShieldCount",
-                "ShieldReactivationDelay",
-                "ShieldDiesUponLossOfControl"
-            ],
-            "ZombieGargantuarMechProps": [
-                "ref:ZombieGargantuarProps",
-                "EyeLaserDelayBetweenShots",
-                "EyeLaserWarmUpTime",
-                "EyeLaserSweepTime",
-                "EyeLaserTotalDamage",
-                "EyeLaserMinDistance",
-                "EyeLaserMaxDistance",
-                "EyeLaserSweepLength",
-                "SoundOnDeactivate",
-                "SoundOnActivate",
-                "HealthPercentThrowImp",
-                "ProjectileLayersToHide"
-            ],
-            "ZombieGargantuarProps": [
-                "SmashDuration",
-                "SmashDamage",
-                "SoundOnSmash",
-                "SoundOnCannon",
-                "ImpType",
-                "MinPosXThrowImp",
-                "ThrowImpDuration",
-                "ImpTargetColumn",
-                "ImpApex",
-                "ImpFlightTime",
-                "ImpSpawnOffset",
-                "HealthThresholdToImpAmmoLayers"
-            ],
-            "ZombieGeneralCaesarProps": [
-                "ref:ZombieGeneralProps",
-                "ActionAttackTargetRect"
-            ],
-            "ZombieGeneralProps": [
-                "ref:ZombieWithActionsProps",
-                "LifetimeSeconds",
-                "GeneralPhase",
-                "CollidePlants",
-                "CollideHypnotizedZombies"
-            ],
-            "ZombieGeneralTreadmillProps": [
-                "ref:ZombieGeneralProps",
-                "PowerDrinkTargetRect"
-            ],
-            "ZombieGeneralZmechProps": [
-                "ref:ZombieGeneralProps",
-                "CrosshairPopAnim",
-                "CrosshairAnimation",
-                "RocketAnimation",
-                "RocketExplosionAnimation",
-                "CraterLifetime",
-                "StunTime"
-            ],
-            "ZombieGumProps": [
-                "DamagePhases"
-            ],
-            "ZombieHamsterBallProps": [
-                "TargetByIncludelist",
-                "PlantsWhichBreakBarrelOnCollision",
-                "ZombieInsideBallType",
-                "Behavior",
-                "SpeedBeforeImpact",
-                "RicochetLaneChangeTime"
-            ],
-            "ZombieHeroBehaviorProps": [
-                "TriggerAtHP",
-                "TriggerAtTime",
-                "TriggerInterval",
-                "TriggerMax"
-            ],
-            "ZombieHeroProps": [
-                "HeroBehavior",
-                "HeroBehaviorProps"
-            ],
-            "ZombieHeroSpawnerProps": [
-                "ZombieSpawnType",
-                "SpawnPattern"
-            ],
-            "ZombieIceAgeDodoProps": [
-                "ref:ZombieWithActionsProps",
-                "PlantsToFlyOver",
-                "GridItemsToFlyOver",
-                "MaximumGridSquaresToFlyOver",
-                "MinRandomGridSquaresToFlyOver",
-                "MaxRandomGridSquaresToFlyOver",
-                "CooldownSecondsUntilNextJumpAvailable",
-                "InitialSetRandomChanceForJump",
-                "LandedResetRandomChanceForJump",
-                "AddRandomChanceForJumpPerGridWalked",
-                "ElectrocutePAMName"
-            ],
-            "ZombieIceAgeHunterProps": [
-                "ref:ZombieWithActionsProps",
-                "NearAttackRange",
-                "FarAttackRange",
-                "SnowballsPerBarrage"
-            ],
-            "ZombieIceAgeTroglobiteProps": [
-                "ref:ZombieWithActionsProps",
-                "ImpType",
-                "NumberOfIceblocksToSpawnWith",
-                "ConditionToApply"
-            ],
-            "ZombieImpPorterProps": [
-                "TentTargetingOffsetX"
-            ],
-            "ZombieLostCityJaneProps": [
-                "ProjectileBounceHeight",
-                "ProjectileBounceTime",
-                "ProjectileBounceDistance",
-                "BounceableProjectiles"
-            ],
-            "ZombieLostCityLostPilotProps": [
-                "ref:ZombieWithActionsProps",
-                "HangingAttackRectOffsetY",
-                "HangingNoEatTimeUntilDrop"
-            ],
-            "ZombieLostCityRelicHunterProps": [
-                "ref:ZombieSwashbucklerProps"
-            ],
-            "ZombieMechDiscoProps": [
-                "ref:ZombieMechProps",
-                "DanceCountdown",
-                "DanceDuration",
-                "SummonDuration",
-                "SoundOnSummon"
-            ],
-            "ZombieMechFootballProps": [
-                "ref:ZombieMechProps",
-                "SoundOnPush",
-                "PushDamageToZombies"
-            ],
-            "ZombieMechProps": [
-                "SoundOnActivate",
-                "SoundOnDeactivate",
-                "NumDamageStates"
-            ],
-            "ZombieModernAllStarProps": [
-                "SmashDamage",
-                "RunningSpeedScale"
-            ],
-            "ZombieModernNewspaperProps": [
-                "EnragedSpeedScale",
-                "EnragedDpsScale"
-            ],
-            "ZombieModernSuperfanImpProps": [
-                "MinTriggerColumn",
-                "MaxTriggerColumn",
-                "ExplosionDamage",
-                "ExplosionRadius"
-            ],
-            "ZombiePianoProps": [
-                "FastMoveSpeed",
-                "PlantsWhichBreakPianoOnCollision"
-            ],
-            "ZombiePirateCannonProps": [
-                "InitialShotCooldown",
-                "ShotCooldown",
-                "ChanceImpFallsInWater",
-                "TimeToWalkInToPosition",
-                "ImpShotHeight",
-                "ImpShotTime",
-                "ExplosionImpSpawnCount",
-                "ExplosionImpTargetColumnMin",
-                "ExplosionImpTargetColumnMax",
-                "ExplosionImpLaunchHeight",
-                "ExplosionImpLaunchTime",
-                "ExplosionImpLaunchTimeVariance",
-                "ImpType"
-            ],
-            "ZombiePirateCaptainParrotProps": [
-                "LiftSpeed",
-                "PlantLiftingWaitTime",
-                "ReturningToCaptainWaitTime",
-                "ParrotTargetExcludeList"
-            ],
-            "ZombiePirateCaptainProps": [
-                "ParrotCooldown",
-                "ParrotRetryCooldown"
-            ],
-            "ZombiePonchoProps": [
-                "PonchoHealth",
-                "PlateProbability",
-                "PlateHealth"
-            ],
-            "ZombiePropertySheet": [],
-            "ZombieProspectorProps": [
-                "LaunchCountdown",
-                "StunTime",
-                "TimeToTravel",
-                "Apex"
-            ],
-            "ZombiePrototypeProps": [
-                "StaticArtImageAsset"
-            ],
-            "ZombieRaProps": [
-                "MaxClaimedSunCurrency"
-            ],
-            "ZombieRomanBallistaProps": [
-                "InitialShotCooldown",
-                "ShotCooldown",
-                "ChanceImpFallsInWater",
-                "TimeToWalkInToPosition",
-                "VaseShotHeight",
-                "VaseShotTime",
-                "VaseTargetLeftmostGridXOffset",
-                "VaseTargetRightmostGridXOffset",
-                "VaseDefaultGridX",
-                "VaseProjectile",
-                "ZombieSpawnData"
-            ],
-            "ZombieRomanHealerProps": [
-                "ref:ZombieWithActionsProps",
-                "GridItemToDrop",
-                "BreaksStaff",
-                "BlocksStaff"
-            ],
-            "ZombieRomanImpProps": [
-                "NetSuspendSeconds"
-            ],
-            "ZombieRomanMedusaProps": [
-                "ref:ZombieIceAgeTroglobiteProps",
-                "PetrifiedZombieType",
-                "PetrifiedZombieHealthMultiplier"
-            ],
-            "ZombieSarcophagusProps": [
-                "RunSpeed"
-            ],
-            "ZombieSeagullProps": [
-                "DropsHeadOnDeath",
-                "SpawnBirdOnDeath"
-            ],
-            "ZombieStatueProps": [
-                "DamagePhases",
-                "BreakEffect"
-            ],
-            "ZombieSwashbucklerProps": [
-                "MinLandingColumn",
-                "MaxLandingColumn",
-                "FallIntoDrinkChance"
-            ],
-            "ZombieTigerGrassTigerProps": [
-                "TigerLaunchProps",
-                "TigerSpawnOffset",
-                "TigerDieAnimationOffset",
-                "SwipeImpactEffectOffset",
-                "TigerProjectile",
-                "SwipeAttackRate",
-                "TigerWaitTime"
-            ],
-            "ZombieTombRaiserProps": [
-                "TimeBetweenCasts",
-                "TimeBetweenRaisings",
-                "NumberOfTombsToSpawn",
-                "Projectile"
-            ],
-            "ZombieTreasureYetiProps": [
-                "WalkTime",
-                "CollectableType"
-            ],
-            "ZombieWithActionsProps": [
-                "Actions"
-            ],
-            "ZombieZCorpConsultantProps": [
-                "ForwardShovePercentage",
-                "ShoveHeight",
-                "ShoveTime",
-                "SlideTime",
-                "SlideCooldown",
-                "TimeBetweenDirectionChanges",
-                "ShoveExcludeList"
-            ],
-            "ZombieZCorpHelpdeskProps": [
-                "ref:ZombieLostCityLostPilotProps",
-                "EnragedSpeedScale",
-                "EnragedDpsScale",
-                "LaptopProjectile",
-                "LaptopSpawnOffset",
-                "ApexHeight",
-                "TimeUntilHit",
-                "MaxTossGridDistance",
-                "DeathExplosionRadius",
-                "DeathExplosionDamage",
-                "DeathExplosionOffsetX",
-                "DeathExplosionOffsetY",
-                "DeathExplosionPAM",
-                "DeathExplosionAnim"
-            ],
-            "ZombieZCorpImpProps": [
-                "SmashDamage"
-            ],
-            "ZombieZcorpRacerProps": [
-                "RacerRect",
-                "RacerSpeed",
-                "LaunchZombieDistance",
-                "LaunchZombieApex",
-                "LaunchZombieTimeToLand",
-                "ChairCollideDamage"
-            ],
-            "ZombieZombossMechBeachProps": [
-                "ref:ZombieZombossMechProps",
-                "TangleKelpStunDuration",
-                "TangleKelpStunShouldUseKnockback",
-                "TangleKelpStunShouldUseFlash",
-                "RetreatSubmergedDuration",
-                "MinionParameters"
-            ],
-            "ZombieZombossMechCowboyProps": [
-                "ref:ZombieZombossMechProps"
-            ],
-            "ZombieZombossMechDarkProps": [
-                "ref:ZombieZombossMechProps",
-                "MagnetStunDuration"
-            ],
-            "ZombieZombossMechDinoProps": [
-                "ref:ZombieZombossMechProps",
                 "SplashRadius",
-                "SplashDamage",
-                "EyeLaserWarmUpTime",
-                "EyeLaserSweepTime",
-                "LaserOffset",
-                "LaserMaxColumn",
-                "LaserMinColumn"
+                "SplashRadiusBaseDamageCutoff",
+                "ShakeBoardOnSplash",
+                "CollisionFlags",
+                "DamageFlags",
+                "InitialVelocity",
+                "InitialAcceleration",
+                "InitialVelocityScale",
+                "InitialHeight",
+                "InitialRotation",
+                "InitialAngularVelocity",
+                "InitialScale",
+                "CollisionRect",
+                "AttachedPAM",
+                "AttachedPAMAnimRigClass",
+                "AttachedPAMAnimationToPlay",
+                "AttachedPAMOffset",
+                "AttachedPAMEffectOffset",
+                "SpawnPAM",
+                "SpawnPAMAnimationToPlay",
+                "SpawnPAMOffset",
+                "ImpactPAM",
+                "ImpactPAMAnimationToPlay",
+                "ImpactOffset",
+                "ImpactShowsAtZombieFeet",
+                "RenderColor",
+                "RenderImage",
+                "ShadowImage",
+                "ImpactSoundEvent",
+                "ImpactSoundThrottleTimer",
+                "ImpactSoundForce",
+                "HasShadow",
+                "FollowsGround",
+                "RotateToMatchVelocity",
+                "DiesOnImpact",
+                "StunDuration",
+                "OverrideStunCondition",
+                "Conditions"
             ],
-            "ZombieZombossMechEgyptProps": [
-                "ref:ZombieZombossMechProps",
-                "NumRocketGravestones",
-                "BoneProjectileType"
+            "Sub": {
+                "AkeeProjectileProps": [
+                    "ProjectileRetargetingRadius",
+                    "PropertyReductionMultiplierPerBounce",
+                    "DamageReductionAmountPerBounce"
+                ],
+                "BlastberryMainProjectileProps": [
+                    "ChildProjectileType",
+                    "ChildProjectileXStart",
+                    "ChildProjectileXSpacing"
+                ],
+                "BloomingHeartsProjectileProps": [
+                    "MaximumStacks",
+                    "StacksToAdd",
+                    "AdditionalDamagePerStack"
+                ],
+                "BoomFlowerProjectileProps": [
+                    "BalloonLifetime",
+                    "BalloonMaxMerge"
+                ],
+                "BoulderProjectileProps": [
+                    "RollingVelocity",
+                    "BounceElasticity",
+                    "BounceThreshold"
+                ],
+                "BouncingAndRollingProjectileProps": [
+                    "BounceAngleInRadians",
+                    "BounceOutwardTendency"
+                ],
+                "BowlingBulbProjectileProps": [
+                    "ref:BouncingAndRollingProjectileProps",
+                    "HitsUntilFirstAward",
+                    "HitsUntilRepeatAward",
+                    "LootAwardOnHits"
+                ],
+                "ButtercupProjectileProps": [
+                    "ButterItemName"
+                ],
+                "CactusProjectileProps": [
+                    "InitialPierceChance",
+                    "PierceChanceReductionPerHit"
+                ],
+                "CaulipowerProjectileProps": [
+                    "InitialPositionOffset"
+                ],
+                "DandelionProjectileProps": [
+                    "ResistancePerSecond",
+                    "LaneChangeStartOffsetY",
+                    "LaneChangeStartVelocityY",
+                    "DriftDecayZPeriod",
+                    "DriftDecayZTargetVelocity",
+                    "DriftDecayXPeriod",
+                    "DriftDecayXTargetVelocity"
+                ],
+                "DartichokeLeafProps": [
+                    "MaxRotationsPerSecond",
+                    "Lifetime"
+                ],
+                "DraftodilProjectileProps": [
+                    "WindAccel",
+                    "UpPercent",
+                    "CanBlowAway"
+                ],
+                "DusklobberPlantfoodProjectileProps": [
+                    "ShrapnelDamage",
+                    "ShrapnelRadius",
+                    "PauseBeforeStartingFlower"
+                ],
+                "ElectricPeaPlantfoodSubProps": [
+                    "SlowDownPercentage",
+                    "SlowDownTime"
+                ],
+                "GiantPlasmaProjectileProps": [
+                    "MinTossAngle",
+                    "MaxTossAngle",
+                    "TossSpeed",
+                    "TossSpinRadiansPerSecond"
+                ],
+                "GrapeshotProjectileProps": [
+                    "BounceAngleInRadians",
+                    "BounceOutwardTendency",
+                    "BouncesUntilSelfDestruct",
+                    "EndingPAM"
+                ],
+                "GuacodileProjectileProps": [
+                    "ChompsPerSecond",
+                    "DamagePerChomp"
+                ],
+                "HeathSeekerProjectileProps": [
+                    "MaxRotationsPerSecond",
+                    "Lifetime"
+                ],
+                "HollyKnightLeafProps": [
+                    "KnockbackChance",
+                    "KnockbackTime",
+                    "KnockbackHeight",
+                    "ShieldType",
+                    "IsFromPlantFood"
+                ],
+                "HomingThistleLeafProps": [
+                    "MaxRotationsPerSecond",
+                    "Lifetime"
+                ],
+                "InfernoPFProjectileProps": [
+                    "ref:InfernoProjectileProps",
+                    "LaneChangeTime",
+                    "TimeBetweenLaneChanges",
+                    "CyclonePullSquareRange"
+                ],
+                "InfernoProjectileProps": [
+                    "TimeBetweenDamagePulses",
+                    "DamagePulseMultiple",
+                    "UnmovableZombies",
+                    "MeltableGridItems",
+                    "InitialExtraVelocityStart",
+                    "InitialExtraVelocitySeconds",
+                    "InitialExtraVelocityCurve"
+                ],
+                "ParsnipProjectileProps": [
+                    "ChompsPerSecond",
+                    "DamagePerChomp"
+                ],
+                "PowerDrinkProjectileProps": [
+                    "ConditionToApply"
+                ],
+                "PrimalPeashooterProjectileProps": [
+                    "StunDuration",
+                    "KnockbackChance",
+                    "KnockbackDistance",
+                    "KnockbackTime",
+                    "KnockbackHeight"
+                ],
+                "ProjectilePropertySheet": [],
+                "SandbagProjectileProps": [
+                    "ImpactRadiusX",
+                    "ImpactRadiusY"
+                ],
+                "SapflingProjectileProps": [
+                    "SapItemName"
+                ],
+                "SnapPeaMedusaProjectileProps": [
+                    "PetrificationArea",
+                    "CannotBePetrified",
+                    "PetrifiedHealthMultiplier",
+                    "PetrifiedZombieType"
+                ],
+                "SnowPeaFreezingProjectileProps": [
+                    "LinearAOE"
+                ],
+                "SnowPeaProjectileProps": [
+                    "LinearAOE"
+                ],
+                "SnowballProjectileProps": [
+                    "MinZombieDamagePct",
+                    "MaxDamage"
+                ],
+                "TumbleweedProjectileProps": [
+                    "ref:BouncingAndRollingProjectileProps",
+                    "KnockbackTime",
+                    "KnockbackHeight",
+                    "TossChanceBuckets",
+                    "TossChance"
+                ]
+            }
+        },
+        "WorldMapList": {
+            "Main": [
+                "MapList",
+                "MapResourceGrid",
+                "MapResourceGridWidth",
+                "MapResourceGridHeight",
+                "MapResourceGridOffsetX",
+                "MapResourceGridOffsetY"
             ],
-            "ZombieZombossMechEightiesProps": [
-                "ref:ZombieZombossMechProps",
-                "StageJamOrder",
-                "ZombossAnimOrder"
+            "Sub": {
+                "WorldMapList": []
+            }
+        },
+        "WorldMapList_Rift": {
+            "Main": [
+                "MapList",
+                "MapResourceGrid",
+                "MapResourceGridWidth",
+                "MapResourceGridHeight",
+                "MapResourceGridOffsetX",
+                "MapResourceGridOffsetY"
             ],
-            "ZombieZombossMechFutureProps": [
-                "ref:ZombieZombossMechProps"
+            "Sub": {
+                "WorldMapList": []
+            }
+        },
+        "WorldMapList_Utility": {
+            "Main": [
+                "MapList",
+                "MapResourceGrid",
+                "MapResourceGridWidth",
+                "MapResourceGridHeight",
+                "MapResourceGridOffsetX",
+                "MapResourceGridOffsetY"
             ],
-            "ZombieZombossMechIceAgeProps": [
-                "ref:ZombieZombossMechProps",
-                "IceCrustHealth",
-                "RevealAction",
-                "CoverUpAction"
+            "Sub": {
+                "WorldMapList": []
+            }
+        },
+        "ZombieProperties": {
+            "Main": [
+                "Hitpoints",
+                "EatDPS",
+                "Speed",
+                "SpeedVariance",
+                "WavePointCost",
+                "Weight",
+                "Size",
+                "GroundTrackName",
+                "ZombieArmorProps",
+                "AlmanacScale",
+                "AlmanacOffset",
+                "ArtCenter",
+                "ArtScale",
+                "ArtCenterBurnEffectOffset",
+                "ShrunkenScale",
+                "HitRect",
+                "AttackRect",
+                "ShadowOffset",
+                "ShadowScaling",
+                "GridExtents",
+                "HypnoshroomEffectOffset",
+                "StreetSize",
+                "StreetCriticalSize",
+                "StreetOffset",
+                "CanSpawnPlantFood",
+                "CanSurrender",
+                "CanTriggerZombieWin",
+                "ExplodesWhenMowed",
+                "NormalDeathWhenMowed",
+                "NormalDeathOnExplosion",
+                "IsSpawnedFlying",
+                "CanBePlantTossedWeak",
+                "CanBePlantTossedStrong",
+                "CanBeFlicked",
+                "CanBeFlickedOff",
+                "FlickIsLaneRestricted",
+                "IsValidPinchTarget",
+                "ChillInsteadOfFreeze",
+                "SkipHeadDropState",
+                "IgnoreWaterLine",
+                "MaxTideLoweredPercent",
+                "Helm",
+                "HelmHitpoints",
+                "HelmDamageLayerIndices",
+                "HelmAbsorbsOverflowDamage",
+                "TimeToKillInSeconds",
+                "ArmDropFraction",
+                "ScoreOverride",
+                "PowerUpDamageModifier",
+                "FireDamageMultiplier",
+                "FoeEatDamageReflectPct",
+                "SoundOnDeath",
+                "SoundOnTakeDamage",
+                "SoundOnWalk",
+                "SoundOnEat",
+                "SoundOnIdle",
+                "SoundOnAsh",
+                "SoundOnElectrocute",
+                "ConditionImmunities",
+                "Ammo",
+                "MetallicBodyParts",
+                "ZombieStats",
+                "ScaledProps",
+                "Cost",
+                "GridHeight"
             ],
-            "ZombieZombossMechLostCityProps": [
-                "ref:ZombieZombossMechProps",
-                "SpawnZombieAction",
-                "DropSandbagAction"
+            "Sub": {
+                "ZombieBarrelProps": [
+                    "TargetByIncludelist",
+                    "PlantsWhichBreakBarrelOnCollision",
+                    "BurstDelay",
+                    "ImpType"
+                ],
+                "ZombieBarrelPusherProps": [
+                    "BarrelType"
+                ],
+                "ZombieBeachFastSwimmerProps": [
+                    "SwimSpeedMultiplier"
+                ],
+                "ZombieBeachFishermanProps": [
+                    "DelayBetweenCasting",
+                    "DelayBeforeReeling",
+                    "CastingAreaMinRange",
+                    "CastingAreaMaxRange",
+                    "CastingAreaHeight",
+                    "CastTimePerGridSquare",
+                    "ReelTimePerGridSquare",
+                    "PlantablePlants",
+                    "AllowedLowPlants"
+                ],
+                "ZombieBeachOctopusProps": [
+                    "ref:ZombieWithActionsProps"
+                ],
+                "ZombieBeachSnorkelProps": [
+                    "TargetByIncludelist",
+                    "DamageWhileSubmerged",
+                    "DamageWhileSubmergedPlantfoodOnly"
+                ],
+                "ZombieBeachSurferProps": [
+                    "SurfSpeedMultiplier",
+                    "SurfboardAttackRectOffsetX",
+                    "BreaksSurfboard",
+                    "BlocksSurfboard"
+                ],
+                "ZombieBugProps": [
+                    "SpawnedZombieName",
+                    "BasicHelm",
+                    "DamageFraction",
+                    "PlantsWhichAlsoKillBasic",
+                    "DamageAmountWhichAlsoKillsBasic"
+                ],
+                "ZombieBullProps": [
+                    "BuckRect",
+                    "BullRunSpeed",
+                    "BullPawLocation",
+                    "BullEnterSpeed"
+                ],
+                "ZombieBullRiderProps": [
+                    "LaunchDistance",
+                    "LaunchHeight",
+                    "LaunchAirTime"
+                ],
+                "ZombieBullVeteranProps": [
+                    "ref:ZombieBullProps",
+                    "BullRunAgainDelay",
+                    "BullRammingDamage"
+                ],
+                "ZombieCakeTankProps": [
+                    "ref:ZombieGeneralProps",
+                    "CustomDamageSteps"
+                ],
+                "ZombieCamelProps": [
+                    "CamelSegmentOffset",
+                    "CamelSegmentTooCloseBuffer",
+                    "CamelSegmentTooFarBuffer",
+                    "WalkCycleOffset",
+                    "SpawnManyCamelSegmentAtPosition",
+                    "PropagateSignDestruction",
+                    "OnlyHeadZombieEats",
+                    "SurprisedTime",
+                    "DropArmOnSignDrop",
+                    "SwitchToHeadCamelSign"
+                ],
+                "ZombieCamelTouchProps": [
+                    "ref:ZombieCamelProps",
+                    "PostMatchStunChance",
+                    "PostMatchStunDuration"
+                ],
+                "ZombieCarnieFireBreatherProps": [
+                    "FlamePAMOffset",
+                    "FlameRange",
+                    "FlameDamagePerSecond",
+                    "FlameCooldownTime",
+                    "DeathExplosionDamage",
+                    "DeathExplosionRadius"
+                ],
+                "ZombieCarnieGrinderheadProps": [
+                    "MonkeyAudioFrequency",
+                    "Percent",
+                    "Condition"
+                ],
+                "ZombieCarnieImpTwinsProps": [
+                    "SpawnImpType"
+                ],
+                "ZombieCarnieMagicianDoveProps": [
+                    "ref:ZombiePirateCaptainParrotProps",
+                    "FeatherEffectSpawnOffset"
+                ],
+                "ZombieCarnieMagicianProps": [
+                    "ref:ZombieWithActionsProps",
+                    "TeleportOtherStartTime",
+                    "TeleportSelfStartTime",
+                    "DoveSpawnStartTime",
+                    "TimeBetweenTeleportOther",
+                    "TimeBetweenTeleportSelf",
+                    "TimeBetweenDoveSpawn",
+                    "TeleportationFailPercentage",
+                    "ImmuneToPlantRestrictionSet"
+                ],
+                "ZombieCarnieMonkeyProps": [
+                    "ref:ZombieChickenProps",
+                    "PercentageChanceToDropCoin",
+                    "CoinType"
+                ],
+                "ZombieChickenFarmerProps": [
+                    "ChickeningHealthPercentage",
+                    "ChickenTypeName",
+                    "ChickeningSound",
+                    "ChickeningDuration",
+                    "ChickeningDurationVariance",
+                    "ChickeningInterval",
+                    "ChickeningIntervalVariance"
+                ],
+                "ZombieChickenProps": [
+                    "BucketPercentage",
+                    "ElectrocutePAMName",
+                    "AffectedBySliders"
+                ],
+                "ZombieCrystalSkullProps": [
+                    "ChargingTime",
+                    "ChargingTimeDecrementPerFiveSun",
+                    "LaserBeamLength",
+                    "LaserBeamDamage",
+                    "LaserCooldownTime"
+                ],
+                "ZombieDarkJugglerProps": [
+                    "LaunchVelocity",
+                    "LaunchAcceleration",
+                    "LaunchHeight",
+                    "MaxProjectilesToJuggle",
+                    "JuggleLaunchDelay",
+                    "MoveSpeedMultiplierWhileJuggling",
+                    "CatchArcDegrees",
+                    "JuggleableProjectiles",
+                    "UnthrowableProjectiles",
+                    "AngleAgnosticProjectiles"
+                ],
+                "ZombieDarkKingProps": [
+                    "DelayBetweenKnightings",
+                    "KnightingAreaX",
+                    "KnightingAreaY",
+                    "KnightHelm",
+                    "KnightHelmHitpoints",
+                    "ValidKnightTargets",
+                    "PlantablePlants"
+                ],
+                "ZombieDarkWizardProps": [
+                    "ref:ZombieWithActionsProps"
+                ],
+                "ZombieDinoBullyVeteranProps": [
+                    "SmashDuration",
+                    "SmashDamage",
+                    "SoundOnSmash",
+                    "CraterLifetime"
+                ],
+                "ZombieEightiesArcadeProps": [
+                    "ref:ZombieWithActionsProps",
+                    "JamStyle"
+                ],
+                "ZombieEightiesBoomboxProps": [
+                    "PlantBoomRestrictionSet",
+                    "JamStyle",
+                    "BoomBoxDuration",
+                    "PlantFreezeRadius",
+                    "BoomBoxColumn"
+                ],
+                "ZombieEightiesBreakDancerProps": [
+                    "JamStyle",
+                    "JamWalkSpeedMult",
+                    "TossTime",
+                    "TossHeight",
+                    "TossDistance",
+                    "TossTargetRect",
+                    "ZombiesToNotKick"
+                ],
+                "ZombieEightiesGargantuarProps": [
+                    "ref:ZombieGargantuarProps",
+                    "JamStyle",
+                    "ArbitrarySmashDelay",
+                    "ArbitrarySmashDelayVariance",
+                    "ShockWaveSpawnOffset"
+                ],
+                "ZombieEightiesGlitterProps": [
+                    "JamStyle",
+                    "RainbowTrailLength"
+                ],
+                "ZombieEightiesMCProps": [
+                    "JamStyle",
+                    "JamAttackRadius",
+                    "JamAttackDamage"
+                ],
+                "ZombieEightiesPunkProps": [
+                    "JamStyle",
+                    "PushCooldown",
+                    "PushDamageToZombies",
+                    "KickFallbackDPS",
+                    "PlantsToKickInsteadOfPush"
+                ],
+                "ZombieExcavatorProps": [
+                    "CatchArcDegrees",
+                    "PreferredDistanceToThrowPlant",
+                    "ShovelAttackRectOffsetX",
+                    "ShovelRect",
+                    "PlantsShovelableWhileInvincible",
+                    "PlantsToBashInsteadOfShovel",
+                    "ProjectileClassesToNeverBlock"
+                ],
+                "ZombieExplorerProps": [
+                    "MaxTorchReach"
+                ],
+                "ZombieFutureJetpackProps": [
+                    "DiscoMode"
+                ],
+                "ZombieFutureProtectorProps": [
+                    "ref:ZombieMechProps",
+                    "ShieldActivationColumn",
+                    "ShieldSizeX",
+                    "ShieldSizeY",
+                    "ShieldHP",
+                    "ShieldCount",
+                    "ShieldReactivationDelay",
+                    "ShieldDiesUponLossOfControl"
+                ],
+                "ZombieGargantuarMechProps": [
+                    "ref:ZombieGargantuarProps",
+                    "EyeLaserDelayBetweenShots",
+                    "EyeLaserWarmUpTime",
+                    "EyeLaserSweepTime",
+                    "EyeLaserTotalDamage",
+                    "EyeLaserMinDistance",
+                    "EyeLaserMaxDistance",
+                    "EyeLaserSweepLength",
+                    "SoundOnDeactivate",
+                    "SoundOnActivate",
+                    "HealthPercentThrowImp",
+                    "ProjectileLayersToHide"
+                ],
+                "ZombieGargantuarProps": [
+                    "SmashDuration",
+                    "SmashDamage",
+                    "SoundOnSmash",
+                    "SoundOnCannon",
+                    "ImpType",
+                    "MinPosXThrowImp",
+                    "ThrowImpDuration",
+                    "ImpTargetColumn",
+                    "ImpApex",
+                    "ImpFlightTime",
+                    "ImpSpawnOffset",
+                    "HealthThresholdToImpAmmoLayers"
+                ],
+                "ZombieGeneralCaesarProps": [
+                    "ref:ZombieGeneralProps",
+                    "ActionAttackTargetRect"
+                ],
+                "ZombieGeneralProps": [
+                    "ref:ZombieWithActionsProps",
+                    "LifetimeSeconds",
+                    "GeneralPhase",
+                    "CollidePlants",
+                    "CollideHypnotizedZombies"
+                ],
+                "ZombieGeneralTreadmillProps": [
+                    "ref:ZombieGeneralProps",
+                    "PowerDrinkTargetRect"
+                ],
+                "ZombieGeneralZmechProps": [
+                    "ref:ZombieGeneralProps",
+                    "CrosshairPopAnim",
+                    "CrosshairAnimation",
+                    "RocketAnimation",
+                    "RocketExplosionAnimation",
+                    "CraterLifetime",
+                    "StunTime"
+                ],
+                "ZombieGumProps": [
+                    "DamagePhases"
+                ],
+                "ZombieHamsterBallProps": [
+                    "TargetByIncludelist",
+                    "PlantsWhichBreakBarrelOnCollision",
+                    "ZombieInsideBallType",
+                    "Behavior",
+                    "SpeedBeforeImpact",
+                    "RicochetLaneChangeTime"
+                ],
+                "ZombieHeroBehaviorProps": [
+                    "TriggerAtHP",
+                    "TriggerAtTime",
+                    "TriggerInterval",
+                    "TriggerMax"
+                ],
+                "ZombieHeroProps": [
+                    "HeroBehavior",
+                    "HeroBehaviorProps"
+                ],
+                "ZombieHeroSpawnerProps": [
+                    "ZombieSpawnType",
+                    "SpawnPattern"
+                ],
+                "ZombieIceAgeDodoProps": [
+                    "ref:ZombieWithActionsProps",
+                    "PlantsToFlyOver",
+                    "GridItemsToFlyOver",
+                    "MaximumGridSquaresToFlyOver",
+                    "MinRandomGridSquaresToFlyOver",
+                    "MaxRandomGridSquaresToFlyOver",
+                    "CooldownSecondsUntilNextJumpAvailable",
+                    "InitialSetRandomChanceForJump",
+                    "LandedResetRandomChanceForJump",
+                    "AddRandomChanceForJumpPerGridWalked",
+                    "ElectrocutePAMName"
+                ],
+                "ZombieIceAgeHunterProps": [
+                    "ref:ZombieWithActionsProps",
+                    "NearAttackRange",
+                    "FarAttackRange",
+                    "SnowballsPerBarrage"
+                ],
+                "ZombieIceAgeTroglobiteProps": [
+                    "ref:ZombieWithActionsProps",
+                    "ImpType",
+                    "NumberOfIceblocksToSpawnWith",
+                    "ConditionToApply"
+                ],
+                "ZombieImpPorterProps": [
+                    "TentTargetingOffsetX"
+                ],
+                "ZombieLostCityJaneProps": [
+                    "ProjectileBounceHeight",
+                    "ProjectileBounceTime",
+                    "ProjectileBounceDistance",
+                    "BounceableProjectiles"
+                ],
+                "ZombieLostCityLostPilotProps": [
+                    "ref:ZombieWithActionsProps",
+                    "HangingAttackRectOffsetY",
+                    "HangingNoEatTimeUntilDrop"
+                ],
+                "ZombieLostCityRelicHunterProps": [
+                    "ref:ZombieSwashbucklerProps"
+                ],
+                "ZombieMechDiscoProps": [
+                    "ref:ZombieMechProps",
+                    "DanceCountdown",
+                    "DanceDuration",
+                    "SummonDuration",
+                    "SoundOnSummon"
+                ],
+                "ZombieMechFootballProps": [
+                    "ref:ZombieMechProps",
+                    "SoundOnPush",
+                    "PushDamageToZombies"
+                ],
+                "ZombieMechProps": [
+                    "SoundOnActivate",
+                    "SoundOnDeactivate",
+                    "NumDamageStates"
+                ],
+                "ZombieModernAllStarProps": [
+                    "SmashDamage",
+                    "RunningSpeedScale"
+                ],
+                "ZombieModernNewspaperProps": [
+                    "EnragedSpeedScale",
+                    "EnragedDpsScale"
+                ],
+                "ZombieModernSuperfanImpProps": [
+                    "MinTriggerColumn",
+                    "MaxTriggerColumn",
+                    "ExplosionDamage",
+                    "ExplosionRadius"
+                ],
+                "ZombiePianoProps": [
+                    "FastMoveSpeed",
+                    "PlantsWhichBreakPianoOnCollision"
+                ],
+                "ZombiePirateCannonProps": [
+                    "InitialShotCooldown",
+                    "ShotCooldown",
+                    "ChanceImpFallsInWater",
+                    "TimeToWalkInToPosition",
+                    "ImpShotHeight",
+                    "ImpShotTime",
+                    "ExplosionImpSpawnCount",
+                    "ExplosionImpTargetColumnMin",
+                    "ExplosionImpTargetColumnMax",
+                    "ExplosionImpLaunchHeight",
+                    "ExplosionImpLaunchTime",
+                    "ExplosionImpLaunchTimeVariance",
+                    "ImpType"
+                ],
+                "ZombiePirateCaptainParrotProps": [
+                    "LiftSpeed",
+                    "PlantLiftingWaitTime",
+                    "ReturningToCaptainWaitTime",
+                    "ParrotTargetExcludeList"
+                ],
+                "ZombiePirateCaptainProps": [
+                    "ParrotCooldown",
+                    "ParrotRetryCooldown"
+                ],
+                "ZombiePonchoProps": [
+                    "PonchoHealth",
+                    "PlateProbability",
+                    "PlateHealth"
+                ],
+                "ZombiePropertySheet": [],
+                "ZombieProspectorProps": [
+                    "LaunchCountdown",
+                    "StunTime",
+                    "TimeToTravel",
+                    "Apex"
+                ],
+                "ZombiePrototypeProps": [
+                    "StaticArtImageAsset"
+                ],
+                "ZombieRaProps": [
+                    "MaxClaimedSunCurrency"
+                ],
+                "ZombieRomanBallistaProps": [
+                    "InitialShotCooldown",
+                    "ShotCooldown",
+                    "ChanceImpFallsInWater",
+                    "TimeToWalkInToPosition",
+                    "VaseShotHeight",
+                    "VaseShotTime",
+                    "VaseTargetLeftmostGridXOffset",
+                    "VaseTargetRightmostGridXOffset",
+                    "VaseDefaultGridX",
+                    "VaseProjectile",
+                    "ZombieSpawnData"
+                ],
+                "ZombieRomanHealerProps": [
+                    "ref:ZombieWithActionsProps",
+                    "GridItemToDrop",
+                    "BreaksStaff",
+                    "BlocksStaff"
+                ],
+                "ZombieRomanImpProps": [
+                    "NetSuspendSeconds"
+                ],
+                "ZombieRomanMedusaProps": [
+                    "ref:ZombieIceAgeTroglobiteProps",
+                    "PetrifiedZombieType",
+                    "PetrifiedZombieHealthMultiplier"
+                ],
+                "ZombieSarcophagusProps": [
+                    "RunSpeed"
+                ],
+                "ZombieSeagullProps": [
+                    "DropsHeadOnDeath",
+                    "SpawnBirdOnDeath"
+                ],
+                "ZombieStatueProps": [
+                    "DamagePhases",
+                    "BreakEffect"
+                ],
+                "ZombieSwashbucklerProps": [
+                    "MinLandingColumn",
+                    "MaxLandingColumn",
+                    "FallIntoDrinkChance"
+                ],
+                "ZombieTigerGrassTigerProps": [
+                    "TigerLaunchProps",
+                    "TigerSpawnOffset",
+                    "TigerDieAnimationOffset",
+                    "SwipeImpactEffectOffset",
+                    "TigerProjectile",
+                    "SwipeAttackRate",
+                    "TigerWaitTime"
+                ],
+                "ZombieTombRaiserProps": [
+                    "TimeBetweenCasts",
+                    "TimeBetweenRaisings",
+                    "NumberOfTombsToSpawn",
+                    "Projectile"
+                ],
+                "ZombieTreasureYetiProps": [
+                    "WalkTime",
+                    "CollectableType"
+                ],
+                "ZombieWithActionsProps": [
+                    "Actions"
+                ],
+                "ZombieZCorpConsultantProps": [
+                    "ForwardShovePercentage",
+                    "ShoveHeight",
+                    "ShoveTime",
+                    "SlideTime",
+                    "SlideCooldown",
+                    "TimeBetweenDirectionChanges",
+                    "ShoveExcludeList"
+                ],
+                "ZombieZCorpHelpdeskProps": [
+                    "ref:ZombieLostCityLostPilotProps",
+                    "EnragedSpeedScale",
+                    "EnragedDpsScale",
+                    "LaptopProjectile",
+                    "LaptopSpawnOffset",
+                    "ApexHeight",
+                    "TimeUntilHit",
+                    "MaxTossGridDistance",
+                    "DeathExplosionRadius",
+                    "DeathExplosionDamage",
+                    "DeathExplosionOffsetX",
+                    "DeathExplosionOffsetY",
+                    "DeathExplosionPAM",
+                    "DeathExplosionAnim"
+                ],
+                "ZombieZCorpImpProps": [
+                    "SmashDamage"
+                ],
+                "ZombieZcorpRacerProps": [
+                    "RacerRect",
+                    "RacerSpeed",
+                    "LaunchZombieDistance",
+                    "LaunchZombieApex",
+                    "LaunchZombieTimeToLand",
+                    "ChairCollideDamage"
+                ],
+                "ZombieZombossMechBeachProps": [
+                    "ref:ZombieZombossMechProps",
+                    "TangleKelpStunDuration",
+                    "TangleKelpStunShouldUseKnockback",
+                    "TangleKelpStunShouldUseFlash",
+                    "RetreatSubmergedDuration",
+                    "MinionParameters"
+                ],
+                "ZombieZombossMechCowboyProps": [
+                    "ref:ZombieZombossMechProps"
+                ],
+                "ZombieZombossMechDarkProps": [
+                    "ref:ZombieZombossMechProps",
+                    "MagnetStunDuration"
+                ],
+                "ZombieZombossMechDinoProps": [
+                    "ref:ZombieZombossMechProps",
+                    "SplashRadius",
+                    "SplashDamage",
+                    "EyeLaserWarmUpTime",
+                    "EyeLaserSweepTime",
+                    "LaserOffset",
+                    "LaserMaxColumn",
+                    "LaserMinColumn"
+                ],
+                "ZombieZombossMechEgyptProps": [
+                    "ref:ZombieZombossMechProps",
+                    "NumRocketGravestones",
+                    "BoneProjectileType"
+                ],
+                "ZombieZombossMechEightiesProps": [
+                    "ref:ZombieZombossMechProps",
+                    "StageJamOrder",
+                    "ZombossAnimOrder"
+                ],
+                "ZombieZombossMechFutureProps": [
+                    "ref:ZombieZombossMechProps"
+                ],
+                "ZombieZombossMechIceAgeProps": [
+                    "ref:ZombieZombossMechProps",
+                    "IceCrustHealth",
+                    "RevealAction",
+                    "CoverUpAction"
+                ],
+                "ZombieZombossMechLostCityProps": [
+                    "ref:ZombieZombossMechProps",
+                    "SpawnZombieAction",
+                    "DropSandbagAction"
+                ],
+                "ZombieZombossMechPirateProps": [
+                    "ref:ZombieZombossMechProps"
+                ],
+                "ZombieZombossMechProps": [
+                    "SquashZombies",
+                    "SquashGridItems",
+                    "EnterRow",
+                    "EnterColumn",
+                    "HideDuringIntro",
+                    "CrosshairPopAnim",
+                    "CrosshairAnimation",
+                    "RocketAnimation",
+                    "RocketExplosionAnimation",
+                    "UnlimitedStages",
+                    "Stages"
+                ]
+            }
+        },
+        "ZombieSwapLists": {
+            "Main": [
+                "Value"
             ],
-            "ZombieZombossMechPirateProps": [
-                "ref:ZombieZombossMechProps"
+            "Sub": {
+                "ZombieSwapListData": []
+            }
+        },
+        "ZombieSwapProperties": {
+            "Main": [
+                "ZombieSwaps"
             ],
-            "ZombieZombossMechProps": [
-                "SquashZombies",
-                "SquashGridItems",
-                "EnterRow",
-                "EnterColumn",
-                "HideDuringIntro",
-                "CrosshairPopAnim",
-                "CrosshairAnimation",
-                "RocketAnimation",
-                "RocketExplosionAnimation",
-                "UnlimitedStages",
-                "Stages"
-            ]
+            "Sub": {
+                "ZombieSwapProperties": []
+            }
+        },
+        "ZombieTypes": {
+            "Main": [
+                "TypeName",
+                "DisplayTypeName",
+                "IntegerID",
+                "ZombieClass",
+                "AnimRigClass",
+                "PopAnim",
+                "Properties",
+                "ResourceGroups",
+                "AudioGroups",
+                "HomeWorld",
+                "AlmanacBackdropName",
+                "Placeable",
+                "HastyOnStart",
+                "IsBasicZombie",
+                "IsFemaleZombie",
+                "HideFromAlmanac",
+                "FlagType"
+            ],
+            "Sub": {
+                "ZombieType": []
+            }
         }
     },
-    "ZombieSwapLists": {
-        "Main": [
-            "Value"
-        ],
-        "Sub": {
-            "ZombieSwapListData": []
-        }
-    },
-    "ZombieSwapProperties": {
-        "Main": [
-            "ZombieSwaps"
-        ],
-        "Sub": {
-            "ZombieSwapProperties": []
-        }
-    },
-    "ZombieTypes": {
-        "Main": [
-            "TypeName",
-            "DisplayTypeName",
-            "IntegerID",
-            "ZombieClass",
-            "AnimRigClass",
-            "PopAnim",
-            "Properties",
-            "ResourceGroups",
-            "AudioGroups",
-            "HomeWorld",
-            "AlmanacBackdropName",
-            "Placeable",
-            "HastyOnStart",
-            "IsBasicZombie",
-            "IsFemaleZombie",
-            "HideFromAlmanac",
-            "FlagType"
-        ],
-        "Sub": {
-            "ZombieType": []
-        }
-    }
+    "ProjectPath": "C:/Personal/PvZ2/Projects/Impunity/main.675.com.ea.game.pvz2_imp.obb.bundle/packages"
 }
